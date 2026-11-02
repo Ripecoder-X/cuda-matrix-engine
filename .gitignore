@@ -1,0 +1,14 @@
+> build/
+CMakeUserPresets.json
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.exe
+*.pdb
+compile_commands.json
+.cache/
+.vscode/
+.idea/

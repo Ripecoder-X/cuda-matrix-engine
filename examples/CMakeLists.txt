@@ -1,0 +1,8 @@
+add_executable(cme_example_basic basic_gemm.cpp)
+target_link_libraries(cme_example_basic PRIVATE cme)
+
+add_executable(cme_example_algorithms algorithm_comparison.cpp)
+target_link_libraries(cme_example_algorithms PRIVATE cme)
+
+add_executable(cme_example_custom custom_configuration.cpp)
+target_link_libraries(cme_example_custom PRIVATE cme)
