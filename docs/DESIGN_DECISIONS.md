@@ -173,3 +173,47 @@ and non-NVIDIA backends.
   for race detection and substantially slower; the dedicated case is a 64x64x64 tiled kernel run.
 - **environment.sh policy:** every tool is probed with `command -v`; a missing tool prints
   `NOT FOUND` and the script continues with exit status 0.
+
+## Batch 6.1
+
+- **CSV formatting:** RFC 4180 escaping implemented in `CsvWriter` for fields containing commas,
+  double quotes, and newlines. Double quotes are escaped by doubling them (`""`).
+- **Header specification:** The 19 column names exactly match Section 4.13 in order and casing.
+
+## Batch 6.2
+
+- **Kernel-only benchmark timing:** Timed with `cudaEvent_t` strictly enclosing `gemm_device()`
+  with `cudaEventSynchronize()` prior to `cudaEventElapsedTime()`.
+- **Buffer allocation:** `DeviceBuffer` instances for A, B, and C allocated once per problem size
+  and populated before timing begins.
+- **Telemetry acquisition:** Queried via `nvidia-smi --query-gpu=driver_version,clocks.sm,temperature.gpu,power.draw`
+  before and after the measured iterations; the average/median of the two readings is reported.
+  If query fails, fields are reported as `NOT MEASURED`.
+- **Statistical summaries:** Median, min, max, and IQR computed from sorted run durations. GFLOP/s
+  computed as `2.0 * M * N * K / (median_ms * 1e-3) / 1e9`.
+
+## Batch 6.3
+
+- **End-to-end measurement:** Timed with `std::chrono::steady_clock` surrounding the public
+  `cme::gemm()` API call. Device is synchronized via `cudaDeviceSynchronize()` immediately
+  prior to starting the timer and before stopping the timer.
+- **CPU Reference scaling in end-to-end:** Host CPU reference is included for comparison;
+  for matrix dimensions >= 1024, iterations are limited to prevent excessive runtime while
+  still recording accurate baseline wall-clock timings.
+- **Transfer benchmark methodology:** `h2d_transfer` transfers matrices A and B via
+  `cudaMemcpyAsync`, while `d2h_transfer` transfers matrix C. Both are timed strictly using
+  CUDA events on the transfer stream. Recorded with `algorithm = CUDA_MEMCPY`, `tile_size = 0`,
+  and `gflops_median = 0.00`.
+
+## Batch 6.4
+
+- **Benchmark driver architecture:** `benchmarks/benchmark_main.cpp` coordinates execution of
+  `run_kernel_benchmarks`, `run_end_to_end_benchmarks`, and `run_transfer_benchmarks`. Supports
+  `--output` destination and `--quick` smoke testing mode.
+- **Reproducibility scripts:** Created `scripts/benchmark.sh` and `scripts/benchmark.ps1` to automate
+  building the release preset, capturing runtime environment metadata into `<file>.env.txt`, and
+  generating the full benchmark dataset.
+- **cuBLAS reference policy:** `CME_WITH_CUBLAS` is `OFF` in default presets; optional cuBLAS
+  reference is omitted as permitted by the specification.
+- **Phase 6 Benchmark Artifact:** Baseline dataset captured in `results/gemm_20261102_141125.csv`.
+

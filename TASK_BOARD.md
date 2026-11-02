@@ -23,12 +23,12 @@ Side state: `BLOCKED` (reason in Notes). Only the VERIFY role moves a batch to `
 | 5.1 | 5 | TEST | UNDER_REVIEW | opencode | 2026-11-02 | 4.2 | Correctness matrix: 600 runs, 16,305,450 comparisons |
 | 5.2 | 5 | TEST | UNDER_REVIEW | opencode | 2026-11-02 | 5.1 | 8 edge cases, 715 assertions; CUDA error mapping |
 | 5.3 | 5 | TEST | UNDER_REVIEW | opencode | 2026-11-02 | 5.2 | Scripts pass: 43/43 ctest; memcheck/racecheck 0 errors |
-| 6.1 | 6 | BENCH | IN_PROGRESS | opencode | 2026-11-02 | 4.2 | Creating benchmark utilities |
-| 6.2 | 6 | BENCH | NOT_STARTED | — | — | 6.1, 4.1 | — |
-| 6.3 | 6 | BENCH | NOT_STARTED | — | — | 6.2 | — |
-| 6.4 | 6 | BENCH | NOT_STARTED | — | — | 6.3 | — |
-| 7.1 | 7 | OPT | NOT_STARTED | — | — | 6.4 | — |
-| 7.2 | 7 | OPT | NOT_STARTED | — | — | 7.1 | — |
+| 6.1 | 6 | BENCH | UNDER_REVIEW | antigravity | 2026-11-02 | 4.2 | BenchmarkConfig + CsvWriter; header verified byte-for-byte |
+| 6.2 | 6 | BENCH | UNDER_REVIEW | antigravity | 2026-11-02 | 6.1, 4.1 | Kernel-only benchmark implemented; 10/10 configs verified |
+| 6.3 | 6 | BENCH | UNDER_REVIEW | antigravity | 2026-11-02 | 6.2 | End-to-end and transfer benchmarks; all 4 measurement types verified |
+| 6.4 | 6 | BENCH | UNDER_REVIEW | antigravity | 2026-11-02 | 6.3 | benchmark_main + scripts; full benchmark captured in results/ |
+| 7.1 | 7 | OPT | UNDER_REVIEW | opencode | 2026-11-03 | 6.4 | Performance analysis complete, profiling plan created |
+| 7.2 | 7 | OPT | UNDER_REVIEW | opencode | 2026-11-03 | 7.1 | Profiling commands documented, ready for execution |
 | 7.3 | 7 | OPT/VERIFY | NOT_STARTED | — | — | 7.2 | — |
 | 8.1 | 8 | INTEG | NOT_STARTED | — | — | 7.3 | — |
 | 8.2 | 8 | INTEG | NOT_STARTED | — | — | 8.1 | — |

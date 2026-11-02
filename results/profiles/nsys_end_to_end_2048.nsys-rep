@@ -1,0 +1,2052 @@
+NVIDIA Tegra Profiler Report 2026@3@1@157-263138048394v0.
+Local (CLI)|{è (@JDESKTOP-I9EQQLGbè€ñ rÒ†/R_C:\Users\SMART\work\pone\cuda-matrix-engine\build\windows-release\benchmarks\benchmark_main.exeZ--sizeZ2048Z--warmupZ1Z--iterationsZ3Z--end-to-endZ--outputZIC:\Users\SMART\work\pone\cuda-matrix-engine\results\profiles\temp_e2e.csvb1C:\Users\SMART\AppData\Local\Programs\antigravity òC
+ANTIGRAVITY_CONVERSATION_ID$86ea3fd3-a123-4f3f-9217-f977c0ebe909ò,
+LOCALAPPDATAC:\Users\SMART\AppData\Localò
+ANTIGRAVITY_AGENT1ò
+ProgramDataC:\ProgramDataò*
+FPS_BROWSER_USER_PROFILE_STRINGDefaultò]
+AGY_BROWSER_ACTIVE_PORT_FILE=C:\Users\SMART\AppData\Roaming\Antigravity\DevToolsActivePortò`
+AGY_BROWSER_WS_URLJws://127.0.0.1:56598/devtools/browser/f2b56202-c225-41a3-a243-5d727583fd68ò!
+ALLUSERSPROFILEC:\ProgramDataò
+PROCESSOR_LEVEL6òo
+ANTIGRAVITY_AGENTAPI_EXESC:\Users\SMART\AppData\Local\Programs\antigravity\resources\bin\language_server.exeò
+EFC_11400_41267989901ò>
+ANTIGRAVITY_CSRF_TOKEN$d31f9c1e-218b-4298-97f7-169e4920718eò>
+ANTIGRAVITY_APP_DATA_DIR"C:/Users/SMART/.gemini/antigravityò)
+ANTIGRAVITY_LS_ADDRESSlocalhost:56601ò$
+ANTIGRAVITY_LS_VERSION
+hub-2.28.0ò
+OLLAMA_CONTEXT_LENGTH16384ò,
+ANTIGRAVITY_PROJECT_IDoutside-of-projectò
+HOMEPATH\Users\SMARTò
+USERNAMESMARTò&
+ComSpecC:\WINDOWS\system32\cmd.exeòÒ
+ANTIGRAVITY_SOURCE_METADATA²{"tool":{"conversationId":"86ea3fd3-a123-4f3f-9217-f977c0ebe909", "stepIndex":321, "toolCall":{"id":"call_488683", "name":"run_command", "argumentsJson":"{\"CommandLine\":\"\\u0026 \\\"C:\\\\Program Files\\\\NVIDIA Corporation\\\\Nsight Systems 2026.3.1\\\\target-windows-x64\\\\nsys.exe\\\" profile -o \\\"C:\\\\Users\\\\SMART\\\\work\\\\pone\\\\cuda-matrix-engine\\\\results\\\\profiles\\\\nsys_end_to_end_2048\\\" --force-overwrite true \\\"C:\\\\Users\\\\SMART\\\\work\\\\pone\\\\cuda-matrix-engine\\\\build\\\\windows-release\\\\benchmarks\\\\benchmark_main.exe\\\" --size 2048 --warmup 1 --iterations 3 --end-to-end --output \\\"C:\\\\Users\\\\SMART\\\\work\\\\pone\\\\cuda-matrix-engine\\\\results\\\\profiles\\\\temp_e2e.csv\\\"\",\"WaitMsBeforeAsync\":10000,\"toolSummary\":\"Run Nsight Systems profile\"}"}}}ò
+HGEDITORfalseòA
+ANTIGRAVITY_TRAJECTORY_ID$fe7fd37f-8d6f-4187-96a0-ba3ed5f0ceebò)
+APPDATAC:\Users\SMART\AppData\Roamingò.
+ChocolateyInstallC:\ProgramData\chocolateyò
+OLLAMA_HOST0.0.0.0:11434ò.
+ChocolateyLastPathUpdate134282782064597193ò
+PROCESSOR_REVISIONb701ò®
+CHROME_DEVTOOLS_MCP_JS“C:\Users\SMART\AppData\Local\Programs\antigravity\resources\app.asar.unpacked\node_modules\chrome-devtools-mcp\build\src\bin\chrome-devtools-mcp.jsò
+	JJ_EDITORfalseò3
+CommonProgramFilesC:\Program Files\Common Filesò>
+CommonProgramFiles(x86)#C:\Program Files (x86)\Common Filesò3
+CommonProgramW6432C:\Program Files\Common FilesòK
+PROCESSOR_IDENTIFIER3Intel64 Family 6 Model 183 Stepping 1, GenuineIntelò
+COMPUTERNAMEDESKTOP-I9EQQLGòE
+	CUDA_PATH8C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3ò 
+ProgramW6432C:\Program Filesò
+OLLAMA_KEEP_ALIVE30mò
+DB_USERpostgresòK
+CUDA_PATH_V13_38C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3ò
+DB_HOST	localhostò
+DB_NAMEnexulithò#
+OneDriveC:\Users\SMART\OneDriveò
+
+GIT_EDITORfalseò
+DB_PASSWORDNFSMW@#2319ò 
+LOGONSERVER\\DESKTOP-I9EQQLGò
+EFC_11400_37891329401ò
+DB_PORT5432ò4
+
+DriverData&C:\Windows\System32\Drivers\DriverDataò 
+IS_PROCESS_PROFILED_BY_NSYS1ò
+EFC_11400_12627196281ò
+EFC_11400_15929130361ò
+EFC_11400_22830322061ò
+EFC_11400_27752935811ò¡
+PSModulePathC:\Users\SMART\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modulesò3
+FPS_BROWSER_APP_PROFILE_STRINGInternet Explorerò 
+ProgramFilesC:\Program Filesò
+	HOMEDRIVEC:ò
+NUMBER_OF_PROCESSORS32ò
+OLLAMA_FLASH_ATTENTION1ò
+OLLAMA_KV_CACHE_TYPEq8_0ò
+OS
+Windows_NTò„
+PATHûC:/Users/SMART/.gemini/antigravity/bin;C:\Users\SMART\AppData\Roaming\Antigravity\bin;C:\Python314\Scripts\;C:\Python314\;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\SMART\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33810\bin\Hostx64\x64;C:\Program Files\Vim\vim92;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2026.2.1\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\Paragon Software\LinuxFS for Windows\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\GitHub CLI\;C:\Program Files\Git\cmd;C:\Users\SMART\.local\bin;C:\Users\SMART\AppData\Local\Microsoft\WindowsApps;C:\Users\SMART\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\SMART\AppData\Local\Programs\Ollama;C:\Users\SMART\AppData\Roaming\npm;;C:\msys64\ucrt64\bin;C:\Users\SMART\AppData\Local\Programs\cursor\resources\app\binòN
+PATHEXTC.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPLò+
+ProgramFiles(x86)C:\Program Files (x86)ò
+PROCESSOR_ARCHITECTUREAMD64ò
+PUBLICC:\Users\Publicò
+SESSIONNAMEConsoleò
+SystemDriveC:ò
+
+SystemRoot
+C:\WINDOWSò)
+TEMP!C:\Users\SMART\AppData\Local\Tempò(
+TMP!C:\Users\SMART\AppData\Local\Tempò
+
+USERDOMAINDESKTOP-I9EQQLGò,
+USERDOMAIN_ROAMINGPROFILEDESKTOP-I9EQQLGò
+USERPROFILEC:\Users\SMARTò
+windir
+C:\WINDOWSò
+ZES_ENABLE_SYSMAN1ò
+
+LD_PRELOAD{}ğ€šô’ï5
+glClearBufferfi
+glBlitFramebuffer
+glDrawElementsIndirect
+glComputeStreamNV
+*glMultiDrawElementsIndirectBindlessCountNV
+glCallCommandListNV
+glBlitFramebufferEXT
+glFenceSyncStreamNV
+glBlitFramebufferNV
+glClearBufferData
+glBlitNamedFramebuffer
+glDrawBuffersATI
+glCopyMultiTexImage2DEXT
+glClear
+glFramebufferTexture3DEXT
+glClearAccum
+glClearBufferfv
+glClearBufferiv
+glDrawElementsInstancedARB
+glClearBufferSubData
+glCoverFillPathNV
+glClearBufferuiv
+glClearColor
+glClearColorIiEXT
+glClearColorIuiEXT
+glDrawCommandsAddressNV
+glDrawTexfvOES
+glClearColorx
+glClearDepth
+glReadnPixelsKHR
+glClearDepthdNV
+glClearDepthf
+glFenceSync
+glClearTexImageEXT
+glGetQueryIndexediv
+glClearDepthx
+glXImportContextEXT
+glClearIndex
+eglCreateContext
+glDrawArraysInstancedARB
+glCoverStrokePathNV
+glQueryCounter
+glClearNamedBufferData
+glQueryCounterEXT
+glClearNamedBufferDataEXT
+$glDrawArraysInstancedBaseInstanceEXT
+glCopyConvolutionFilter1D
+glClearNamedBufferSubData
+glDrawArraysInstancedNV
+-glDrawElementsInstancedBaseVertexBaseInstance
+glDrawArraysInstanced
+glClearNamedBufferSubDataEXT
+glClearNamedFramebufferfi
+glDrawBuffers
+glClearTexSubImage
+glPopDebugGroup
+ glListDrawCommandsStatesClientNV
+glClearNamedFramebufferfv
+glClearNamedFramebufferiv
+glClearNamedFramebufferuiv
+glClearStencil
+ glMultiDrawElementsIndirectCount
+glDrawElements
+glClearTexImage
+glClearTexSubImageEXT
+glCopyTextureSubImage1DEXT
+glClientWaitSync
+glDispatchComputeIndirect
+glPushDebugGroup
+glGenerateTextureMipmap
+glCopyPathNV
+glDispatchComputeGroupSizeARB
+glCoverFillPathInstancedNV
+glDrawMeshTasksIndirectNV
+glCoverStrokePathInstancedNV
+!glDrawArraysInstancedBaseInstance
+glDispatchCompute
+glDrawBuffer
+glDrawArrays
+glCopyBufferSubDataNV
+glDrawArraysEXT
+glDrawArraysIndirect
+0glDrawElementsInstancedBaseVertexBaseInstanceEXT
+glDrawArraysInstancedEXT
+(glMultiDrawArraysIndirectBindlessCountNV
+glDrawCommandsNV
+glDrawBuffersARB
+glFramebufferTexture3D
+glDrawBuffersNV
+glMultiDrawArraysIndirectEXT
+glDrawCommandsStatesAddressNV
+glMultiDrawElements
+glDrawCommandsStatesNV
+glMapBuffer
+glDrawElementsBaseVertex
+glCopyTexSubImage2D
+glReadnPixels
+glDrawElementsBaseVertexEXT
+glMapBufferOES
+glDrawElementsBaseVertexOES
+glPopDebugGroupKHR
+glDrawElementsInstanced
+#glDrawElementsInstancedBaseInstance
+&glDrawElementsInstancedBaseInstanceEXT
+!glDrawElementsInstancedBaseVertex
+$glDrawElementsInstancedBaseVertexEXT
+$glDrawElementsInstancedBaseVertexOES
+glDrawElementsInstancedEXT
+glDrawElementsInstancedNV
+glDrawMeshTasksNV
+glDrawPixels
+glDrawRangeElements
+glPushDebugGroupKHR
+glDrawRangeElementsBaseVertex
+ glDrawRangeElementsBaseVertexEXT
+glCopyTextureSubImage1D
+ glDrawRangeElementsBaseVertexOES
+glMultiDrawArrays
+glDrawRangeElementsEXT
+glDrawTexfOES
+wglDrawBufferRegion
+glDrawTexiOES
+glDrawTexivOES
+glDrawTexsOES
+glDrawTexsvOES
+glDrawTextureNV
+glDrawTexxOES
+glDrawTexxvOES
+glDrawTransformFeedback
+glDrawTransformFeedbackEXT
+ glDrawTransformFeedbackInstanced
+#glMultiDrawMeshTasksIndirectCountNV
+#glDrawTransformFeedbackInstancedEXT
+glDrawTransformFeedbackNV
+glDrawTransformFeedbackStream
+&glDrawTransformFeedbackStreamInstanced
+glPushDebugGroupOES
+glFinish
+glFinishFenceNV
+glFlush
+glFramebufferDrawBufferEXT
+glXMakeCurrent
+glFramebufferTextureOES
+glFramebufferDrawBuffersEXT
+glGenerateMipmap
+glGenerateMipmapEXT
+glGenerateMipmapOES
+glGenerateMultiTexMipmapEXT
+glGenerateTextureMipmapEXT
+glGetQueryObjecti64v
+glGetQueryObjecti64vEXT
+glGetQueryObjectiv
+glGetQueryObjectivARB
+glGetQueryObjectui64v
+glStencilFillPathNV
+glGetQueryObjectui64vEXT
+glMultiDrawArraysIndirectAMD
+glGetQueryObjectui64vNV
+glGetQueryObjectuiv
+glStencilStrokePathInstancedNV
+glGetQueryObjectuivARB
+glGetQueryObjectuivEXT
+glFramebufferTextureLayer
+glFramebufferTexture1D
+
+glIsPathNV
+glIsPointInFillPathNV
+glIsPointInStrokePathNV
+glMulticastBlitFramebufferNV
+glMulticastWaitSyncNV
+glMultiDrawArraysEXT
+glMultiDrawArraysIndirect
+#glMultiDrawArraysIndirectBindlessNV
+glMultiDrawArraysIndirectCount
+!glMultiDrawArraysIndirectCountARB
+glMultiDrawElementsBaseVertex
+glMultiDrawElementsEXT
+glMultiDrawElementsIndirect
+glXSwapBuffers
+glMapNamedBufferRange
+glMultiDrawElementsIndirectAMD
+%glMultiDrawElementsIndirectBindlessNV
+glXMakeContextCurrent
+glGetQueryBufferObjectiv
+#glMultiDrawElementsIndirectCountARB
+glMultiDrawElementsIndirectEXT
+glFramebufferTextureFaceEXT
+glMultiDrawMeshTasksIndirectNV
+glNamedFramebufferDrawBuffer
+glNamedFramebufferDrawBuffers
+glPointAlongPathNV
+glQueryCounterNV
+glReadnPixelsARB
+glReadnPixelsEXT
+glReadPixels
+glSignalSemaphoreEXT
+glStencilFillPathInstancedNV
+glStencilStrokePathNV
+%glStencilThenCoverFillPathInstancedNV
+glStencilThenCoverFillPathNV
+'glStencilThenCoverStrokePathInstancedNV
+glStencilThenCoverStrokePathNV
+glTransformPathNV
+glWaitSemaphoreEXT
+
+glWaitSync
+glPopDebugGroupOES
+glWaitSyncStreamNV
+SwapBuffers
+wglCreateContext
+wglCreateContextAttribsARB
+wglCreateLayerContext
+wglSwapBuffers
+glBindFramebuffer
+glBindFramebufferEXT
+glBindFramebufferOES
+glCopyBufferSubData
+glCopyColorSubTable
+glCopyColorTable
+glCopyConvolutionFilter2D
+glCopyImageSubData
+glCopyImageSubDataEXT
+glCopyImageSubDataNV
+glCopyImageSubDataOES
+glCopyMultiTexSubImage1DEXT
+eglSwapBuffers
+glCopyMultiTexSubImage2DEXT
+glGetQueryivARB
+glDebugMessageInsertKHR
+glCopyMultiTexSubImage3DEXT
+glCopyNamedBufferSubData
+glCopyPixels
+glCopyTexImage1D
+glCopyTexSubImage3DEXT
+glCopyTexImage2D
+glCopyTexSubImage1D
+glCopyTexSubImage3D
+glCopyTexSubImage3DNV
+glCopyTextureImage1DEXT
+glFramebufferTextureFaceARB
+glCopyTextureImage2DEXT
+glCopyTextureSubImage2D
+eglMakeCurrent
+glCopyTextureSubImage2DEXT
+glCopyTextureSubImage3D
+glXCreateContext
+glCopyTextureSubImage3DEXT
+glDebugMessageInsert
+glDebugMessageInsertARB
+glDebugMessageInsertOES
+glFramebufferRenderbuffer
+glFramebufferRenderbufferEXT
+glFramebufferRenderbufferOES
+glFramebufferTexture
+wglMakeCurrent
+glFramebufferTextureLayerEXT
+glFramebufferTexture1DEXT
+glFramebufferTexture2D
+glFramebufferTexture2DEXT
+glXDestroyContext
+glFramebufferTexture2DOES
+glFramebufferTextureARB
+glFramebufferTextureEXT
+glFramebufferTextureLayerARB
+glFramebufferTextureLayerNV
+glGetBufferSubData
+glGetBufferSubDataARB
+glGetQueryBufferObjecti64v
+glGetQueryBufferObjectui64v
+glGetQueryBufferObjectuiv
+glGetQueryiv
+glGetQueryivEXT
+glMapBufferARB
+glMapBufferRange
+glMapBufferRangeEXT
+glXCreateNewContext
+glMapNamedBuffer
+glMapNamedBufferEXT
+glMapNamedBufferRangeEXT
+glMemoryBarrier
+glMemoryBarrierByRegion
+glMemoryBarrierEXT
+glMemoryBarrierStreamNV
+glMulticastCopyBufferSubDataNV
+glMulticastCopyImageSubDataNV
+glXCreateContextAttribsARB
+glXCreateContextWithConfigSGIX
+glXFreeContextEXT
+wglDeleteContext
+wglMakeContextCurrentARB
+wglMakeContextCurrentEXT
+eglDestroyContext
+eglSwapBuffersWithDamageKHR¸à š ê$cfa7e749-67f4-4f63-a83e-a9b6ce0c3632ò ‚ â   ( 8 J RX ` QDTEXT00±˜
+­.
+Local (CLI)•.
+32
+3187
+
+x86_64
+¦#¡#{"items":[{"cpuid":0,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":1,"SchedulingClass":1,"EfficiencyType":"P"},{"cpuid":1,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":1,"SchedulingClass":1,"EfficiencyType":"P"},{"cpuid":2,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":1,"SchedulingClass":1,"EfficiencyType":"P"},{"cpuid":3,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":1,"SchedulingClass":1,"EfficiencyType":"P"},{"cpuid":4,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":1,"SchedulingClass":1,"EfficiencyType":"P"},{"cpuid":5,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":1,"SchedulingClass":1,"EfficiencyType":"P"},{"cpuid":6,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":1,"SchedulingClass":1,"EfficiencyType":"P"},{"cpuid":7,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":1,"SchedulingClass":1,"EfficiencyType":"P"},{"cpuid":8,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":1,"SchedulingClass":1,"EfficiencyType":"P"},{"cpuid":9,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":1,"SchedulingClass":1,"EfficiencyType":"P"},{"cpuid":10,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":1,"SchedulingClass":1,"EfficiencyType":"P"},{"cpuid":11,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":1,"SchedulingClass":1,"EfficiencyType":"P"},{"cpuid":12,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":1,"SchedulingClass":2,"EfficiencyType":"P"},{"cpuid":13,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":1,"SchedulingClass":2,"EfficiencyType":"P"},{"cpuid":14,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":1,"SchedulingClass":2,"EfficiencyType":"P"},{"cpuid":15,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":1,"SchedulingClass":2,"EfficiencyType":"P"},{"cpuid":16,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":0,"SchedulingClass":0,"EfficiencyType":"E"},{"cpuid":17,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":0,"SchedulingClass":0,"EfficiencyType":"E"},{"cpuid":18,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":0,"SchedulingClass":0,"EfficiencyType":"E"},{"cpuid":19,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":0,"SchedulingClass":0,"EfficiencyType":"E"},{"cpuid":20,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":0,"SchedulingClass":0,"EfficiencyType":"E"},{"cpuid":21,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":0,"SchedulingClass":0,"EfficiencyType":"E"},{"cpuid":22,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":0,"SchedulingClass":0,"EfficiencyType":"E"},{"cpuid":23,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":0,"SchedulingClass":0,"EfficiencyType":"E"},{"cpuid":24,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":0,"SchedulingClass":0,"EfficiencyType":"E"},{"cpuid":25,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":0,"SchedulingClass":0,"EfficiencyType":"E"},{"cpuid":26,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":0,"SchedulingClass":0,"EfficiencyType":"E"},{"cpuid":27,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":0,"SchedulingClass":0,"EfficiencyType":"E"},{"cpuid":28,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":0,"SchedulingClass":0,"EfficiencyType":"E"},{"cpuid":29,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":0,"SchedulingClass":0,"EfficiencyType":"E"},{"cpuid":30,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":0,"SchedulingClass":0,"EfficiencyType":"E"},{"cpuid":31,"pmuarch":"X64 Intel(R) Core(TM) i9-14900K","maxfreqhz":3187000000,"EfficiencyClass":0,"SchedulingClass":0,"EfficiencyType":"E"}]}
+™0
+Ë0
+
+Í61088
+ú1
+ÙWindows
+İWindows 10.0.26200
+
+ã13030
+ëDESKTOP-I9EQQLG
+½1
+¾1
+Á0
+)Ñ$65EEA900-5600-A90F-EE65-00560FA9EE65
+©1
+¬1
+­1
+¶1
+Æ1
+Ç1
+È1
+Ê0
+Í1
+Ğ1
+Ñ1
+Ó1
+İ1
+ò6.2.26100.9711.
+û
+ 
+ş 
+€1
+ÓÍ
+ü  NVIDIA GeForce RTX 4070 Ti SUPER0000:01:00.0 *$334295fa-3b82-d71a-f81f-8344060fcb870º‚:AD103H P€€€X€€àû?`€ ‹ÑÇh€èìê	pBx €˜   ¨¡°¸€€ÀÈ€€Ğ€€Ø€˜à€ è€€ğ ø€0ˆ€˜€ €¨@°ÿÿÿÿ¸ÿÿÀÿÿÈĞ	Øà	è ø ‚Adaˆ 
+#Intel(R) UHD Graphics 770 0à¦
+'Microsoft Basic Render Driver 0¯¦
+„0
+ˆ0
+‹1
+Œ0
+ 
+ 
+‘1
+’0
+•0
+–1
+˜0
+™ 
+› 
+ËœÅ
+Â
+nvml_pluginCollect NVML metricsVCollects power and temperature metrics using the NVIDIA Management Library (NVML)
+ API"ÂOptions:
+  -i | --interval  Sampling interval in milliseconds (default: 100)
+  -g | --gpu-devices  GPUs to be sampled. Available options are: all, cuda-visible, or a comma-separated
+                      list of GPU IDs (e.g., 0,1,3) (default: cuda-visible)
+
+The power usage is collected in Watts using the `nvmlDeviceGetFieldValues` API
+function.
+The GPU temperature is collected in degrees Celsius with the
+`nvmlDeviceGetTemperature` API function.
+(€€€€€€@ f
+Local (CLI)|{è (@JDESKTOP-I9EQQLGbè€ñ rÒ†/R_C:\Users\SMART\work\pone\cuda-matrix-engine\build\windows-release\benchmarks\benchmark_main.exeZ--sizeZ2048Z--warmupZ1Z--iterationsZ3Z--end-to-endZ--outputZIC:\Users\SMART\work\pone\cuda-matrix-engine\results\profiles\temp_e2e.csvb1C:\Users\SMART\AppData\Local\Programs\antigravity òC
+ANTIGRAVITY_CONVERSATION_ID$86ea3fd3-a123-4f3f-9217-f977c0ebe909ò,
+LOCALAPPDATAC:\Users\SMART\AppData\Localò
+ANTIGRAVITY_AGENT1ò
+ProgramDataC:\ProgramDataò*
+FPS_BROWSER_USER_PROFILE_STRINGDefaultò]
+AGY_BROWSER_ACTIVE_PORT_FILE=C:\Users\SMART\AppData\Roaming\Antigravity\DevToolsActivePortò`
+AGY_BROWSER_WS_URLJws://127.0.0.1:56598/devtools/browser/f2b56202-c225-41a3-a243-5d727583fd68ò!
+ALLUSERSPROFILEC:\ProgramDataò
+PROCESSOR_LEVEL6òo
+ANTIGRAVITY_AGENTAPI_EXESC:\Users\SMART\AppData\Local\Programs\antigravity\resources\bin\language_server.exeò
+EFC_11400_41267989901ò>
+ANTIGRAVITY_CSRF_TOKEN$d31f9c1e-218b-4298-97f7-169e4920718eò>
+ANTIGRAVITY_APP_DATA_DIR"C:/Users/SMART/.gemini/antigravityò)
+ANTIGRAVITY_LS_ADDRESSlocalhost:56601ò$
+ANTIGRAVITY_LS_VERSION
+hub-2.28.0ò
+OLLAMA_CONTEXT_LENGTH16384ò,
+ANTIGRAVITY_PROJECT_IDoutside-of-projectò
+HOMEPATH\Users\SMARTò
+USERNAMESMARTò&
+ComSpecC:\WINDOWS\system32\cmd.exeòÒ
+ANTIGRAVITY_SOURCE_METADATA²{"tool":{"conversationId":"86ea3fd3-a123-4f3f-9217-f977c0ebe909", "stepIndex":321, "toolCall":{"id":"call_488683", "name":"run_command", "argumentsJson":"{\"CommandLine\":\"\\u0026 \\\"C:\\\\Program Files\\\\NVIDIA Corporation\\\\Nsight Systems 2026.3.1\\\\target-windows-x64\\\\nsys.exe\\\" profile -o \\\"C:\\\\Users\\\\SMART\\\\work\\\\pone\\\\cuda-matrix-engine\\\\results\\\\profiles\\\\nsys_end_to_end_2048\\\" --force-overwrite true \\\"C:\\\\Users\\\\SMART\\\\work\\\\pone\\\\cuda-matrix-engine\\\\build\\\\windows-release\\\\benchmarks\\\\benchmark_main.exe\\\" --size 2048 --warmup 1 --iterations 3 --end-to-end --output \\\"C:\\\\Users\\\\SMART\\\\work\\\\pone\\\\cuda-matrix-engine\\\\results\\\\profiles\\\\temp_e2e.csv\\\"\",\"WaitMsBeforeAsync\":10000,\"toolSummary\":\"Run Nsight Systems profile\"}"}}}ò
+HGEDITORfalseòA
+ANTIGRAVITY_TRAJECTORY_ID$fe7fd37f-8d6f-4187-96a0-ba3ed5f0ceebò)
+APPDATAC:\Users\SMART\AppData\Roamingò.
+ChocolateyInstallC:\ProgramData\chocolateyò
+OLLAMA_HOST0.0.0.0:11434ò.
+ChocolateyLastPathUpdate134282782064597193ò
+PROCESSOR_REVISIONb701ò®
+CHROME_DEVTOOLS_MCP_JS“C:\Users\SMART\AppData\Local\Programs\antigravity\resources\app.asar.unpacked\node_modules\chrome-devtools-mcp\build\src\bin\chrome-devtools-mcp.jsò
+	JJ_EDITORfalseò3
+CommonProgramFilesC:\Program Files\Common Filesò>
+CommonProgramFiles(x86)#C:\Program Files (x86)\Common Filesò3
+CommonProgramW6432C:\Program Files\Common FilesòK
+PROCESSOR_IDENTIFIER3Intel64 Family 6 Model 183 Stepping 1, GenuineIntelò
+COMPUTERNAMEDESKTOP-I9EQQLGòE
+	CUDA_PATH8C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3ò 
+ProgramW6432C:\Program Filesò
+OLLAMA_KEEP_ALIVE30mò
+DB_USERpostgresòK
+CUDA_PATH_V13_38C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3ò
+DB_HOST	localhostò
+DB_NAMEnexulithò#
+OneDriveC:\Users\SMART\OneDriveò
+
+GIT_EDITORfalseò
+DB_PASSWORDNFSMW@#2319ò 
+LOGONSERVER\\DESKTOP-I9EQQLGò
+EFC_11400_37891329401ò
+DB_PORT5432ò4
+
+DriverData&C:\Windows\System32\Drivers\DriverDataò 
+IS_PROCESS_PROFILED_BY_NSYS1ò
+EFC_11400_12627196281ò
+EFC_11400_15929130361ò
+EFC_11400_22830322061ò
+EFC_11400_27752935811ò¡
+PSModulePathC:\Users\SMART\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modulesò3
+FPS_BROWSER_APP_PROFILE_STRINGInternet Explorerò 
+ProgramFilesC:\Program Filesò
+	HOMEDRIVEC:ò
+NUMBER_OF_PROCESSORS32ò
+OLLAMA_FLASH_ATTENTION1ò
+OLLAMA_KV_CACHE_TYPEq8_0ò
+OS
+Windows_NTò„
+PATHûC:/Users/SMART/.gemini/antigravity/bin;C:\Users\SMART\AppData\Roaming\Antigravity\bin;C:\Python314\Scripts\;C:\Python314\;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\SMART\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33810\bin\Hostx64\x64;C:\Program Files\Vim\vim92;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2026.2.1\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\Paragon Software\LinuxFS for Windows\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\GitHub CLI\;C:\Program Files\Git\cmd;C:\Users\SMART\.local\bin;C:\Users\SMART\AppData\Local\Microsoft\WindowsApps;C:\Users\SMART\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\SMART\AppData\Local\Programs\Ollama;C:\Users\SMART\AppData\Roaming\npm;;C:\msys64\ucrt64\bin;C:\Users\SMART\AppData\Local\Programs\cursor\resources\app\binòN
+PATHEXTC.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPLò+
+ProgramFiles(x86)C:\Program Files (x86)ò
+PROCESSOR_ARCHITECTUREAMD64ò
+PUBLICC:\Users\Publicò
+SESSIONNAMEConsoleò
+SystemDriveC:ò
+
+SystemRoot
+C:\WINDOWSò)
+TEMP!C:\Users\SMART\AppData\Local\Tempò(
+TMP!C:\Users\SMART\AppData\Local\Tempò
+
+USERDOMAINDESKTOP-I9EQQLGò,
+USERDOMAIN_ROAMINGPROFILEDESKTOP-I9EQQLGò
+USERPROFILEC:\Users\SMARTò
+windir
+C:\WINDOWSò
+ZES_ENABLE_SYSMAN1ò
+
+LD_PRELOAD{}ğ€šô’ï5
+glClearBufferfi
+glBlitFramebuffer
+glDrawElementsIndirect
+glComputeStreamNV
+*glMultiDrawElementsIndirectBindlessCountNV
+glCallCommandListNV
+glBlitFramebufferEXT
+glFenceSyncStreamNV
+glBlitFramebufferNV
+glClearBufferData
+glBlitNamedFramebuffer
+glDrawBuffersATI
+glCopyMultiTexImage2DEXT
+glClear
+glFramebufferTexture3DEXT
+glClearAccum
+glClearBufferfv
+glClearBufferiv
+glDrawElementsInstancedARB
+glClearBufferSubData
+glCoverFillPathNV
+glClearBufferuiv
+glClearColor
+glClearColorIiEXT
+glClearColorIuiEXT
+glDrawCommandsAddressNV
+glDrawTexfvOES
+glClearColorx
+glClearDepth
+glReadnPixelsKHR
+glClearDepthdNV
+glClearDepthf
+glFenceSync
+glClearTexImageEXT
+glGetQueryIndexediv
+glClearDepthx
+glXImportContextEXT
+glClearIndex
+eglCreateContext
+glDrawArraysInstancedARB
+glCoverStrokePathNV
+glQueryCounter
+glClearNamedBufferData
+glQueryCounterEXT
+glClearNamedBufferDataEXT
+$glDrawArraysInstancedBaseInstanceEXT
+glCopyConvolutionFilter1D
+glClearNamedBufferSubData
+glDrawArraysInstancedNV
+-glDrawElementsInstancedBaseVertexBaseInstance
+glDrawArraysInstanced
+glClearNamedBufferSubDataEXT
+glClearNamedFramebufferfi
+glDrawBuffers
+glClearTexSubImage
+glPopDebugGroup
+ glListDrawCommandsStatesClientNV
+glClearNamedFramebufferfv
+glClearNamedFramebufferiv
+glClearNamedFramebufferuiv
+glClearStencil
+ glMultiDrawElementsIndirectCount
+glDrawElements
+glClearTexImage
+glClearTexSubImageEXT
+glCopyTextureSubImage1DEXT
+glClientWaitSync
+glDispatchComputeIndirect
+glPushDebugGroup
+glGenerateTextureMipmap
+glCopyPathNV
+glDispatchComputeGroupSizeARB
+glCoverFillPathInstancedNV
+glDrawMeshTasksIndirectNV
+glCoverStrokePathInstancedNV
+!glDrawArraysInstancedBaseInstance
+glDispatchCompute
+glDrawBuffer
+glDrawArrays
+glCopyBufferSubDataNV
+glDrawArraysEXT
+glDrawArraysIndirect
+0glDrawElementsInstancedBaseVertexBaseInstanceEXT
+glDrawArraysInstancedEXT
+(glMultiDrawArraysIndirectBindlessCountNV
+glDrawCommandsNV
+glDrawBuffersARB
+glFramebufferTexture3D
+glDrawBuffersNV
+glMultiDrawArraysIndirectEXT
+glDrawCommandsStatesAddressNV
+glMultiDrawElements
+glDrawCommandsStatesNV
+glMapBuffer
+glDrawElementsBaseVertex
+glCopyTexSubImage2D
+glReadnPixels
+glDrawElementsBaseVertexEXT
+glMapBufferOES
+glDrawElementsBaseVertexOES
+glPopDebugGroupKHR
+glDrawElementsInstanced
+#glDrawElementsInstancedBaseInstance
+&glDrawElementsInstancedBaseInstanceEXT
+!glDrawElementsInstancedBaseVertex
+$glDrawElementsInstancedBaseVertexEXT
+$glDrawElementsInstancedBaseVertexOES
+glDrawElementsInstancedEXT
+glDrawElementsInstancedNV
+glDrawMeshTasksNV
+glDrawPixels
+glDrawRangeElements
+glPushDebugGroupKHR
+glDrawRangeElementsBaseVertex
+ glDrawRangeElementsBaseVertexEXT
+glCopyTextureSubImage1D
+ glDrawRangeElementsBaseVertexOES
+glMultiDrawArrays
+glDrawRangeElementsEXT
+glDrawTexfOES
+wglDrawBufferRegion
+glDrawTexiOES
+glDrawTexivOES
+glDrawTexsOES
+glDrawTexsvOES
+glDrawTextureNV
+glDrawTexxOES
+glDrawTexxvOES
+glDrawTransformFeedback
+glDrawTransformFeedbackEXT
+ glDrawTransformFeedbackInstanced
+#glMultiDrawMeshTasksIndirectCountNV
+#glDrawTransformFeedbackInstancedEXT
+glDrawTransformFeedbackNV
+glDrawTransformFeedbackStream
+&glDrawTransformFeedbackStreamInstanced
+glPushDebugGroupOES
+glFinish
+glFinishFenceNV
+glFlush
+glFramebufferDrawBufferEXT
+glXMakeCurrent
+glFramebufferTextureOES
+glFramebufferDrawBuffersEXT
+glGenerateMipmap
+glGenerateMipmapEXT
+glGenerateMipmapOES
+glGenerateMultiTexMipmapEXT
+glGenerateTextureMipmapEXT
+glGetQueryObjecti64v
+glGetQueryObjecti64vEXT
+glGetQueryObjectiv
+glGetQueryObjectivARB
+glGetQueryObjectui64v
+glStencilFillPathNV
+glGetQueryObjectui64vEXT
+glMultiDrawArraysIndirectAMD
+glGetQueryObjectui64vNV
+glGetQueryObjectuiv
+glStencilStrokePathInstancedNV
+glGetQueryObjectuivARB
+glGetQueryObjectuivEXT
+glFramebufferTextureLayer
+glFramebufferTexture1D
+
+glIsPathNV
+glIsPointInFillPathNV
+glIsPointInStrokePathNV
+glMulticastBlitFramebufferNV
+glMulticastWaitSyncNV
+glMultiDrawArraysEXT
+glMultiDrawArraysIndirect
+#glMultiDrawArraysIndirectBindlessNV
+glMultiDrawArraysIndirectCount
+!glMultiDrawArraysIndirectCountARB
+glMultiDrawElementsBaseVertex
+glMultiDrawElementsEXT
+glMultiDrawElementsIndirect
+glXSwapBuffers
+glMapNamedBufferRange
+glMultiDrawElementsIndirectAMD
+%glMultiDrawElementsIndirectBindlessNV
+glXMakeContextCurrent
+glGetQueryBufferObjectiv
+#glMultiDrawElementsIndirectCountARB
+glMultiDrawElementsIndirectEXT
+glFramebufferTextureFaceEXT
+glMultiDrawMeshTasksIndirectNV
+glNamedFramebufferDrawBuffer
+glNamedFramebufferDrawBuffers
+glPointAlongPathNV
+glQueryCounterNV
+glReadnPixelsARB
+glReadnPixelsEXT
+glReadPixels
+glSignalSemaphoreEXT
+glStencilFillPathInstancedNV
+glStencilStrokePathNV
+%glStencilThenCoverFillPathInstancedNV
+glStencilThenCoverFillPathNV
+'glStencilThenCoverStrokePathInstancedNV
+glStencilThenCoverStrokePathNV
+glTransformPathNV
+glWaitSemaphoreEXT
+
+glWaitSync
+glPopDebugGroupOES
+glWaitSyncStreamNV
+SwapBuffers
+wglCreateContext
+wglCreateContextAttribsARB
+wglCreateLayerContext
+wglSwapBuffers
+glBindFramebuffer
+glBindFramebufferEXT
+glBindFramebufferOES
+glCopyBufferSubData
+glCopyColorSubTable
+glCopyColorTable
+glCopyConvolutionFilter2D
+glCopyImageSubData
+glCopyImageSubDataEXT
+glCopyImageSubDataNV
+glCopyImageSubDataOES
+glCopyMultiTexSubImage1DEXT
+eglSwapBuffers
+glCopyMultiTexSubImage2DEXT
+glGetQueryivARB
+glDebugMessageInsertKHR
+glCopyMultiTexSubImage3DEXT
+glCopyNamedBufferSubData
+glCopyPixels
+glCopyTexImage1D
+glCopyTexSubImage3DEXT
+glCopyTexImage2D
+glCopyTexSubImage1D
+glCopyTexSubImage3D
+glCopyTexSubImage3DNV
+glCopyTextureImage1DEXT
+glFramebufferTextureFaceARB
+glCopyTextureImage2DEXT
+glCopyTextureSubImage2D
+eglMakeCurrent
+glCopyTextureSubImage2DEXT
+glCopyTextureSubImage3D
+glXCreateContext
+glCopyTextureSubImage3DEXT
+glDebugMessageInsert
+glDebugMessageInsertARB
+glDebugMessageInsertOES
+glFramebufferRenderbuffer
+glFramebufferRenderbufferEXT
+glFramebufferRenderbufferOES
+glFramebufferTexture
+wglMakeCurrent
+glFramebufferTextureLayerEXT
+glFramebufferTexture1DEXT
+glFramebufferTexture2D
+glFramebufferTexture2DEXT
+glXDestroyContext
+glFramebufferTexture2DOES
+glFramebufferTextureARB
+glFramebufferTextureEXT
+glFramebufferTextureLayerARB
+glFramebufferTextureLayerNV
+glGetBufferSubData
+glGetBufferSubDataARB
+glGetQueryBufferObjecti64v
+glGetQueryBufferObjectui64v
+glGetQueryBufferObjectuiv
+glGetQueryiv
+glGetQueryivEXT
+glMapBufferARB
+glMapBufferRange
+glMapBufferRangeEXT
+glXCreateNewContext
+glMapNamedBuffer
+glMapNamedBufferEXT
+glMapNamedBufferRangeEXT
+glMemoryBarrier
+glMemoryBarrierByRegion
+glMemoryBarrierEXT
+glMemoryBarrierStreamNV
+glMulticastCopyBufferSubDataNV
+glMulticastCopyImageSubDataNV
+glXCreateContextAttribsARB
+glXCreateContextWithConfigSGIX
+glXFreeContextEXT
+wglDeleteContext
+wglMakeContextCurrentARB
+wglMakeContextCurrentEXT
+eglDestroyContext
+eglSwapBuffersWithDamageKHR¸à š ê$cfa7e749-67f4-4f63-a83e-a9b6ce0c3632ò ‚ â   ( 8 J RX ` x ˆä†»¿ûœŒÈ„ê˜‘ìŸóèÒ PÒ1PÒ PÒ P ÒDlaKmdTracePÒ PÒ2PÒ 1PÚÈq€€€€€€@Ú¸b€€€€€€@Ú¨B€€€€€€@Ú´š€€€€€€@ÚüT€€€€€€@Ú \€€€€€€@Ú„…€€€€€€@Úğ\€€€€€€@ÚˆU€€€€€€@Ú¤\€€€€€€@Ú”q€€€€€€@Ú‡€€€€€€@Úì€€€€€€@Ú°€€€€€€@Ú¨’€€€€€€@ÚÈ’€€€€€€@Ú¬›€€€€€€@Ú¤£€€€€€€@ÚÀ£€€€€€€@Úø¥€€€€€€@ÚŒ€€€€€€@ÚÔ€€€€€€@Ú¤€€€€€€@Úä€€€€€€@ÚôA€€€€€€@’ ¤à`(eJlz4P`j€€€€€@j€€€€ €@j5€€€€°€@"'
+EventProvider2mm_"MM_( 2NvMediaj€€€€À€@j€€€€Ğ€@j€€€€à€@j€€€€ğ€@r„€€€€°€@)	 *
+uint32_t%xEngine class ID@&
+*
+uint32_t%uSyncpoint ID@7*-
+uint32_t%uThreshold for task completion@*
+uint32_t%uPID@*
+uint32_t%uTID@*.
+,Marks that the task is submitted to hardwarex —¹±ó!¶±
+41ò/
+ "Profiling has started.(€ @ş
+H6 C
+	Ô¯Ì9 ñ"*Process 14536 was launched by the p[  erM `ÀŒ‡@
+LJ ¡G
+	üïÄƒ ô".Not all NVTX events might have been collec› `À¯Š@
+RN vM
+	È‘ÅN 94NoI 9 T Does™ » 1use, ?¢  T ¢ 'øšT ¢  7à§…¢ '´ N ¢ &T ¢ '°ıT ¢  7 „¢ ?ĞƒÆD0
+T /ÔŠT 1
+:'¬T ö  (À’ö 'è”N ˜&T ˜'À™T ¢  (€â:'üN ¢ &T ¢ 'Ô£T ¢   ¢ '©N ¢ &T ¢ 'è­T ¢ !'Ó‰Ü'À²N ¢ ' T ¢ 'ü·T ¢  (€çæ'Ô¼N ¢ &T ¢ 'ÂT ¢  (À¨¢ 'èÆN ¢ &T ¢ '¤ÌT ¢ !'“†æ'üĞN ¢ ' T ¢ '¸ÖT ¢  7 ‰‡¢ 'ÛN ¢ &T ¢ 'ÌàT ¢ !'¨ˆ¢ '¤åN ¢ ' T ¢ 'àêT ¢  (€¹¢ '¸ïN ¢ &T ¢ 'ôôT ¢ !û¢ '°úN ¢ ' T ¢ 'ˆÿT ¢  7à–æ?Ä„Çì0T ¢ 'œ‰T ¢ !Ú²'ØN D&T ¢ '°“T ¢  (À’¢ 'ì˜N ¢ &T ¢ 'œÔT ¢ !”¢ 'ØÙN ¢ ' T ¢ '”ßT ¢  ( š¸'ìãN ¢ &T ¢ 'ÄèT ¢  (€œ¢ '€îN ¢ &T ¢ 'ØòT ¢  (àˆÌ'”øN ¢ &T ¢ 'ìüT ¢  ( å¢ ?¨‚Èn0T ¢ '€‡T ¢ !ò¢ 'Ø‹N D&T ¢ '”‘T ¢ !ş¢ 'ì•N ¢ ' T V6gQ
+	¬¢T ¤8No OpenGL8. :X /”ªX 5ğX /Ğ¯X 5¦X /ŒµX 5ªX /¬»X 6 ´X /èÀX 5X /¤ÆX 5ÌX /àËX 6 ‚X /œÑX 58X /¼×X 5îX /øÜX 6 ¤X /üãX 5ZX /ÔèX 6 X /îX 5X /ÌóX 6 |X /ˆùX 52X /ÄşX 6 è
+X 6€„ÉpØ+ ò
+X /¼‰X 6 T
+X /øX 5
+
+X /´”X 5À	X /ğ™X 5v	X /ÈX 5,	X /„¤X 6 âX /À©X 6 ˜S˜gN
+	Œ²X S5CUDAI ¤2not´¡ correctly¾
+#'¬¸U  A	X lë , é© 'Ì¾T © 'æÌ'ìÄU © &T © 'ÄÉT © '7	© '€ÏU © &T Dûe?
+	èÖT Á"&Number of˜
+b: 	372ì ]ï %ÔåF ï )Öï 6ØĞÊVï &T © '¤ÙT ˜'Ç	© 'àŞU © &T © '€åT © '
+© '„ìU © &T © 'ÀñT © ( i
+© '˜öU © ' T © 'ÔûT © 'º
+© ?¬€Ë¤0T © 'è…T © '© 'ÀŠU R&T © 'àT © ( \© '¸•U © ' T © 'ôšT © '­© '° U © &T © 'ˆ¥T © ( ş© 'ÄªU © ' T © 'œ¯T © 'O© 'Ø´U © &T © '°¹T © (  © 'ì¾U © ' T © 'ğÅT © 'ñ© '¬ËU © &T © '„ĞT © ( B© 'ÀÕU © ' T © 'àÛT © '1© '¸àU © &T © 'ôåT © ( ä© '°ëU © ' T © 'ˆğT © '5© 'ÄõU © &T © 'œúT © '†© 'ØÿU © &T © 6”…Ì@© '×© 'ì‰U © &T © 'ŒT © '(© 'ä”U © &T © ' šT © (ò'ÜŸU © ' T © '´¤T © ( ÊR'ğ©U © ' T c#g^
+	¼²T ÿEOS runtime libraries.'re vm
+	 ±Õ	Th >¤ NÙ '¨¿t Ù 7
+Ù 'Çe Ù Ft Ù '”Ît Ù 7:Ù '´Ôe Ù Ft Ù 'ÔÚt Ù 7FÙ 'ôàe Ù Ft Ù 'øçt Ù 8 ÇÙ '´íe Ù G t Ù 'œõt Ù 7-Ù 'Øúe Ù Ft Ù 6ø€Ö±Ù 7]Ù '˜‡e Ù Ft Ù '¸t Ù 8 Ù 'Ø“e Ù G t Ù 'ø™t Ù 7½Ù 'Ô¥e Ù Ft Ù '«t Ù 7íÙ 'Ì°e Ù Ft Ù 'ì¶t Ù 8 Ù '¨¼e Ù G t Ù 'äÁt Ù 7MÙ 'èÈe Ù Ft Ù 'ìÏt Ù 8 }Ù '¨Õe Ù G t Ù 'ÈÛt Ù 7­Ù '„áe Ù Ft Ù 'Àæt Ù 8 İÙ 6Ğ±Ø-Ù G t Ù 'Ô¸t Ù 7Ù '¾e Ù Ft Ù '°Ät Ù 8 =Ù 'ìÉe Ù G t Ù '¨Ït Ù 7mÙ 'äÔe Ù Ft Ù ' Út Ù 8 Ù 'Üße Ù G t Ù '˜åt Ù 7ÍÙ 'Ôêe Ù Ft Ù 'ôğt Ù 7ıÙ '°öe Ù Ft Ù 'ìût Ù 7-Ù ?Œ‚ÙïPt Ù 'È‡t Ù 7]Ù '„e ²Ft Ù 'À’t Ù 8 Ù 'ü—e Ù G t Ù 'œt Ù 8 ½Ù 'Ø£e Ù G t PÌK
+	ø˜åNµ=ó"2Common injection7ô	y initialized successfulL% `#Ñ!/â£ÿ ¸ ” 08!@ hBIu •D
+
+¼Ê¡¸v *Z.v n  ¦L – 
+
+äĞí¹M à…Buffers hold&$ğtrace data will be flus>ron Cudaé>ñerStop() call. See --* „-on-cuda¶>östop to control this behaviorw$”© © F²ÒŸÉ© ÔtLoaded CUPTIhğ: C:\Program Files\NVIDIA Corpora•1\Nsş>ô%Systems 2026.3.1\target-windows-x64\cupti64_133.dll(‹E?w@
+
+ÄÎ¼• Q&Enabî?1ófor device graphÄ?G GG †B
+
+¬ÄóĞÜ (tĞQI •L
+
+î‚è‡‘$]‘a¡¶îâ ‘# ‘U£‰ïâv ‘K Á F÷‘®õK Á $(Á aş†·Û Á # Á  çİ%  ¶A ÈÁ K n aˆúè c 0	8#À ş@# aÒ‘¤‡ # İqóÈØı¬  W& e<#Z’õ¹ø¯ 	
+ % JApE
+Î³ù' % L Å G™è»¦L Å $®	Å b˜ìÄ± Å % Å 0ÔÓí' Å $L q ré¦§Ô± ¯% rÁİ“ü± % ãVÙ¯€‘³– % YB râ‘ñµ 	 % 0¤¶ò' % L Å GÔ€ÿºL Å % qÅ rÈöÏÒ· 	Å  % Å 0¥šÑ' Å % L q r¯ıŒá· ¯% rçÿš‡¸ 	% 	VÇÈüØ¹– % É> r­ô®å» 	 % 0Òù¯' % L ÔVÒº¼L Å % ‚Å r…ª¬œ¾ 	Å  % Å 0À®­' Å % L q r‚½´°¾ 	¯% rÆÊ¬Ö¾ 	% 	VÎ Ë§¿– $= ròŞ³Á % 0á„à' $L ÔGŠ©®ÉL Å $/Å r®·ÜÃ Å % Å 0—‚' Å $L q rÙ–«éÃ 	¯% r“¡¼Ä % 
+Vìœ£øÄ– $O r€ıƒ‡Ç % 0»Ù„' $L ÔG˜Ìê L Å % EÅ r¬Œá½É 	Å  % Å 0¹¤ã' Å % L q rº–ÔÎÉ ¯ç% rÉôáîÉ 	%  “6VÛÎˆÀÊ– $50y r¹—©ÒÌ % 0šéª' $L Å G¹ÀéL Å $ùÅ r‘Òå„Ï Å % Å 0‰Àæ' Å $L q r¿ª·–Ï 	¯ î?% rØ¬È¶Ï % 
+V‚ºî­Ğ– $ºy rÉÄ¿ÀÒ % 0ÂàÀ' $L ÔG˜¼ÖL Å $iÅ rûªØîÔ Å % Å 0Ì­Ù' Å $L q rˆŠÎüÔ ¯% r˜Ÿ¥œÕ % 
+VèïƒçÕ– % Q róãŞú× 	 % 0£Óß' % L ÔVü¢À–ØL Å $¼%Å rÓì°Ú Å % Å 0âÙ' Å $L q r÷‰°½Ú ¯% r¾ÔãÚ % AV˜â‹ÄÛ– % mC rŞÚõÎİ 	 % 0îÖö' % L Å GáóÒåL Å $ Å rÆ‚¯‚à Å % Å !üı' Å $L q r”ƒÖ”à ¯% r‚àºà % WVÇè£ªá– $I r¹ÿ¸ã % Vå€¹ãy L Å Gçµ™ÓL Å $€b
+rÆÁÎóå Å % Å 0·‰Ğ' Ô$L 6ré™Íæ ¯% rï˜©¨æ % 
+Vëªçğç– $Ò" rüœûƒê % 0»Îü' $L ÔG©»Š¡L Å $kÅ rõ“ƒ¾ì Å % Å 0²±„' Å $L q r‘áÎì ¯% rÃéøì % Y£–T
+¡³ä³í– 9Ê; äUaproducÊ;C455,*bßF: 20f¥ !­åY  	€  ¢ • q
+Ìı) t°ñhardware tracing isF>Psuppo÷V2 onçszñ. A legacy (soft< Ñinstrumented)J eıVE>" "eaDWY+O×œˆ´8
+9ò ’4
+¨ÁÉÁîñ  ==×W3opp<W ñş
+(0â#±ƒÓë¾ÇÓë ˆ¦(Èq08)@ hˆ¦À * Ö‘ô×ëûö×ëo* ** +T ÷&Äû£²ñ…¤²€W 2- °†¤²°  '- 3- 0Í›‡-  ¡® '‚- 4- ÉÅ °¸¤Û /‘- äâ³Ö¸¢î / - €Ë¼ƒ¹µæ /¯- ÷ ù»ÿ¾³§Äÿ¾½-   ¥²& 0á¸ '¾-   Ôí& 0°ğ '¿-  òêó¸Äöø /Î- ü„ÆÆÄ„” /İ- °¿ÚÜÄÑ /ì- ¶¢£—Ê¸¹ 'ú- á   ğé& 0…í 'û- á  ´–“ŞÏ¾¸ 6Š£-  ÈóõÏ¹Ü /™- ìÑˆˆĞîŞ /¨- ÷ „æÃÕØ‰öÃÕ¶- ï  –& 0ÔŸ '·-   øÚ& 0ãÜ '¸- á  ™Ê•Ûœê /Ç- ¬—¼šÛî² /Ö- Ş€¶©Ûİ• /å- ÷ €Ú¡ãàñ¢ãàó- á  0½‡£-  ÑŠ 'ô- á  ÿŸùğĞæ¯ˆñĞæƒï
+—ŠíæÿŸ /’- ÿ æüœ¼çŸ¼ç¡- ÷ ƒ š¡íºÊ ¡íª- E’ óÓ& @ñ»¢- «-  ô¿& @¸¤- ¬- 0øëås‡‹¤æ³í®- J‡ ÊÔÒºÚë»ÊÚëw8> 8+* Ö®øÄ£Ô£«Æy* /* *ôÿ%Õû§é¬—„¬é¬z, 
+ö —î²‚ò‰²{, 0X  ÄŠ²ää‘, |, 
+ İë% @ç®—, }, 
+ Î×% –Ş£µ¡²~, 1„ ÿ ³ƒ¶¡²×™ø£², ü Ô¼›•¥Ñä¥²ƒ³7 89Y - ÷ ÿ¶å¥²¸ˆö²…- b-  Û¹& —Ò„ïø²†- ³ - ÷ Ü±ğø²üš…ù²‡- :‡  ¨«& @²ò“- ˆ-  ˜‰”ù²ëñœ- ‰- 0³ˆ-  Óæ 'Š- á  ÿ £Æ¶ª¸±É¸ª¸‹-  î& @òÌí- Œ- E Öå& @Ùÿô- - 0ãŠõ‡ 0¹Óú- -  §ì& —ÛÂá­¸- • ÿ É¤â­¸ûı°¸-  šß·@“ª¨- ’- I  £Î& —¼ÀÉÍ¸”- h  ¦ı& —Ô¢ÏĞ¸•- ´   ëì& @€æã- –- I  ‹ü& @Õğ- —-  Ÿá& @¸¾û- ˜-  µÒ& @Ğ—ü- ™- á   ¢¤& 0ş­ /š-  «½& —´éŠÑ¸›- I  Êï& @âô- œ-  ìù& @Ñ°•- -  À¸& —ÄŞÔÓ¸- • ÿ †ÎÕÓ¸©‡²Ö¸Ÿ-  ĞóÓ
+@–Æº- ¡- I  àä& —İÜ¤û¸£- h ÷ º°¥û¸½çÕı¸¤- ´   Ã¯Öı¸õáì- ¥- I  ±õ& @ûäô- ¦-  ùî& @ƒüû- §- 0Ã”ü‡  Èç '¨- á   ¼û& @æıZ ©- 0…ƒşZ ‡»’ş¸ª- I  ç¤& @Àï—- «-  ÷ô& @®ç- ¬-  „ò& —†•×€¹­- •  Îö& Ÿá³»ƒ¹®-  ûìï@üÃ- °- I  ·¦& —Õ¬é½¹²- h ÷ ÔŠê½¹ÒƒÀ¹³- ´   •ê& @ä‘- ´- I  ÿì& @Ê„œ- µ-  Ÿ—& @ïº- ¶-  Î‘& 0úÅ '·- á  ÷ ş³·ù¾éãÑù¾¸-   ™û& ŸË®­ú¾¹-  àÀ& @¨ı¸- º- ÷ ‡¹ú¾™Éçü¾»- h  ìßèü¾·Ì¹¸¼-  Éù„—€‰€¿À- ˜& —ÿÉÿ‹¿Â- ; ÷ Ó‡€Œ¿øÛÂ¿Ã- ´   Ë…Ã¿“Ü- Ä-   ¥¢& @ûğæ- Å- ş& @ííï- Æ- 0€†ğ‡  µæ 'Ç- á  ÿ ÁŠ’³Äë·”³ÄÈ-  Úç& @ŒÉ­- É- I  šÔ& @˜¥´- Ê-  Š¯& @²º- Ë-  “Á& —Í’Î¶ÄÌ- • @¿†Ï¶ Ìò¸ÄÍ-  ì€ô¸Äè ù- Ï- I  ñ·& —ÑÜ¾ÄÑ- h ÷ ëİ¾Äá£›ÁÄÒ- ´   ˆÍ& @š³- Ó- I   ­& @ÕÒ¾- Ô-  ûŞ& @¥µÖ- Õ-  £Ë& @½—×- Ö- á   Ä¥& 0•¯ /×-  ¶¼& @ö°ãZ Ø- I  ·& @‡ëè- Ù-  ò& @·çí- Ú-  ‹ñ& —»õ¯ÄÄÛ- •ï¿°ÄÄüÃÄÆÄÜ-  ƒ«¼@ñÖÎ- Ş- I  æò& —‚È¼ÕÄà- h ÷ ’”½ÕÄÎ‘ÒØÄá- ´   ÜÚ& @Äšñ- â- I  ½®& ŸÙİ‰ÙÄã-  ıø& @Ç’- ä-  ‘Ÿ& 0ùá 'å- á   €í& 0ñõ /æ-  À‚“ÙÄÜáŸ‡ ç- I  ¾ë& @‹®¥- è-  ¹³& @ã¾ª- é-  ‚È& —ç†ŸÛÄê- •  «¯& Ÿ£ÜÙÜÄë-  †ÓØ@ìÆà- í- I  Øİ& —–üÇàÄï- h ÷ è©ÈàÄ”¨„ãÄğ- ´   å…ãÄ€·- ñ- I  ËŒ& @ß‡À- ò-  ‘š& @õôÆ- ó- 0“Ç‡  –ô 'ô- á  ÷ ¦â”‘Ê€èª‘Êõ-   üï& @ù·°- ö-  ¹½& @ß’µ- ÷-  Í & —÷öÀ”Êø- h ÿ ëıÁ”Ê£­¡—Êù- !‘òÎ0 ¶®- ü-   ²Ø& —Å»À£Êş- ;  ‡÷& —õı™¦Êÿ- ´   à¥š¦ÊÜ¬- €9 «¤& @ù»- -  ­ª& @é¬Å- ‚-  ËÁ& @èŸÆ- ƒ- á  ÿ ˜çõØÏ„øØÏ„-  ËÏ& —•œŒÙÏ…- I  ¡¥& @’• - †-  …®& @æÃ¦- ‡-  ôĞ& —á±õÛÏˆ- • ÿ ÌˆöÛÏ¬é‘ŞÏ‰-  Î½¶@Õìš- ‹- I 0÷›ê‡ãÎËìÏ- h ÷ ¼µÌìÏçËÔïÏ- ´   Ô‚ÕïÏ«é- - e  ƒ¨& @à‚ù- -  ‚‹& ŸÂ…ğÏ‘-  ÷İ& @™Ê†- ’- á   ğÙ& 0”ã /“-  ªû& @Æ˜šZ ”- I  Ì¡& @ÈŠ - •-  ‹& @‡­¥- –-  –º& —ÜÀ­óÏ—- • ÿ û‹®óÏø—òõÏ˜-  ĞßÒ@§Îø- š- I  ùò& —ºŠ’ÿÏœ- h  …ÿ& —Å›îĞ- ´   ¯Â& —Şç‚Ğ- I  Øø& @õş¦- Ÿ-  Ì…§‚Ğó—·-  -  —³& @ó°¸- ¡- á   ·Ë& 0èÔ /¢-  øí& @Á«ÍZ £- I  ê±& @ÂìÓ- ¤-  €ò& @‰¢Ø- ¥-  ˆ±& —“—È…Ğ¦- •  …÷& Ÿé±‡ˆĞ§-  ãî@¤¿- ©- I  »î& —ûò‘Ğ«- h ÷ ËÎ‘ĞÍº‹”Ğ¬- ´   öı& @Ôú™- ­- I ÿ ÇŒš”ĞÕ¤”Ğ®-  ×—& @Ô‹¯- ¯-  & 0áğ '°- á  ÷ ñùÜ¾Õ–Çî¾Õ±-   ­Î& @Öó- ²-  †—& @‚î÷- ³-  ı& —¬²­ÁÕ´- h  Š„®ÁÕ‘âä·µ-  åƒ—ıØ”ÄÕ¹-  ÷ •”•ÄÕêÊØËÕ»- ; ÷ á¦ÙËÕ¼«‘ÎÕ¼- ´   ŞÑ& @Ú’©- ½-   ¹¦& @ÛÊ±- ¾-  ­Ñ& @¯©¸- ¿-  ä·& 0ùù 'À- á  ÿ …ÉÇ†Û­ŠÊ†ÛÁ-  ÏÀ& @Òêã- Â- I 0Ó€äZ 0†Àí- Ã-  öÉ& @ú³ô- Ä-  ¢Ó& —¿ä—ŠÛÅ- • ÿ •Ì˜ŠÛµŸ”ÛÆ-  ô•Û´Ïœ- È- I  ¦í& —æ†÷‘ÛÊ- h  É¥& —–óß”ÛË- ´   ‚»à”Û¯íò- Ì- I  ¶õ& ŸÉÖƒ•ÛÍ-  ¥ì& @¯Ù‹- Î-  ÿò& @¤ØŒ- Ï- á   ”î& 0†ø /Ğ- 1Ä‡-  äZ Ñ- I  ¬ê& @à¯¤- Ò-  š¶& @ÿñ¨- Ó-  Œü& —Áï„˜ÛÔ- • ÿ ¹Ê…˜ÛèİºšÛÕ- !ñ»Â"0«‘Á- ×- I  æª& —Øä—¡ÛÙ- h ÷ Ü¤˜¡Û© Ê£ÛÚ- ´   ıÃ& @é¡í- Û- I  ÿ©& @÷ôö- Ü-  ı& ŸÒ¶‹¤Ûİ-  ‡Ù& @—ÙŒ- Ş- á   Âô& 0¯ş /ß-  ä•¤Ûş‡Z à- I  ¾‘& @À¢¢- á-  ·¨& @Ÿ§§- â-  ¶¯& —¨‡¢§Ûã- •  Æè& ŸÉà´©Ûä- !ô™Ş$0Ü™½- æ- I  ©´& —²ğá¬Ûè- h ÷ ÷€â¬Ûû»”®Ûé- ´   …Ê& @êë²- ê- I  Ğó& @•‚À- ë-  èŠ& @„Í- ì-  ²& 0ó² 'í- á  ÷ íÙİàÈÆòİàî-   âÑ& @Ì™ø- ï-  ŠŸ& ŸÓ¯‚Şàğ-  ßà& —®Íïààñ- h  Õšğàà¬¬  &ò-  …“™&@´Õ³- õ-   ¡ó& —È©¿’á÷- ;  ä& —Ô¥•áø- ´   Ø¥¦•áÛëÊ- ù-  0ö€Ë- 0İãÑ- ú-  éê& @­£Ù- û-  Ş¹& @éÚ- ü- á  ÿ ¯ÌéÊæà¥ëÊæı-  ÓÍ& —Ö“ƒËæş- I  ­¯& @‘ô- ÿ-  ù€ËæÉˆ—- €''Z  í& —»¼°Îæ- •  îÖ±Îæ¨ãï(‚-  —µ(@ØÙö- „- I  Ãò& —Ñ«’äæ†- h  ®Ù& —®õïææ‡- ´  ÷ ¿ğææ¤ÿ„çæˆ- I  ò……çæÁ¢- ‰-  §»& @è¼–- Š-  Õ& @Ñª—- ‹- á   ¬¸& 0 Á /Œ-  ©Ô& @›Ö©Z - I  ªÜ& @£™¯- -  Ó& @Ä—´- -  Ã£& —…ä¡êæ- • ÿ ¼¥¢êæâ‡íæ‘-  è¬Šíæñì“- “- I 0Ù“”- ‡ãÕ ³ç•- h ÷ ±ª¡³ç”Ù ¶ç–- ´   ˆ¯¡¶ç‰ˆº- —- I  Ñœ& @¬ùÅ- ˜- 0×ÆZ 0Ç¥×- ™-  ı¼& @û¦Ø- š- á   ¼¿& 0¢É /›-  “Ü& @ó¥åZ œ- I  È¬& @Š—ê- -  Âœ& @óÁî- -  ¢Ï& —«‚ñ¹çŸ- • ÿ ¨€ò¹ç’Ğ›¼ç -  ù–í,@ƒà¤- ¢- I 0û€¥!-‡ÖÊÑç¤- h  „ø& —ø¿“Õç¥- ´   ŸŒ”Õç ÑÅ- ¦- I  ©ä& @òÖÔ- §-  İŞ& @ˆ»Ú- ¨-  ÔÊ& @—ŠÛ- ©- á  yOÚt ¸ãÅ+0üªŠÅ+³ƒ  (08@ŒKôDH ªN786@7P€X€`hpx€ ˆ  ˜€€¼ ¨(°€€¸ À Ğ à ø € ˆ  ˜   { ²¸÷¸±¸É…ÆÍ$*{ ({ 0ı ¾03Ø¶¡û¸¡{ *{  Õ¥½„¹úÏå[&°{ *{ zìÀuÆ•Œ€¿äëûº$À{ œO<=;@<ì*€í@¨&íí| 0¥õü#0çØí"Ï| +| 0íÒ4·¸ÕÄŞ| +| @¥äÜª" ¹ÅSí| +| xğPs…š¾à0úÙ¼³ü| ğM?=>@?P@X@`h p Ú*€@î	z îz  ÁÈÈàÏ¶•Æä/‹Vz 
+z 0áÑü50¦“Œšz )z  ‘¹‘ˆĞ»Ò˜F©z )z \0Ì…“¤0×óÔ¤¹z •OAB@@AØ1pêêT/ ê| 0öŸ 0°Êô×È| +|  †‰œÛ’Ó”
+×| +| 0ÅŞÜj0¨Ôà=æ| +| ^ ÌŸ²ãà¥¸¼õ| “MDBC@DØ²*€Bîz Æz  ¥ëôÒæÅÑÎ/„Øz z 0Î¨—ÿ0æ¾œÿ“z )z 0ŠÛİ0
+0œÜÅ0
+¢z )z °<Ú6áÇñ?62Îè´ç5!	œ	²€€€Üu€ˆ> 0¾¬Íù52ØÍúù5> =| Ã7Õ¢”ö²ÈŒÍ±5? S ( } ? £äƒÉ«¸ËËã[4?   ¼ ? ²ØŠ®¸üÁG4 m4—
+û ? @¹ÒÍ¡0 ´«q3•? 	½ @ã¶êÑ¢2©2 Ï2~ 0üíèá2 „Ó»2 á2?  ’ßªû¸‡§±¸1¤? 	½ £ê¼ğş¸ÒìØC1~  ÁŒó€¹‰¹½(1®? 0²«ò1Bñ«è¿1~ ½ £Üïìú¾×œêä/?   7å÷„ı¾º°µ> ¼# 70ş‘†®/3©š®/? ½ £ôµš´ÄÉÚĞX.?   ½ Şõá¶Äª²D. j.? @¿úã¾Š/2ÿöÀ".? ½ Ğ¢³ÂÄ«©¦, Ì,?   ½ 0¡ì¿Ş,0´äÇ±,Ü# z0ïğÄ–,0€µ²i,á? 	½ 0„ƒïÇ+3½ @+~ £êÂªÛÄµ¥ÜR+? 0ñ…Í
++B¸„èâ
++? ½ £‘ƒ’Ê®èÚá)?   z0šÈøó)3—ò¢ó)?  ÔÖÅ£ÊÆØ€÷(ÿ? 	½ £îôÙÏ¤¬øU(~  »À…ÜÏÊñ”:(‰?  íıÓìÏ©°Å'? 	½ 1§ˆøª'#¤²É&½ ÏèÁóÏçòµ&/˜? £½Ÿ™ÿÏ·ÉÈ“&~ ½ Æ·¥ƒĞ¨ê% =%?  Õ7ÜíÚ…Ğ—À)% O%? 0Óö¤%BÂØä“%? ½ óœ½¿ÕÕÜ¸#/´? 	½ 0È»ğ#3Ç‡êğ#~ ? 0Ğ€ß¨#B¶ñúÍ¨#? ½ @ğØÊ‡%"#Ø™R"? ~ 0Å…ãd"0ÜŒ—7"Æ?  ë¿û‘ÛãŸ­ï!Ë? 	½ £Áûó•ÛÎ“…Æ ½ @£‰—˜~ À²  Ø ? 0ÍÉœ 0˜²6 Ú? 	½ @¥ò#Ì£:~ åÆ·§Û¾À& L?  ‚å0ıúƒ}é? 	½ £ºÒŞàşÂğÛ~ 0Øôúí0ØŸŸÀò?   €Ä’á’”€ñø? 	½ £¾İËæ¿²O½ 0’˜Æa î²;/‚? £ÿ—äæĞéÓ~ ½ ”´ßèæ‚óÃ? ±0Ø±Õ Ö¡¯ Õ? 0ŞÉ¨BÄßõµ? ½ ï½·ç˜¨ 7? ½  ÍõºçÓŸ ? ²³ÜÒÑçÆãÔ~ ½ ò 6jÚ1İíªÆœ’‚E ; vÿÿÿÿ8ÃAÊ
+ `  
+88 P3œ ©E2Ğô«E: 9: A4•å•D0èÙŒĞ…u ;  ß¨èC0ã  ïC; 0ä¨·vC ıÀ×C/‹; 0œö¨èK ò×B ıBv @ÉëûĞöK”B/™;  ¥§4 0¨¬  eBv 0Î‚»<$ÛeA; ! ¹’@ ¾â  ¿@;  Åş4 4óãÍ@; !ÅÍ?0Ğêèr²;  Ó¦ ?0¨Â /·; !’«'>0ùŸÿmÂ; !ì¦= èÜ  =ì Úù’³ÄŞ­i= =; !øÔ<$ó™<; !íëé; ƒ”–;/Ö;  Ö¨4 0·­  ÷;v 0Å˜Ï×0ò•¼×à;  İ¸:0Ìİ /å;  Õï4 0¬ô  _:± !åù_9$±Ú_9; ›ÇÇãÄÚï /ô; !¦÷¹70ãŒÀş; PœñÅ¦Ê®27± 0ÅÅö!7 ÷„û6 !7; !±µ!6$è†!6; š‡†ğÏ“Æ /’;  çÜ4 0Öá  ‰5v 0ëŸùt0­³‘tœ; ”ÁÛ·‚Ğœ¦ã3v  ±Î4 0‹Ó  ñ3; 0Ÿ«$Õµñ2; 0ÆÉ¯¥2 Àí  K2; !îËK10¦“Ø§»; ÕÎ¸ÎÕòï  ¥0v 0€¾ÈY00ÿøÉ,0Á;  ÕœÛòêöÜÊ;  Û¡Ù.0ëÓ /Ï;  ñ4 0¸ö  /ì !¾À.$é².;  ÒA-0ŸÏ /Ş;  Û÷4 0¶ü  ƒ-v ! Õƒ,$˜çƒ,;  ÿœÖ+0ı¯  İ+; 0ÜŸ´@0Öú¾@÷; !Ÿİ7*$‹7*v @´šêÊ°(E*;  ƒ•÷Ğæµ…’w†…5JÕ
+!æöŸ( „¤L(/‹;  ­»4 0Ï¿ /Œ; !²¾­'$€Š­'ì !Îç' †£´&/š;  áÂ4 0×Ç  'v !‹°&0¢åÉå¤; !ˆão%$÷†o%v ”Éìå³íÁøR? ( Ø$²RPôœ¹¸%A¨™Ã¥¸%e0g85@öX& 0¦Àü¾W2Êµ…ÙH& 0Ì¨¤("0áÒ©Bü& 0úé‚f 2´È‰77& 0â‡¤\0ÿæ¬¦õ& ¾ ¹â¡õ I08 Æo0©s0—±µb # Ka# r÷üñ³ # ç†g p‹üÛN  Z† aõ§ Í %0
+† !  ¬´8r ! „ !Ü™ª[ )0D # !øë#  /0# r®ˆˆ´í F rä×ú¿Ê Î  "†i r‰ÎŠÓã # l_# rÉâÉÁ y # rç‰İ€¼ #  èkF r±€İ Ç # 5€ç…# rÂéÍı¬ # &À¨# rÿ„Ìğç # %“†F 0Åßşm # (Œ 0°Êò0o #  kn# 0Ä­—œj # 5€¹ˆèağúŞ‡ ! §srÉê—ªá # `# 0ïğ¿×l #  ˜}# rœÂÁåİ # Lb# 0àíà¡g # ”# rœ…¥¦¯ # 5 šŠ# rÊÈ²éÌ # 1hi 0¯‚bd # ³b# rÄ†ö ê # !§# rÌ¹óæÕ # ò# 0Ë–­®g # ş# ù—ÑÁˆ’ºÎˆ 08@ hĞ± —«yuFìåù‡# 1˜ Ös#íñ Ëˆú†ØéŞÀ–ØH q@ hœˆ5% !ŠÂX4èò¾%  m % !áĞ% 4ÛÓ¼% J ³á¿ß—Ø–·à—o %  àÅ Qòï°ïe>8"% Æö´áñ»Ô¦‚¼¹ "Ä u¹ !ƒ¥˜Cÿ€%  ¹ % !»¼% 4àãú%  ¹ % ³ñÁË‚¼²´Ì‚J  ¹ %  ÀÀ QÂË­œÌo¹ % 0ÌêÊ4€íÔ ” )ä¦r ê‡DÒÀÉM % 8 ã€—!¯şWdA’ú³ÓÊd% "Àò¾Â÷à‡ÀÊ˜•ÀÊ( J 1¸äj% ¨Ó’Á–ØÊïÒo )Ì†” 0´£Î¹ 8ƒÌİ¹ "ü‘” •ïÿæAşèåNLS`! ‚Ù•ÜNŸä!  Œ ! ‚„¬ÜNÍ¼â!  ‹! ‘ê×OäãØOc  ‡!  ÔÁ°ùØOêÜ¡¸"  =" ‚¢•á¹ÔÚóĞ# &!Y# ¢ÓºêÖ²ÚêÖ# 5'@(# ¢ÅãëÖÂşƒ×# (F €å¡Óëş½ka ¡F  ±ÔËÚÂ¼ÑóÂ¯ <,@i ¯–ú†Ã¹öˆÃ# Ÿ‹ûˆÃ©ûŠ# “ëüŠÃş¦‹# <-@i ¢®¥òÄò¼¨Åi #  ŸªÄ¨Å’ìà# ¯ÍğàÅ•¤–ÆF “°–—Æö²¤# .;€˜‡«Æ·;·0¦¾¥‰]0ğ¨¦/] % ± %  º DŞã¬% 5F@ù %  îæ OÚ‹±% 0Û×·y
+0ÆÖãq] o G· J !¹“
+C–ÿ‡´% K%  Ä€¼
+0À öJ P¬Õ¶ùÄX#2ÈùÄJ  ."¸§rp% à«ÅãËëJ  À)ìÖ!Ëâå8Ú¥˜)% !…ö% 4Õ”–%  |% ³è—ÜÔã¡ĞİÔo  €%  Âä b¬·Ğóå¹  ƒ% 0ÇšèÊRÍºığç%  Ş 1ä”XfŞ  ¥­× D§ü£”  % )Ô™Ş ±ëÌÌÊÁ¥¡ÖÊÉt% $øŸ“sè0•ÚÄ¹ 4ÌÏ¹  J 8Ø ,0¦ÜÈ% 8“Şâ% )ä›o ¤ù€¼©Î‹y J 8¤y0üÿgV¸ØŸ‘³Ş 1¸i”  ¢¢¼HÉìJ )ĞÑÃ0Ã•¸y4¿ÕÊy o )ğo ¡±“ÀÁë`u)Ä¤!ªóÈ
+4İê¬%  J % ¤ğ‚ŸÉÁ¸ù§%  % 0Üñİr4çÏŞr %  ¢Û b­¶‚ÜÃ % 0¨¹ÂŞ 8 ¸ĞŞ "„Éh—íçç‡Á£ğÇ)ä”ÇÂÌƒ•“Ç†ë Çm  "Ì`p!ƒ4¦¿é%  % !ø±% 4ÂÂç%  % ³ÚÛ¢ÇàÁ¢o  %  ®Î 0§â¨t• % !¾Æ?u4‰úóo  ” 8´©¹  €„× H¢”ş% )à¡% ·Á¦ªòçŠºòQ) œQ¤šÃù¡Çƒ¨‡¹  o )©(Â¡«¤ªá³©¸ªáM % "øÑºM0æÍüJ 8ğşJ ) ‘J Â¸£åó¬ñüØı¬J  —1œ©ÔJ 0àÎ÷4—¿×%  o % !Ÿ% 4³ÓÕ%  —% ³±ÿ¬¡‘ÿo  —%  Ñ² BÆÎùt~—% 0íÓuAº­ıåùo” "”…wË‚ØÔÍOò±Û‰ µ 1¬¦+Ú  ¡Ôø D™âµ  % 8ğ®€ÿ 0×Ø€µ  Ü€— ' % )´á% 0ğˆÙ$8¡¢ìJ )ˆ…% 0¢á…J 4·Ş›ÿ  J )ˆ§n ‡—$Dãù·á % 1ô™Ğ¹ !Îå% 8ÊÈÆ% )€ÂP0ÈÉÏ Àçè¹ )ô£% @«’Êº[F®ıØ¹"ÌÚo !òÃ³4Âµù%  ” % !Ãè% 4ƒó%  % ‚¢Ú¹·ñ ”  %  »ı bŠš°å»”  ™% İ‚ ÑåNöºí‡
+  )„›ç†ô×åN•—ö! )˜ÿ! †åÊO”´Ó"ü“! Ø“¼ïíÖ©„õc
+ e "ìÆ# Ç„Ïáç ª-Ğ  A"¬ªò% !¯Ë8âèäK% !Èş% 4©¥à%  ?% 0»ßµD4ÂÌ¶D ?%  ôã fºúüƒê?% 0áÕæß4¥Üòo  Ş )”É¹ 0È©¥o 4‘Ï®o  % )ø¥³·ÍÖŒçİ¢¯ç‹"¼Ú‹0Ò±ûBCò“†Ùø J 8ˆœg0ÏØ£ÔGÎÜ¹øQ	)ŒñQ	 øŸªH—çJ )„±0î´gGüšÚo *°‹o  áşfA„ñˆ»	” "Ôâh#¬P»Í”J 8Ö¶£J )Ôÿo ì†êŸáÌ°˜8”©‘0©‡˜¶8÷Ï¢¶% !¯š% 4ƒÅ %  % ³˜Ìâ«áÑ¹ã«o  %  ñÅ fŸ±€¹ã% –Ò‹«µ†× ¹ 1Ô§k!ñÚ4ÔÂı%  ¼% !õê% 4¢‹û%  ¹ % ³¦¿İ¼µ½Ş¼J  ¹ %  ªÉ Q¶ÆÑÒjş%  şÁ² HËÍ’¼"œ¨¹ À—¤¿ˆ¯øÆ‚"”É‚Ü ¤Ñ­Û„³¬Ş
+ À)ˆ«
+·Í”ò³€Ÿş-
+% !­£% 4­Ùû%  % ³ËåÜ’³üıİ’J  % 0ú’Ş%  ÑÖƒ• ÿ% 0ÈËÎK4èØK •)ÄÙ½0Ü’Ô% 8òä% )üÖ% @’õÒí#/Ö}o  )°¸v!ÛÁo8…õ¡›% !­Ú% 4èıŸ%  % 0èª¹64è¿º6 %  –Ô S‘é„‡À	 %  å—² Díõ®o  )ğò¹ 0úÍ»o 4ÅöÓo  % 1ø*0Ûİ£›4éü­v % "´…ÀN“íØüÉªèæ
+ &"œ¤N# “€†ß‡£šç#  F #  ²‘# 3¶Åå#  "# ±¬ÏÉˆÅïâ û # ± 0ƒÅÇ4«€Ò k )À¯
+0İÓÊ%  –‡	J  % )ìà% –«ÑÚİÂP	%  Ø 1à”I	o !¯Ûã4ÇûĞ%  J % !†÷% 4ŸÃÍ%  Ü % 0»Ñ–-4¾®—- ş%  ì¹ QşŸ°‚{x% !ş–ˆy4¼éo  ” )Ü¹ 0ŠËˆo 4µÇ’o  % )üÓœÂÜ‰ØĞÅóî­Ğ* VÌ€À”0ÿáÃ4š«í%  J % !°¤% 4‰†ë%  % ³Ññ ¯Ğ¿ê¡¯o  %  òø bÁÀÒ”  %  ‡ª² Dêƒøo  ” 8¼‡¹ ³¯‹—¨¯®¡¨O % "ÀÀ[á!æøJ Cºí‚®”  % )àô0Ûº¹ 4Ãğ˜¹  % )€‹o ³ÅìØÒÚ§£Ø¹  % eô“ şo 0‰Ñ’J 8Å¥¦J )œËo ÂÒõë—¿­ŞË§¿ —"¼…}¹ 0Ï‚À 4×ïÉ%  o % !ğ% 4ÀÇ%  —% ³¸„©¿¡¼…©o  —%  ÙÕ S­à³S —%  ¶‰² DÕ§Ôo  ” 1¸¤^„¹ §× H‘ºİ% ) ¬% ÂÁÍØêÌ‘ÅâêÌ J 1¼ŸôJ ¤ìµï¨¿âù€¹  % )´ş(0›Öø% 8›¯% )àÒ% @’Öè›+3½¦+ r)ÔÙ+!Ô¾©4ª¶%  o % !‘Ú% 4§ì­%  r% 0·…­š4÷¦®š r%  µ¶ 0Éü‹  r% 0İÑÂ=4¶µØo  ” )¼—¹ !¦ì% 4²›Ö%  ” % 0†ÙÒ|4Ùæî¡ J *¨­ ¦Ço 4×ÒğJ  % 8ä†S0ö° Ş 4”û©Ş  % )À % ÑùƒßÌ¡ÄĞƒŞ  r8èº€á!Æèø4æä¾%  J % ¤áƒ³éÌÇ§¼%  Ş % 0¡äãP4ˆÍäP r%  ¯Ø 0ÅÜëƒ”  r% 0®ø¿o 4ØÉo  ” )ü“š ¡Ğ× H¬ãÔ% )ä§% Æûõà¢ê®ùï¢êä1ì®’ä0é¡Ü¹ 4Âì¹  o "œŠJ ~’§®ëÑ¶®õ8 K$¨íGò Òì¢3¬¢­#  F #  ù# 3Ô«#  G# ¢µ»—ö®˜öi  E# µ•˜öÉù·ÛC# “éø­õˆéµi  Œ 3Üœö¯ ŸÌ Gš¿# )¸‡# “àü‹öéó”Œ  F )¤‘# —‹ùö‡ëœ# "Ì‘`Â¸ÏÁµÛ¬‹ŒÄÛ… =1¸§:% !Ç¥]4ÂéŠ%  m % !ÿ°% 4¡ ‰%  A% 0—‹ö§C¦ôöÎP c% 0´ä‹% 4©Ú”J  o 8´Ğ€”  ¥² HŒä% )Ôú% 0¦ĞìJ 8Ú¤ô% )ì…Ş  „ H¼õû% )Ø›J ³‹áÇ’êØ¸‹¡­ (8ÜÖ€­!Í²b4©ä‡%  ¹ % !¤Ò% 4Ôæ„%  (% ¤İŠí¢ê¸šî k%  ¾° 0ĞÏw~m% ¤ÅÖ‰¡êÈÎ•o  ” )œã¹  ´¦× Hº…¢% )ô¤% 0®äè” 4ÿÎø”  J )Ğ % Æª½¼ØÕÀÊ„çÕP"”DP!ág4í•‚%  J % 0óŠô% CÚ©ÿæJ  (% ³¼šèÕ”š›è%  (%  Š© b¹ïßú×”  u% ºw†8ÂÎ’” V… ò¿ ÛŸ× H­% ) ÕŞ 0”ë’” 4¯©£”  Ş )˜£J 0šø–% 8ƒ¾²% Ä% ¿¿»ÌÒûú!ˆ u"Èân M!¥·‘ 4ïº%  o % !¢Õ% 4µô¶%  M% 0ô¹¡Â	4ü£¢Â	 M%  –± QëÇÙîë‡M% ¤ñ»»ÖÒ×óÆo  ” )¤¨
+ Èì× H¨ÊÓ% )Œ‰% 0÷×ˆ” 4«˜˜”  J )”‹% ¤¶°ÿ³ıÖˆÌ % 8ĞÜ€Ô0ç³Íá8åßá)ÀˆáÂÆ÷ª²Ê¯ê‰ÀÊ+ r1Ì®š$r!ï½$4³†%  o % 0øûâ$4Â‘ƒ%  r% ³ƒÃ«ÁÊŞÏ¬Áo  r%  ×ï S»•«Ò ¿% 0ÆŞˆM 4Ê¡Ÿo  ” )„ ¹ 0¾˜Ÿo 4Ó¥°o  % <Ş 0å¸¢% 8†¯¹% pôÀ’„@±©'ô §'
+	[Unknown]
+ ôG kernel module]
+[Max depth]
+[Broken backtraces]
+[Called from Java]
+
+GpuMetrics
+
+Soc ğmm_
+task_submit
+class_id
+	syncpt  ğthresh
+pid
+tid
+GenericCounters
+FT‡ Ò
+ETW
+DlaKmd ñyYC:/Program Files/NVIDIA Corporation/Nsight Systems 2026.3.1/target-windows-x64/config.ini
+ 
+tC:/Users/SMART/AppData/Local/Temp/nvidia/nb "_sb ÿ2/quadd_session_1015708/streams/stdout_f37a-0fbf-bcb2-f587.log
+¯	= %ñJ
+ CUDA Matrix Engine - Benchmark Driver
+ Mode:   FULL (standard methodology)
+ Output: C:\\ñ\work\pone\cuda-mm !-em Ğ\results\profò\temp_e2e.csv
+ Sizes:  2048
+ Warmup: 1 ite¬Ès
+ Timing: 3 %ö=
+
+
+>>> Phase 2: End-To-Endğs (public gemm API)
+[end_to_end]  M=N=K=¶ ñ2 |  CPU_REFERENCE (tile= 0): median = 44365.2617 ms, IQR = 0.0000  GFLOP/s =  ÿ0.39 [host reference]‚ 
+!  ê__NAIV‚  94.3813o € 
+o182.03o STILEDñ (16ñ  30.4532o o564.14o *32o o8.5641o o445.49o 	 3_OPTIMIZŞ 
+MŞ 8o Ş 65.0538Ş ö264.09
+
+[SUCCESS]Õò run finished. R™Ÿ saved toÖ8(H?err(ÁChunk Allocèv
+TLS a bNVTX ‹ò;ing started
+*1TaskRunner
+*2CommsProcessor
+"Thread name service initializl PLoadU ñplugins
+[NSys]
+  S 2]
+ ûÿ redirect]
+OpenGL   z ! æ 
+ÌT  pCUPTI º0er pKad
+- g 6+
+,( õdata flush on cuInitiQ
+cuMU3Get# m`
+cuDeI  Puid
+>2Get òProperties_v12000
+´ ¢Instrumentx ğ Resource Manage  © °ontext crea€ } ğSynchronize_v3020
+ MK  semcpy2D  cuLibraryê eData
+ AGetKe	 û 
+ ğGetName
+Lazy FuncŸ = ğing
+g_ZN3cme6detail46_GLOBAL__N__9ac64f0e_13_¦÷_naive_cu_57bb5c8017 k{ rENS0_14æ òGemmArgsE
+Fcme::f P::<unéMd>::A (* 
+H =)
+0  ÿ‚daLaunchô 0_v7Î 4Freaoì 	g8b6337ì Ptiledì ƒ416b2494ì  ì ŸILi16EEEvô iTvoid Ï ù N Ÿ<(int)16>9 Ú C/32Ú </32Ú w¡)50¢c8b9a26_17roptimiz¥¡21c35d9421  ©X©R ­ ê K¹	ê &½†‚Unload
+6bBuffer½/
+)Ø
+p{ exit
++ qb gcuCtxY+
+*D 
+Gpanalysi*Qop
+P? _ ha ¸. 0opp *¼Á 14536 was l„“ed by the1er
+íron inje€lÄâ`ed sucƒfully.
+*s4 -, "…fQs hol"ù Hõ rwill be‡ edFBCudaô ñerStop() call. See --±@-on-FĞ`erstopÉ	ñcontrol this behavior.
+~2ed úä Í	0\0\0\0ñ\cupti64_133.dll
+&Enab¹ñ Qfor døc graph˜!
+(P£9Number ofË `eventsÑÃduced: 	455, bâs: 20.
+te hardware’  š âis not support=¿ñ. A legacy (soft< i‡1ed)J eg`collecE  " ?ead± 8± @.NotÁ
+ Wé m½–have beens Y.
+4No+  T Doesù ÊA use, c?
+8No Ñc 8 . 1?
+5Q J›  RŸ ­@ corë
+ ? § : o  , 8?
+&ù=  °: 	372.
+EOSìCtimeç!ie¥ TJ µ † ÷ ?€€€ÀŒ‡@ 2 €€€€@†
+ 
+ Ø›€àˆ@
+
+ ´Ğ€àˆ@
+
+ Ôú€àˆ@
+ 
+ ì…àˆ@
+ 
+ À¯€à–@
+
+ øÑ€à–@
+ 
+ ìà€à–@
+
+ ´…à–@
+ 
+ Ğ € å@
+
+ ô¤€ å@
+
+ œã€ å@
+ 
+ ì® å@
+
+  Õ€ ò@
+
+ … ò@
+ 
+ ˜£ ò@
+ 
+ Ä£ ò@
+
+ Œ‰ ş@
+ 
+ ”‹ ş@
+ 
+ ô“ ş@
+
+ ¤¨ ş@
+
+ ĞÜ€ „@
+ 
+ Àˆ „@
+
+ ¸ „@
+ 
+ ¨­ „@
+ 
+ …€À’„@
+
+ ¸À’„@
+ 
+ ôÀ’„@
+
+ „ À’„@
+ 
+ ü‘€à§…@
+
+  ã€à§…@
+
+ Ì†à§…@
+ 
+ ä¦à§…@
+
+ ˆ…€À¨…@
+
+ ğ®€À¨…@
+ 
+ ´á€À¨…@
+ 
+ ˆ§À¨…@
+
+ Ô™€€â…@
+ 
+ ä›€€â…@
+
+ Àò€€â…@
+ 
+ Ø €â…@
+ 
+ øŸ€ â…@
+ 
+ ô£€ â…@
+
+ €Â€ â…@
+
+ ô™ â…@
+ 
+  ‘€€ç…@
+ 
+ ©€€ç…@
+
+ à¡€ç…@
+
+ ´©€ç…@
+
+ ”É€À“†@
+
+ ä”À“†@
+ 
+  œÀ“†@
+ 
+ ø¥À“†@
+
+ „€ ‰‡@
+ 
+ Ôÿ€ ‰‡@
+ 
+ °‹ ‰‡@
+
+ ˆœ ‰‡@
+ 
+ ü“€ÀŒ‡@
+
+ „›€ÀŒ‡@
+%
+ ìÆ€ÀŒ‡@
+
+ ˜ÿ€ÀŒ‡@
+ 
+ ¬¦ÀŒ‡@
+ 
+ üÖ€ ¨ˆ@
+ 
+ ÄÙ€ ¨ˆ@
+
+ Ôâ€ ¨ˆ@
+
+ œ¨ ¨ˆ@
+ 
+ ¸§€€¹ˆ@
+
+ Œñ€€¹ˆ@
+
+ ğò€€¹ˆ@
+ 
+ ø€¹ˆ@
+ 
+ Ğ±€€ûˆ@
+ 
+ ”É€€ûˆ@
+
+ ä”€ûˆ@
+
+ ˜ €ûˆ@
+
+ ”…€À’‰@
+ 
+ üÓ€À’‰@
+ 
+ ¼Ú€À’‰@
+
+ ÜÀ’‰@
+ 
+ œË€À”‰@
+
+ àô€À”‰@
+
+ ¼‡À”‰@
+ 
+ €‹À”‰@
+ 
+ „É€ Ó‰@
+
+ ĞÑ€ Ó‰@
+
+ ¤ Ó‰@
+ 
+ ğ Ó‰@
+ 
+ àÒ€àÚ‰@
+ 
+ ´ş€àÚ‰@
+
+ ¸¤àÚ‰@
+
+  ¬àÚ‰@
+
+ ¼—€ šŠ@
+ 
+ ÀÀ€ šŠ@
+
+ ä† šŠ@
+ 
+ À  šŠ@
+ 
+ œŠ€œŠ@
+
+ ü“€œŠ@
+ 
+ ¼Ÿ€œŠ@
+
+ ä§€œŠ@
+ 
+ Ì‘€À¯Š@
+
+ ¸‡À¯Š@
+ 
+ ¤‘À¯Š@
+
+ ÜœÀ¯Š@à
+Ã€€€€€€@¸:»Intel(R) UHD Graphics 770  *$00000000-0000-0000-0000-0000000000000à¦: H P X ` h p x ‚ Š  ˜   ¨ ° ¸ À È Ğ Ø à è ğ ø € ˆ  ˜   ¨ ° ¸ À È Ğ Ø à è ø ‚ :‚  NVIDIA GeForce RTX 4070 Ti SUPER0000:01:00.0 *$334295fa-3b82-d71a-f81f-8344060fcb870º‚:AD103H P€€€X€€àû?`€ ‹ÑÇh€èìê	pBx ‚ Š €˜   ¨¡°¸€€ÀÈ€€Ğ€€Ø€˜à€ è€€ğ ø€0ˆ€˜€ €¨@°ÿÿÿÿ¸ÿÿÀÿÿÈĞ	Øà	è ø ‚Adaˆ :¿Microsoft Basic Render Driver  *$00000000-0000-0000-0000-0000000000000¯¦: H P X ` h p x ‚ Š  ˜   ¨ ° ¸ À È Ğ Ø à è ğ ø € ˆ  ˜   ¨ ° ¸ À È Ğ Ø à è ø ‚ J1  Èq*$334295fa-3b82-d71a-f81f-8344060fcb870B8!Pr  Èq( 08 @ H P ` h p z  Èq(0 8z  Èq(0 8z  Èq(0 8z
+  Èq(0 8z	  Èq(0 8z  Èq(0 8z  Èq(0ûÿÿÿ8
+lz4ğ²
+¡yĞêçÑùœ’•y
+¾t"æs"  (2 : P€X *¢= cudaGetLastErrorcudaHostGetDevicePointercudaSetupArgumentcudaConfigureCallcudaArrayGetInfocudaChooseDevicecudaCreateChannelDesccudaD3D10GetDevicecudaD3D10GetDevicescudaD3D10GetDirect3DDevicecudaD3D10ResourceGetMappedArraycudaD3D10ResourceGetMappedPitch!cudaD3D10ResourceGetMappedPointercudaD3D10ResourceGetMappedSize%cudaD3D10ResourceGetSurfaceDimensionscudaD3D10ResourceSetMapFlagscudaD3D10SetDirect3DDevicecudaD3D11GetDevicecudaD3D11GetDevicescudaD3D11GetDirect3DDevicecudaD3D11SetDirect3DDevicecudaD3D9BegincudaD3D9EndcudaD3D9GetDevicecudaD3D9GetDevicescudaD3D9GetDirect3DDevicecudaD3D9ResourceGetMappedArraycudaD3D9ResourceGetMappedPitch cudaD3D9ResourceGetMappedPointercudaD3D9ResourceGetMappedSize$cudaD3D9ResourceGetSurfaceDimensionscudaD3D9ResourceSetMapFlagscudaD3D9SetDirect3DDevicecudaDeviceCanAccessPeercudaDeviceDisablePeerAccesscudaDeviceEnablePeerAccesscudaDeviceGetAttributecudaDeviceGetByPCIBusIdcudaDeviceGetCacheConfigcudaDeviceGetLimitcudaDeviceGetP2PAttributecudaDeviceGetPCIBusIdcudaDeviceGetSharedMemConfig cudaDeviceGetStreamPriorityRangecudaDeviceSetCacheConfigcudaDeviceSetLimitcudaDeviceSetSharedMemConfigcudaDriverGetVersioncudaEventElapsedTimecudaFuncGetAttributescudaFuncSetAttributecudaFuncSetCacheConfigcudaFuncSetSharedMemConfigcudaGetChannelDesccudaGetDevicecudaGetDeviceCountcudaGetDeviceFlagscudaGetErrorNamecudaGetErrorStringcudaGetExportTablecudaGetMipmappedArrayLevel cudaGetSurfaceObjectResourceDesccudaGetSurfaceReferencecudaGetSymbolAddresscudaGetSymbolSizecudaGetTextureAlignmentOffset cudaGetTextureObjectResourceDesc$cudaGetTextureObjectResourceViewDesccudaGetTextureObjectTextureDesccudaGetTextureReferencecudaGLGetDevicescudaGLSetBufferObjectMapFlagscudaGLSetGLDevice%cudaGraphicsResourceGetMappedEglFrame+cudaGraphicsResourceGetMappedMipmappedArray$cudaGraphicsResourceGetMappedPointercudaGraphicsResourceSetMapFlags%cudaGraphicsSubResourceGetMappedArraycudaHostGetFlagscudaIpcGetEventHandlecudaIpcGetMemHandlecudaIpcOpenEventHandlecudaMemAdvisecudaMemRangeGetAttributecudaMemRangeGetAttributes-cudaOccupancyMaxActiveBlocksPerMultiprocessor6cudaOccupancyMaxActiveBlocksPerMultiprocessorWithFlagscudaPeekAtLastErrorcudaPeerGetDevicePointercudaPointerGetAttributescudaProfilerInitializecudaRuntimeGetVersioncudaSetDevicecudaSetDeviceFlagscudaSetDoubleForDevicecudaSetDoubleForHostcudaSetValidDevicescudaStreamGetFlagscudaStreamGetFlags_ptszcudaStreamGetPrioritycudaStreamGetPriority_ptszcudaStreamQuerycudaThreadExitcudaThreadGetCacheConfigcudaThreadGetLimitcudaThreadSetCacheConfigcudaThreadSetLimitcudaVDPAUGetDevicecudaVDPAUSetVDPAUDevicecudaWGLGetDevice__cudaInitModule__cudaPopCallConfiguration__cudaPushCallConfiguration__cudaRegisterFatBinary__cudaRegisterFatBinaryEnd__cudaRegisterFunction__cudaRegisterManagedVar__cudaRegisterSurface__cudaRegisterTexture__cudaRegisterVar__cudaUnregisterFatBinarycu64Array3DGetDescriptorcu64ArrayGetDescriptorcu64D3D10ResourceGetMappedPitch!cu64D3D10ResourceGetMappedPointercu64D3D10ResourceGetMappedSize%cu64D3D10ResourceGetSurfaceDimensionscu64D3D9ResourceGetMappedPitch cu64D3D9ResourceGetMappedPointercu64D3D9ResourceGetMappedSize$cu64D3D9ResourceGetSurfaceDimensionscu64DeviceTotalMem$cu64GraphicsResourceGetMappedPointercu64MemGetAddressRangecu64MemHostGetDevicePointercu64ModuleGetGlobalcu64TexRefGetAddresscu64TexRefSetAddresscu64TexRefSetAddress2DcuArray3DGetDescriptorcuArray3DGetDescriptor_v2cuArrayGetDescriptorcuArrayGetDescriptor_v2cuCtxAttachcuCtxDetachcuCtxDisablePeerAccesscuCtxEnablePeerAccesscuCtxGetApiVersioncuCtxGetCacheConfigcuCtxGetCurrentcuCtxGetDevicecuCtxGetFlagscuCtxGetLimitcuCtxGetSharedMemConfigcuCtxGetStreamPriorityRangecuCtxPopCurrentcuCtxPopCurrent_v2cuCtxPushCurrentcuCtxPushCurrent_v2cuCtxSetCacheConfigcuCtxSetLimitcuCtxSetSharedMemConfigcuD3D10GetDevicecuD3D10GetDevicescuD3D10GetDirect3DDevicecuD3D10ResourceGetMappedArraycuD3D10ResourceGetMappedPitch cuD3D10ResourceGetMappedPitch_v2cuD3D10ResourceGetMappedPointer"cuD3D10ResourceGetMappedPointer_v2cuD3D10ResourceGetMappedSizecuD3D10ResourceGetMappedSize_v2#cuD3D10ResourceGetSurfaceDimensions&cuD3D10ResourceGetSurfaceDimensions_v2cuD3D10ResourceSetMapFlagscuD3D11GetDevicecuD3D11GetDevicescuD3D11GetDirect3DDevicecuD3D9Begin	cuD3D9EndcuD3D9GetDevicecuD3D9GetDevicescuD3D9GetDirect3DDevicecuD3D9ResourceGetMappedArraycuD3D9ResourceGetMappedPitchcuD3D9ResourceGetMappedPitch_v2cuD3D9ResourceGetMappedPointer!cuD3D9ResourceGetMappedPointer_v2cuD3D9ResourceGetMappedSizecuD3D9ResourceGetMappedSize_v2"cuD3D9ResourceGetSurfaceDimensions%cuD3D9ResourceGetSurfaceDimensions_v2cuD3D9ResourceSetMapFlagscuDeviceCanAccessPeercuDeviceComputeCapabilitycuDeviceGetcuDeviceGetAttributecuDeviceGetByPCIBusIdcuDeviceGetCountcuDeviceGetNamecuDeviceGetP2PAttributecuDeviceGetPCIBusIdcuDeviceGetUuidcuDevicePrimaryCtxGetStatecuDevicePrimaryCtxReleasecuDevicePrimaryCtxResetcuDevicePrimaryCtxRetaincuDevicePrimaryCtxSetFlagscuDeviceTotalMemcuDeviceTotalMem_v2cuDriverGetVersioncuEventElapsedTimecuFuncGetAttributecuFuncSetAttributecuFuncSetBlockShapecuFuncSetCacheConfigcuFuncSetSharedMemConfigcuFuncSetSharedSizecuGetErrorNamecuGetErrorStringcuGetExportTablecuGLGetDevicescuGLGetDevices_v2cuGLSetBufferObjectMapFlags#cuGraphicsResourceGetMappedEglFrame)cuGraphicsResourceGetMappedMipmappedArray"cuGraphicsResourceGetMappedPointer%cuGraphicsResourceGetMappedPointer_v2cuGraphicsResourceSetMapFlags cuGraphicsResourceSetMapFlags_v2#cuGraphicsSubResourceGetMappedArraycuIpcGetEventHandlecuIpcGetMemHandlecuIpcOpenEventHandlecuLinkAddDatacuLinkAddData_v2cuLinkAddFilecuLinkAddFile_v2cuMemAdvisecuMemGetAddressRangecuMemGetAddressRange_v2cuMemHostGetDevicePointercuMemHostGetDevicePointer_v2cuMemHostGetFlagscuMemPeerGetDevicePointercuMemRangeGetAttributecuMemRangeGetAttributescuMipmappedArrayGetLevelcuModuleGetFunctioncuModuleGetGlobalcuModuleGetGlobal_v2cuModuleGetSurfRefcuModuleGetTexRefcuNNSetAllocatorcuNVNbufferGetPointercuNVNtextureGetArray+cuOccupancyMaxActiveBlocksPerMultiprocessor4cuOccupancyMaxActiveBlocksPerMultiprocessorWithFlags cuOccupancyMaxPotentialBlockSize)cuOccupancyMaxPotentialBlockSizeWithFlagscuParamSetfcuParamSeticuParamSetSizecuParamSetTexRefcuParamSetvcuPointerGetAttributecuPointerGetAttributescuPointerSetAttributecuProfilerInitializecuStreamGetCtxcuStreamGetCtx_ptszcuStreamGetFlagscuStreamGetFlags_ptszcuStreamGetPrioritycuStreamGetPriority_ptszcuStreamQuerycuStreamQuery_ptszcuSurfObjectGetResourceDesccuSurfRefGetArraycuSurfRefGetFormatcuSurfRefSetArraycuSurfRefSetFormatcuTexObjectGetResourceDesccuTexObjectGetResourceViewDesccuTexObjectGetTextureDesccuTexRefGetAddresscuTexRefGetAddress_v2cuTexRefGetAddressModecuTexRefGetArraycuTexRefGetBorderColorcuTexRefGetFilterModecuTexRefGetFlagscuTexRefGetFormatcuTexRefGetMaxAnisotropycuTexRefGetMipmapFilterModecuTexRefGetMipmapLevelBiascuTexRefGetMipmapLevelClampcuTexRefGetMipmappedArraycuTexRefSetAddresscuTexRefSetAddress_v2cuTexRefSetAddress2DcuTexRefSetAddress2D_v2cuTexRefSetAddress2D_v3cuTexRefSetAddressModecuTexRefSetArraycuTexRefSetBorderColorcuTexRefSetFilterModecuTexRefSetFlagscuTexRefSetFormatcuTexRefSetMaxAnisotropycuTexRefSetMipmapFilterModecuTexRefSetMipmapLevelBiascuTexRefSetMipmapLevelClampcuTexRefSetMipmappedArraycuVDPAUGetDevicecuWGLGetDevice  0 8 @ Jÿÿ R  ZØ à2ï5
+glClearBufferfi
+glBlitFramebuffer
+glDrawElementsIndirect
+glComputeStreamNV
+*glMultiDrawElementsIndirectBindlessCountNV
+glCallCommandListNV
+glBlitFramebufferEXT
+glFenceSyncStreamNV
+glBlitFramebufferNV
+glClearBufferData
+glBlitNamedFramebuffer
+glDrawBuffersATI
+glCopyMultiTexImage2DEXT
+glClear
+glFramebufferTexture3DEXT
+glClearAccum
+glClearBufferfv
+glClearBufferiv
+glDrawElementsInstancedARB
+glClearBufferSubData
+glCoverFillPathNV
+glClearBufferuiv
+glClearColor
+glClearColorIiEXT
+glClearColorIuiEXT
+glDrawCommandsAddressNV
+glDrawTexfvOES
+glClearColorx
+glClearDepth
+glReadnPixelsKHR
+glClearDepthdNV
+glClearDepthf
+glFenceSync
+glClearTexImageEXT
+glGetQueryIndexediv
+glClearDepthx
+glXImportContextEXT
+glClearIndex
+eglCreateContext
+glDrawArraysInstancedARB
+glCoverStrokePathNV
+glQueryCounter
+glClearNamedBufferData
+glQueryCounterEXT
+glClearNamedBufferDataEXT
+$glDrawArraysInstancedBaseInstanceEXT
+glCopyConvolutionFilter1D
+glClearNamedBufferSubData
+glDrawArraysInstancedNV
+-glDrawElementsInstancedBaseVertexBaseInstance
+glDrawArraysInstanced
+glClearNamedBufferSubDataEXT
+glClearNamedFramebufferfi
+glDrawBuffers
+glClearTexSubImage
+glPopDebugGroup
+ glListDrawCommandsStatesClientNV
+glClearNamedFramebufferfv
+glClearNamedFramebufferiv
+glClearNamedFramebufferuiv
+glClearStencil
+ glMultiDrawElementsIndirectCount
+glDrawElements
+glClearTexImage
+glClearTexSubImageEXT
+glCopyTextureSubImage1DEXT
+glClientWaitSync
+glDispatchComputeIndirect
+glPushDebugGroup
+glGenerateTextureMipmap
+glCopyPathNV
+glDispatchComputeGroupSizeARB
+glCoverFillPathInstancedNV
+glDrawMeshTasksIndirectNV
+glCoverStrokePathInstancedNV
+!glDrawArraysInstancedBaseInstance
+glDispatchCompute
+glDrawBuffer
+glDrawArrays
+glCopyBufferSubDataNV
+glDrawArraysEXT
+glDrawArraysIndirect
+0glDrawElementsInstancedBaseVertexBaseInstanceEXT
+glDrawArraysInstancedEXT
+(glMultiDrawArraysIndirectBindlessCountNV
+glDrawCommandsNV
+glDrawBuffersARB
+glFramebufferTexture3D
+glDrawBuffersNV
+glMultiDrawArraysIndirectEXT
+glDrawCommandsStatesAddressNV
+glMultiDrawElements
+glDrawCommandsStatesNV
+glMapBuffer
+glDrawElementsBaseVertex
+glCopyTexSubImage2D
+glReadnPixels
+glDrawElementsBaseVertexEXT
+glMapBufferOES
+glDrawElementsBaseVertexOES
+glPopDebugGroupKHR
+glDrawElementsInstanced
+#glDrawElementsInstancedBaseInstance
+&glDrawElementsInstancedBaseInstanceEXT
+!glDrawElementsInstancedBaseVertex
+$glDrawElementsInstancedBaseVertexEXT
+$glDrawElementsInstancedBaseVertexOES
+glDrawElementsInstancedEXT
+glDrawElementsInstancedNV
+glDrawMeshTasksNV
+glDrawPixels
+glDrawRangeElements
+glPushDebugGroupKHR
+glDrawRangeElementsBaseVertex
+ glDrawRangeElementsBaseVertexEXT
+glCopyTextureSubImage1D
+ glDrawRangeElementsBaseVertexOES
+glMultiDrawArrays
+glDrawRangeElementsEXT
+glDrawTexfOES
+wglDrawBufferRegion
+glDrawTexiOES
+glDrawTexivOES
+glDrawTexsOES
+glDrawTexsvOES
+glDrawTextureNV
+glDrawTexxOES
+glDrawTexxvOES
+glDrawTransformFeedback
+glDrawTransformFeedbackEXT
+ glDrawTransformFeedbackInstanced
+#glMultiDrawMeshTasksIndirectCountNV
+#glDrawTransformFeedbackInstancedEXT
+glDrawTransformFeedbackNV
+glDrawTransformFeedbackStream
+&glDrawTransformFeedbackStreamInstanced
+glPushDebugGroupOES
+glFinish
+glFinishFenceNV
+glFlush
+glFramebufferDrawBufferEXT
+glXMakeCurrent
+glFramebufferTextureOES
+glFramebufferDrawBuffersEXT
+glGenerateMipmap
+glGenerateMipmapEXT
+glGenerateMipmapOES
+glGenerateMultiTexMipmapEXT
+glGenerateTextureMipmapEXT
+glGetQueryObjecti64v
+glGetQueryObjecti64vEXT
+glGetQueryObjectiv
+glGetQueryObjectivARB
+glGetQueryObjectui64v
+glStencilFillPathNV
+glGetQueryObjectui64vEXT
+glMultiDrawArraysIndirectAMD
+glGetQueryObjectui64vNV
+glGetQueryObjectuiv
+glStencilStrokePathInstancedNV
+glGetQueryObjectuivARB
+glGetQueryObjectuivEXT
+glFramebufferTextureLayer
+glFramebufferTexture1D
+
+glIsPathNV
+glIsPointInFillPathNV
+glIsPointInStrokePathNV
+glMulticastBlitFramebufferNV
+glMulticastWaitSyncNV
+glMultiDrawArraysEXT
+glMultiDrawArraysIndirect
+#glMultiDrawArraysIndirectBindlessNV
+glMultiDrawArraysIndirectCount
+!glMultiDrawArraysIndirectCountARB
+glMultiDrawElementsBaseVertex
+glMultiDrawElementsEXT
+glMultiDrawElementsIndirect
+glXSwapBuffers
+glMapNamedBufferRange
+glMultiDrawElementsIndirectAMD
+%glMultiDrawElementsIndirectBindlessNV
+glXMakeContextCurrent
+glGetQueryBufferObjectiv
+#glMultiDrawElementsIndirectCountARB
+glMultiDrawElementsIndirectEXT
+glFramebufferTextureFaceEXT
+glMultiDrawMeshTasksIndirectNV
+glNamedFramebufferDrawBuffer
+glNamedFramebufferDrawBuffers
+glPointAlongPathNV
+glQueryCounterNV
+glReadnPixelsARB
+glReadnPixelsEXT
+glReadPixels
+glSignalSemaphoreEXT
+glStencilFillPathInstancedNV
+glStencilStrokePathNV
+%glStencilThenCoverFillPathInstancedNV
+glStencilThenCoverFillPathNV
+'glStencilThenCoverStrokePathInstancedNV
+glStencilThenCoverStrokePathNV
+glTransformPathNV
+glWaitSemaphoreEXT
+
+glWaitSync
+glPopDebugGroupOES
+glWaitSyncStreamNV
+SwapBuffers
+wglCreateContext
+wglCreateContextAttribsARB
+wglCreateLayerContext
+wglSwapBuffers
+glBindFramebuffer
+glBindFramebufferEXT
+glBindFramebufferOES
+glCopyBufferSubData
+glCopyColorSubTable
+glCopyColorTable
+glCopyConvolutionFilter2D
+glCopyImageSubData
+glCopyImageSubDataEXT
+glCopyImageSubDataNV
+glCopyImageSubDataOES
+glCopyMultiTexSubImage1DEXT
+eglSwapBuffers
+glCopyMultiTexSubImage2DEXT
+glGetQueryivARB
+glDebugMessageInsertKHR
+glCopyMultiTexSubImage3DEXT
+glCopyNamedBufferSubData
+glCopyPixels
+glCopyTexImage1D
+glCopyTexSubImage3DEXT
+glCopyTexImage2D
+glCopyTexSubImage1D
+glCopyTexSubImage3D
+glCopyTexSubImage3DNV
+glCopyTextureImage1DEXT
+glFramebufferTextureFaceARB
+glCopyTextureImage2DEXT
+glCopyTextureSubImage2D
+eglMakeCurrent
+glCopyTextureSubImage2DEXT
+glCopyTextureSubImage3D
+glXCreateContext
+glCopyTextureSubImage3DEXT
+glDebugMessageInsert
+glDebugMessageInsertARB
+glDebugMessageInsertOES
+glFramebufferRenderbuffer
+glFramebufferRenderbufferEXT
+glFramebufferRenderbufferOES
+glFramebufferTexture
+wglMakeCurrent
+glFramebufferTextureLayerEXT
+glFramebufferTexture1DEXT
+glFramebufferTexture2D
+glFramebufferTexture2DEXT
+glXDestroyContext
+glFramebufferTexture2DOES
+glFramebufferTextureARB
+glFramebufferTextureEXT
+glFramebufferTextureLayerARB
+glFramebufferTextureLayerNV
+glGetBufferSubData
+glGetBufferSubDataARB
+glGetQueryBufferObjecti64v
+glGetQueryBufferObjectui64v
+glGetQueryBufferObjectuiv
+glGetQueryiv
+glGetQueryivEXT
+glMapBufferARB
+glMapBufferRange
+glMapBufferRangeEXT
+glXCreateNewContext
+glMapNamedBuffer
+glMapNamedBufferEXT
+glMapNamedBufferRangeEXT
+glMemoryBarrier
+glMemoryBarrierByRegion
+glMemoryBarrierEXT
+glMemoryBarrierStreamNV
+glMulticastCopyBufferSubDataNV
+glMulticastCopyImageSubDataNV
+glXCreateContextAttribsARB
+glXCreateContextWithConfigSGIX
+glXFreeContextEXT
+wglDeleteContext
+wglMakeContextCurrentARB
+wglMakeContextCurrentEXT
+eglDestroyContext
+eglSwapBuffersWithDamageKHR: brè€ñ(€008²
+  PÒª²ò ‚ 08@JLocal (CLI)RDESKTOP-I9EQQLG¢$cfa7e749-67f4-4f63-a83e-a9b6ce0c3632ª1015708R±C:\Program Files\NVIDIA Corporation\Nsight Systems 2026.3.1\target-windows-x64\nsys.exe profile -o C:\Users\SMART\work\pone\cuda-matrix-engine\results\profiles\nsys_end_to_end_2048 --force-overwrite true C:\Users\SMART\work\pone\cuda-matrix-engine\build\windows-release\benchmarks\benchmark_main.exe --size 2048 --warmup 1 --iterations 3 --end-to-end --output C:\Users\SMART\work\pone\cuda-matrix-engine\results\profiles\temp_e2e.csvZ1C:\Users\SMART\AppData\Local\Programs\antigravity‚êQC:\Users\SMART\work\pone\cuda-matrix-engine\results\profiles\nsys_end_to_end_2048ğâcolumnÈ’ 
+Å¢œãÑúœ¢¸¢
+²¢
+_C:\Users\SMART\work\pone\cuda-matrix-engine\build\windows-release\benchmarks\benchmark_main.exe--size2048--warmup1--iterations3--end-to-end--outputIC:\Users\SMART\work\pone\cuda-matrix-engine\results\profiles\temp_e2e.csv1C:\Users\SMART\AppData\Local\Programs\antigravity *,
+C
+ANTIGRAVITY_CONVERSATION_ID$86ea3fd3-a123-4f3f-9217-f977c0ebe909
+,
+LOCALAPPDATAC:\Users\SMART\AppData\Local
+
+ANTIGRAVITY_AGENT1
+
+ProgramDataC:\ProgramData
+*
+FPS_BROWSER_USER_PROFILE_STRINGDefault
+]
+AGY_BROWSER_ACTIVE_PORT_FILE=C:\Users\SMART\AppData\Roaming\Antigravity\DevToolsActivePort
+`
+AGY_BROWSER_WS_URLJws://127.0.0.1:56598/devtools/browser/f2b56202-c225-41a3-a243-5d727583fd68
+!
+ALLUSERSPROFILEC:\ProgramData
+
+PROCESSOR_LEVEL6
+o
+ANTIGRAVITY_AGENTAPI_EXESC:\Users\SMART\AppData\Local\Programs\antigravity\resources\bin\language_server.exe
+
+EFC_11400_41267989901
+>
+ANTIGRAVITY_CSRF_TOKEN$d31f9c1e-218b-4298-97f7-169e4920718e
+>
+ANTIGRAVITY_APP_DATA_DIR"C:/Users/SMART/.gemini/antigravity
+)
+ANTIGRAVITY_LS_ADDRESSlocalhost:56601
+$
+ANTIGRAVITY_LS_VERSION
+hub-2.28.0
+
+OLLAMA_CONTEXT_LENGTH16384
+,
+ANTIGRAVITY_PROJECT_IDoutside-of-project
+
+HOMEPATH\Users\SMART
+
+USERNAMESMART
+&
+ComSpecC:\WINDOWS\system32\cmd.exe
+Ò
+ANTIGRAVITY_SOURCE_METADATA²{"tool":{"conversationId":"86ea3fd3-a123-4f3f-9217-f977c0ebe909", "stepIndex":321, "toolCall":{"id":"call_488683", "name":"run_command", "argumentsJson":"{\"CommandLine\":\"\\u0026 \\\"C:\\\\Program Files\\\\NVIDIA Corporation\\\\Nsight Systems 2026.3.1\\\\target-windows-x64\\\\nsys.exe\\\" profile -o \\\"C:\\\\Users\\\\SMART\\\\work\\\\pone\\\\cuda-matrix-engine\\\\results\\\\profiles\\\\nsys_end_to_end_2048\\\" --force-overwrite true \\\"C:\\\\Users\\\\SMART\\\\work\\\\pone\\\\cuda-matrix-engine\\\\build\\\\windows-release\\\\benchmarks\\\\benchmark_main.exe\\\" --size 2048 --warmup 1 --iterations 3 --end-to-end --output \\\"C:\\\\Users\\\\SMART\\\\work\\\\pone\\\\cuda-matrix-engine\\\\results\\\\profiles\\\\temp_e2e.csv\\\"\",\"WaitMsBeforeAsync\":10000,\"toolSummary\":\"Run Nsight Systems profile\"}"}}}
+
+HGEDITORfalse
+A
+ANTIGRAVITY_TRAJECTORY_ID$fe7fd37f-8d6f-4187-96a0-ba3ed5f0ceeb
+)
+APPDATAC:\Users\SMART\AppData\Roaming
+.
+ChocolateyInstallC:\ProgramData\chocolatey
+
+OLLAMA_HOST0.0.0.0:11434
+.
+ChocolateyLastPathUpdate134282782064597193
+
+PROCESSOR_REVISIONb701
+®
+CHROME_DEVTOOLS_MCP_JS“C:\Users\SMART\AppData\Local\Programs\antigravity\resources\app.asar.unpacked\node_modules\chrome-devtools-mcp\build\src\bin\chrome-devtools-mcp.js
+
+	JJ_EDITORfalse
+3
+CommonProgramFilesC:\Program Files\Common Files
+>
+CommonProgramFiles(x86)#C:\Program Files (x86)\Common Files
+3
+CommonProgramW6432C:\Program Files\Common Files
+K
+PROCESSOR_IDENTIFIER3Intel64 Family 6 Model 183 Stepping 1, GenuineIntel
+
+COMPUTERNAMEDESKTOP-I9EQQLG
+E
+	CUDA_PATH8C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3
+ 
+ProgramW6432C:\Program Files
+
+OLLAMA_KEEP_ALIVE30m
+
+DB_USERpostgres
+K
+CUDA_PATH_V13_38C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3
+
+DB_HOST	localhost
+
+DB_NAMEnexulith
+#
+OneDriveC:\Users\SMART\OneDrive
+
+
+GIT_EDITORfalse
+
+DB_PASSWORDNFSMW@#2319
+ 
+LOGONSERVER\\DESKTOP-I9EQQLG
+
+EFC_11400_37891329401
+
+DB_PORT5432
+4
+
+DriverData&C:\Windows\System32\Drivers\DriverData
+ 
+IS_PROCESS_PROFILED_BY_NSYS1
+
+EFC_11400_12627196281
+
+EFC_11400_15929130361
+
+EFC_11400_22830322061
+
+EFC_11400_27752935811
+¡
+PSModulePathC:\Users\SMART\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+3
+FPS_BROWSER_APP_PROFILE_STRINGInternet Explorer
+ 
+ProgramFilesC:\Program Files
+
+	HOMEDRIVEC:
+
+NUMBER_OF_PROCESSORS32
+
+OLLAMA_FLASH_ATTENTION1
+
+OLLAMA_KV_CACHE_TYPEq8_0
+
+OS
+Windows_NT
+„
+PATHûC:/Users/SMART/.gemini/antigravity/bin;C:\Users\SMART\AppData\Roaming\Antigravity\bin;C:\Python314\Scripts\;C:\Python314\;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\SMART\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33810\bin\Hostx64\x64;C:\Program Files\Vim\vim92;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2026.2.1\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\Paragon Software\LinuxFS for Windows\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\GitHub CLI\;C:\Program Files\Git\cmd;C:\Users\SMART\.local\bin;C:\Users\SMART\AppData\Local\Microsoft\WindowsApps;C:\Users\SMART\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\SMART\AppData\Local\Programs\Ollama;C:\Users\SMART\AppData\Roaming\npm;;C:\msys64\ucrt64\bin;C:\Users\SMART\AppData\Local\Programs\cursor\resources\app\bin
+N
+PATHEXTC.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL
++
+ProgramFiles(x86)C:\Program Files (x86)
+
+PROCESSOR_ARCHITECTUREAMD64
+
+PUBLICC:\Users\Public
+
+SESSIONNAMEConsole
+
+SystemDriveC:
+
+
+SystemRoot
+C:\WINDOWS
+)
+TEMP!C:\Users\SMART\AppData\Local\Temp
+(
+TMP!C:\Users\SMART\AppData\Local\Temp
+
+
+USERDOMAINDESKTOP-I9EQQLG
+,
+USERDOMAIN_ROAMINGPROFILEDESKTOP-I9EQQLG
+
+USERPROFILEC:\Users\SMART
+
+windir
+C:\WINDOWS
+
+ZES_ENABLE_SYSMAN1
+
+
+LD_PRELOAD{}@Jæs"  (2 : P€X *¢= cudaGetLastErrorcudaHostGetDevicePointercudaSetupArgumentcudaConfigureCallcudaArrayGetInfocudaChooseDevicecudaCreateChannelDesccudaD3D10GetDevicecudaD3D10GetDevicescudaD3D10GetDirect3DDevicecudaD3D10ResourceGetMappedArraycudaD3D10ResourceGetMappedPitch!cudaD3D10ResourceGetMappedPointercudaD3D10ResourceGetMappedSize%cudaD3D10ResourceGetSurfaceDimensionscudaD3D10ResourceSetMapFlagscudaD3D10SetDirect3DDevicecudaD3D11GetDevicecudaD3D11GetDevicescudaD3D11GetDirect3DDevicecudaD3D11SetDirect3DDevicecudaD3D9BegincudaD3D9EndcudaD3D9GetDevicecudaD3D9GetDevicescudaD3D9GetDirect3DDevicecudaD3D9ResourceGetMappedArraycudaD3D9ResourceGetMappedPitch cudaD3D9ResourceGetMappedPointercudaD3D9ResourceGetMappedSize$cudaD3D9ResourceGetSurfaceDimensionscudaD3D9ResourceSetMapFlagscudaD3D9SetDirect3DDevicecudaDeviceCanAccessPeercudaDeviceDisablePeerAccesscudaDeviceEnablePeerAccesscudaDeviceGetAttributecudaDeviceGetByPCIBusIdcudaDeviceGetCacheConfigcudaDeviceGetLimitcudaDeviceGetP2PAttributecudaDeviceGetPCIBusIdcudaDeviceGetSharedMemConfig cudaDeviceGetStreamPriorityRangecudaDeviceSetCacheConfigcudaDeviceSetLimitcudaDeviceSetSharedMemConfigcudaDriverGetVersioncudaEventElapsedTimecudaFuncGetAttributescudaFuncSetAttributecudaFuncSetCacheConfigcudaFuncSetSharedMemConfigcudaGetChannelDesccudaGetDevicecudaGetDeviceCountcudaGetDeviceFlagscudaGetErrorNamecudaGetErrorStringcudaGetExportTablecudaGetMipmappedArrayLevel cudaGetSurfaceObjectResourceDesccudaGetSurfaceReferencecudaGetSymbolAddresscudaGetSymbolSizecudaGetTextureAlignmentOffset cudaGetTextureObjectResourceDesc$cudaGetTextureObjectResourceViewDesccudaGetTextureObjectTextureDesccudaGetTextureReferencecudaGLGetDevicescudaGLSetBufferObjectMapFlagscudaGLSetGLDevice%cudaGraphicsResourceGetMappedEglFrame+cudaGraphicsResourceGetMappedMipmappedArray$cudaGraphicsResourceGetMappedPointercudaGraphicsResourceSetMapFlags%cudaGraphicsSubResourceGetMappedArraycudaHostGetFlagscudaIpcGetEventHandlecudaIpcGetMemHandlecudaIpcOpenEventHandlecudaMemAdvisecudaMemRangeGetAttributecudaMemRangeGetAttributes-cudaOccupancyMaxActiveBlocksPerMultiprocessor6cudaOccupancyMaxActiveBlocksPerMultiprocessorWithFlagscudaPeekAtLastErrorcudaPeerGetDevicePointercudaPointerGetAttributescudaProfilerInitializecudaRuntimeGetVersioncudaSetDevicecudaSetDeviceFlagscudaSetDoubleForDevicecudaSetDoubleForHostcudaSetValidDevicescudaStreamGetFlagscudaStreamGetFlags_ptszcudaStreamGetPrioritycudaStreamGetPriority_ptszcudaStreamQuerycudaThreadExitcudaThreadGetCacheConfigcudaThreadGetLimitcudaThreadSetCacheConfigcudaThreadSetLimitcudaVDPAUGetDevicecudaVDPAUSetVDPAUDevicecudaWGLGetDevice__cudaInitModule__cudaPopCallConfiguration__cudaPushCallConfiguration__cudaRegisterFatBinary__cudaRegisterFatBinaryEnd__cudaRegisterFunction__cudaRegisterManagedVar__cudaRegisterSurface__cudaRegisterTexture__cudaRegisterVar__cudaUnregisterFatBinarycu64Array3DGetDescriptorcu64ArrayGetDescriptorcu64D3D10ResourceGetMappedPitch!cu64D3D10ResourceGetMappedPointercu64D3D10ResourceGetMappedSize%cu64D3D10ResourceGetSurfaceDimensionscu64D3D9ResourceGetMappedPitch cu64D3D9ResourceGetMappedPointercu64D3D9ResourceGetMappedSize$cu64D3D9ResourceGetSurfaceDimensionscu64DeviceTotalMem$cu64GraphicsResourceGetMappedPointercu64MemGetAddressRangecu64MemHostGetDevicePointercu64ModuleGetGlobalcu64TexRefGetAddresscu64TexRefSetAddresscu64TexRefSetAddress2DcuArray3DGetDescriptorcuArray3DGetDescriptor_v2cuArrayGetDescriptorcuArrayGetDescriptor_v2cuCtxAttachcuCtxDetachcuCtxDisablePeerAccesscuCtxEnablePeerAccesscuCtxGetApiVersioncuCtxGetCacheConfigcuCtxGetCurrentcuCtxGetDevicecuCtxGetFlagscuCtxGetLimitcuCtxGetSharedMemConfigcuCtxGetStreamPriorityRangecuCtxPopCurrentcuCtxPopCurrent_v2cuCtxPushCurrentcuCtxPushCurrent_v2cuCtxSetCacheConfigcuCtxSetLimitcuCtxSetSharedMemConfigcuD3D10GetDevicecuD3D10GetDevicescuD3D10GetDirect3DDevicecuD3D10ResourceGetMappedArraycuD3D10ResourceGetMappedPitch cuD3D10ResourceGetMappedPitch_v2cuD3D10ResourceGetMappedPointer"cuD3D10ResourceGetMappedPointer_v2cuD3D10ResourceGetMappedSizecuD3D10ResourceGetMappedSize_v2#cuD3D10ResourceGetSurfaceDimensions&cuD3D10ResourceGetSurfaceDimensions_v2cuD3D10ResourceSetMapFlagscuD3D11GetDevicecuD3D11GetDevicescuD3D11GetDirect3DDevicecuD3D9Begin	cuD3D9EndcuD3D9GetDevicecuD3D9GetDevicescuD3D9GetDirect3DDevicecuD3D9ResourceGetMappedArraycuD3D9ResourceGetMappedPitchcuD3D9ResourceGetMappedPitch_v2cuD3D9ResourceGetMappedPointer!cuD3D9ResourceGetMappedPointer_v2cuD3D9ResourceGetMappedSizecuD3D9ResourceGetMappedSize_v2"cuD3D9ResourceGetSurfaceDimensions%cuD3D9ResourceGetSurfaceDimensions_v2cuD3D9ResourceSetMapFlagscuDeviceCanAccessPeercuDeviceComputeCapabilitycuDeviceGetcuDeviceGetAttributecuDeviceGetByPCIBusIdcuDeviceGetCountcuDeviceGetNamecuDeviceGetP2PAttributecuDeviceGetPCIBusIdcuDeviceGetUuidcuDevicePrimaryCtxGetStatecuDevicePrimaryCtxReleasecuDevicePrimaryCtxResetcuDevicePrimaryCtxRetaincuDevicePrimaryCtxSetFlagscuDeviceTotalMemcuDeviceTotalMem_v2cuDriverGetVersioncuEventElapsedTimecuFuncGetAttributecuFuncSetAttributecuFuncSetBlockShapecuFuncSetCacheConfigcuFuncSetSharedMemConfigcuFuncSetSharedSizecuGetErrorNamecuGetErrorStringcuGetExportTablecuGLGetDevicescuGLGetDevices_v2cuGLSetBufferObjectMapFlags#cuGraphicsResourceGetMappedEglFrame)cuGraphicsResourceGetMappedMipmappedArray"cuGraphicsResourceGetMappedPointer%cuGraphicsResourceGetMappedPointer_v2cuGraphicsResourceSetMapFlags cuGraphicsResourceSetMapFlags_v2#cuGraphicsSubResourceGetMappedArraycuIpcGetEventHandlecuIpcGetMemHandlecuIpcOpenEventHandlecuLinkAddDatacuLinkAddData_v2cuLinkAddFilecuLinkAddFile_v2cuMemAdvisecuMemGetAddressRangecuMemGetAddressRange_v2cuMemHostGetDevicePointercuMemHostGetDevicePointer_v2cuMemHostGetFlagscuMemPeerGetDevicePointercuMemRangeGetAttributecuMemRangeGetAttributescuMipmappedArrayGetLevelcuModuleGetFunctioncuModuleGetGlobalcuModuleGetGlobal_v2cuModuleGetSurfRefcuModuleGetTexRefcuNNSetAllocatorcuNVNbufferGetPointercuNVNtextureGetArray+cuOccupancyMaxActiveBlocksPerMultiprocessor4cuOccupancyMaxActiveBlocksPerMultiprocessorWithFlags cuOccupancyMaxPotentialBlockSize)cuOccupancyMaxPotentialBlockSizeWithFlagscuParamSetfcuParamSeticuParamSetSizecuParamSetTexRefcuParamSetvcuPointerGetAttributecuPointerGetAttributescuPointerSetAttributecuProfilerInitializecuStreamGetCtxcuStreamGetCtx_ptszcuStreamGetFlagscuStreamGetFlags_ptszcuStreamGetPrioritycuStreamGetPriority_ptszcuStreamQuerycuStreamQuery_ptszcuSurfObjectGetResourceDesccuSurfRefGetArraycuSurfRefGetFormatcuSurfRefSetArraycuSurfRefSetFormatcuTexObjectGetResourceDesccuTexObjectGetResourceViewDesccuTexObjectGetTextureDesccuTexRefGetAddresscuTexRefGetAddress_v2cuTexRefGetAddressModecuTexRefGetArraycuTexRefGetBorderColorcuTexRefGetFilterModecuTexRefGetFlagscuTexRefGetFormatcuTexRefGetMaxAnisotropycuTexRefGetMipmapFilterModecuTexRefGetMipmapLevelBiascuTexRefGetMipmapLevelClampcuTexRefGetMipmappedArraycuTexRefSetAddresscuTexRefSetAddress_v2cuTexRefSetAddress2DcuTexRefSetAddress2D_v2cuTexRefSetAddress2D_v3cuTexRefSetAddressModecuTexRefSetArraycuTexRefSetBorderColorcuTexRefSetFilterModecuTexRefSetFlagscuTexRefSetFormatcuTexRefSetMaxAnisotropycuTexRefSetMipmapFilterModecuTexRefSetMipmapLevelBiascuTexRefSetMipmapLevelClampcuTexRefSetMipmappedArraycuVDPAUGetDevicecuWGLGetDevice  0 8 @ Jÿÿ R  ZØ à2ï5
+glClearBufferfi
+glBlitFramebuffer
+glDrawElementsIndirect
+glComputeStreamNV
+*glMultiDrawElementsIndirectBindlessCountNV
+glCallCommandListNV
+glBlitFramebufferEXT
+glFenceSyncStreamNV
+glBlitFramebufferNV
+glClearBufferData
+glBlitNamedFramebuffer
+glDrawBuffersATI
+glCopyMultiTexImage2DEXT
+glClear
+glFramebufferTexture3DEXT
+glClearAccum
+glClearBufferfv
+glClearBufferiv
+glDrawElementsInstancedARB
+glClearBufferSubData
+glCoverFillPathNV
+glClearBufferuiv
+glClearColor
+glClearColorIiEXT
+glClearColorIuiEXT
+glDrawCommandsAddressNV
+glDrawTexfvOES
+glClearColorx
+glClearDepth
+glReadnPixelsKHR
+glClearDepthdNV
+glClearDepthf
+glFenceSync
+glClearTexImageEXT
+glGetQueryIndexediv
+glClearDepthx
+glXImportContextEXT
+glClearIndex
+eglCreateContext
+glDrawArraysInstancedARB
+glCoverStrokePathNV
+glQueryCounter
+glClearNamedBufferData
+glQueryCounterEXT
+glClearNamedBufferDataEXT
+$glDrawArraysInstancedBaseInstanceEXT
+glCopyConvolutionFilter1D
+glClearNamedBufferSubData
+glDrawArraysInstancedNV
+-glDrawElementsInstancedBaseVertexBaseInstance
+glDrawArraysInstanced
+glClearNamedBufferSubDataEXT
+glClearNamedFramebufferfi
+glDrawBuffers
+glClearTexSubImage
+glPopDebugGroup
+ glListDrawCommandsStatesClientNV
+glClearNamedFramebufferfv
+glClearNamedFramebufferiv
+glClearNamedFramebufferuiv
+glClearStencil
+ glMultiDrawElementsIndirectCount
+glDrawElements
+glClearTexImage
+glClearTexSubImageEXT
+glCopyTextureSubImage1DEXT
+glClientWaitSync
+glDispatchComputeIndirect
+glPushDebugGroup
+glGenerateTextureMipmap
+glCopyPathNV
+glDispatchComputeGroupSizeARB
+glCoverFillPathInstancedNV
+glDrawMeshTasksIndirectNV
+glCoverStrokePathInstancedNV
+!glDrawArraysInstancedBaseInstance
+glDispatchCompute
+glDrawBuffer
+glDrawArrays
+glCopyBufferSubDataNV
+glDrawArraysEXT
+glDrawArraysIndirect
+0glDrawElementsInstancedBaseVertexBaseInstanceEXT
+glDrawArraysInstancedEXT
+(glMultiDrawArraysIndirectBindlessCountNV
+glDrawCommandsNV
+glDrawBuffersARB
+glFramebufferTexture3D
+glDrawBuffersNV
+glMultiDrawArraysIndirectEXT
+glDrawCommandsStatesAddressNV
+glMultiDrawElements
+glDrawCommandsStatesNV
+glMapBuffer
+glDrawElementsBaseVertex
+glCopyTexSubImage2D
+glReadnPixels
+glDrawElementsBaseVertexEXT
+glMapBufferOES
+glDrawElementsBaseVertexOES
+glPopDebugGroupKHR
+glDrawElementsInstanced
+#glDrawElementsInstancedBaseInstance
+&glDrawElementsInstancedBaseInstanceEXT
+!glDrawElementsInstancedBaseVertex
+$glDrawElementsInstancedBaseVertexEXT
+$glDrawElementsInstancedBaseVertexOES
+glDrawElementsInstancedEXT
+glDrawElementsInstancedNV
+glDrawMeshTasksNV
+glDrawPixels
+glDrawRangeElements
+glPushDebugGroupKHR
+glDrawRangeElementsBaseVertex
+ glDrawRangeElementsBaseVertexEXT
+glCopyTextureSubImage1D
+ glDrawRangeElementsBaseVertexOES
+glMultiDrawArrays
+glDrawRangeElementsEXT
+glDrawTexfOES
+wglDrawBufferRegion
+glDrawTexiOES
+glDrawTexivOES
+glDrawTexsOES
+glDrawTexsvOES
+glDrawTextureNV
+glDrawTexxOES
+glDrawTexxvOES
+glDrawTransformFeedback
+glDrawTransformFeedbackEXT
+ glDrawTransformFeedbackInstanced
+#glMultiDrawMeshTasksIndirectCountNV
+#glDrawTransformFeedbackInstancedEXT
+glDrawTransformFeedbackNV
+glDrawTransformFeedbackStream
+&glDrawTransformFeedbackStreamInstanced
+glPushDebugGroupOES
+glFinish
+glFinishFenceNV
+glFlush
+glFramebufferDrawBufferEXT
+glXMakeCurrent
+glFramebufferTextureOES
+glFramebufferDrawBuffersEXT
+glGenerateMipmap
+glGenerateMipmapEXT
+glGenerateMipmapOES
+glGenerateMultiTexMipmapEXT
+glGenerateTextureMipmapEXT
+glGetQueryObjecti64v
+glGetQueryObjecti64vEXT
+glGetQueryObjectiv
+glGetQueryObjectivARB
+glGetQueryObjectui64v
+glStencilFillPathNV
+glGetQueryObjectui64vEXT
+glMultiDrawArraysIndirectAMD
+glGetQueryObjectui64vNV
+glGetQueryObjectuiv
+glStencilStrokePathInstancedNV
+glGetQueryObjectuivARB
+glGetQueryObjectuivEXT
+glFramebufferTextureLayer
+glFramebufferTexture1D
+
+glIsPathNV
+glIsPointInFillPathNV
+glIsPointInStrokePathNV
+glMulticastBlitFramebufferNV
+glMulticastWaitSyncNV
+glMultiDrawArraysEXT
+glMultiDrawArraysIndirect
+#glMultiDrawArraysIndirectBindlessNV
+glMultiDrawArraysIndirectCount
+!glMultiDrawArraysIndirectCountARB
+glMultiDrawElementsBaseVertex
+glMultiDrawElementsEXT
+glMultiDrawElementsIndirect
+glXSwapBuffers
+glMapNamedBufferRange
+glMultiDrawElementsIndirectAMD
+%glMultiDrawElementsIndirectBindlessNV
+glXMakeContextCurrent
+glGetQueryBufferObjectiv
+#glMultiDrawElementsIndirectCountARB
+glMultiDrawElementsIndirectEXT
+glFramebufferTextureFaceEXT
+glMultiDrawMeshTasksIndirectNV
+glNamedFramebufferDrawBuffer
+glNamedFramebufferDrawBuffers
+glPointAlongPathNV
+glQueryCounterNV
+glReadnPixelsARB
+glReadnPixelsEXT
+glReadPixels
+glSignalSemaphoreEXT
+glStencilFillPathInstancedNV
+glStencilStrokePathNV
+%glStencilThenCoverFillPathInstancedNV
+glStencilThenCoverFillPathNV
+'glStencilThenCoverStrokePathInstancedNV
+glStencilThenCoverStrokePathNV
+glTransformPathNV
+glWaitSemaphoreEXT
+
+glWaitSync
+glPopDebugGroupOES
+glWaitSyncStreamNV
+SwapBuffers
+wglCreateContext
+wglCreateContextAttribsARB
+wglCreateLayerContext
+wglSwapBuffers
+glBindFramebuffer
+glBindFramebufferEXT
+glBindFramebufferOES
+glCopyBufferSubData
+glCopyColorSubTable
+glCopyColorTable
+glCopyConvolutionFilter2D
+glCopyImageSubData
+glCopyImageSubDataEXT
+glCopyImageSubDataNV
+glCopyImageSubDataOES
+glCopyMultiTexSubImage1DEXT
+eglSwapBuffers
+glCopyMultiTexSubImage2DEXT
+glGetQueryivARB
+glDebugMessageInsertKHR
+glCopyMultiTexSubImage3DEXT
+glCopyNamedBufferSubData
+glCopyPixels
+glCopyTexImage1D
+glCopyTexSubImage3DEXT
+glCopyTexImage2D
+glCopyTexSubImage1D
+glCopyTexSubImage3D
+glCopyTexSubImage3DNV
+glCopyTextureImage1DEXT
+glFramebufferTextureFaceARB
+glCopyTextureImage2DEXT
+glCopyTextureSubImage2D
+eglMakeCurrent
+glCopyTextureSubImage2DEXT
+glCopyTextureSubImage3D
+glXCreateContext
+glCopyTextureSubImage3DEXT
+glDebugMessageInsert
+glDebugMessageInsertARB
+glDebugMessageInsertOES
+glFramebufferRenderbuffer
+glFramebufferRenderbufferEXT
+glFramebufferRenderbufferOES
+glFramebufferTexture
+wglMakeCurrent
+glFramebufferTextureLayerEXT
+glFramebufferTexture1DEXT
+glFramebufferTexture2D
+glFramebufferTexture2DEXT
+glXDestroyContext
+glFramebufferTexture2DOES
+glFramebufferTextureARB
+glFramebufferTextureEXT
+glFramebufferTextureLayerARB
+glFramebufferTextureLayerNV
+glGetBufferSubData
+glGetBufferSubDataARB
+glGetQueryBufferObjecti64v
+glGetQueryBufferObjectui64v
+glGetQueryBufferObjectuiv
+glGetQueryiv
+glGetQueryivEXT
+glMapBufferARB
+glMapBufferRange
+glMapBufferRangeEXT
+glXCreateNewContext
+glMapNamedBuffer
+glMapNamedBufferEXT
+glMapNamedBufferRangeEXT
+glMemoryBarrier
+glMemoryBarrierByRegion
+glMemoryBarrierEXT
+glMemoryBarrierStreamNV
+glMulticastCopyBufferSubDataNV
+glMulticastCopyImageSubDataNV
+glXCreateContextAttribsARB
+glXCreateContextWithConfigSGIX
+glXFreeContextEXT
+wglDeleteContext
+wglMakeContextCurrentARB
+wglMakeContextCurrentEXT
+eglDestroyContext
+eglSwapBuffersWithDamageKHR: brè€ñ(€008²
+  PÒª²ò ‚ R1015708`hp 
+mÈ„¼¿ûœšb
+`
+^°WC:\Program Files\NVIDIA Corporation\Nsight Systems 2026.3.1\target-windows-x64\nsys.exe
+Èşü€ê² 
+œœƒêª
+Ú
+
+ƒ”tsFy¢‹Çj
+
+
+H!¡'2NŠ–ñéôæi
+
+=r»›KIÄ«Š^:*é·
+(
+3B•ú;‚×øƒDË‡
+3B•ú;‚×øƒDË‡
+
+P"<w¿ÅOŠ€@D¨1c
+
+gĞŸğ»oA½}
+œd* l
+
+:q)ŞE’Œ:‰ÄŞÕc]
+
+ÌÉ] vÃAÎ¯Lo É¹ıK
+
+Øñ{e¶=E&†Ô¥˜J!ÁÛ	¬
+1
+ƒ”tsFy¢‹ÇjÌÉ] vÃAÎ¯Lo É¹ıK
+       ğ?
+E
+=r»›KIÄ«Š^:*é·:q)ŞE’Œ:‰ÄŞÕc]
+Èªï²•òÈÊ²’Ïò      ğ?
+˜
+3B•ú;‚×øƒDË‡gĞŸğ»oA½}
+œd* l
+€ÖşüŒò¢àÍôÖØóq	@
+€ÁšÒƒŒòüĞÑõîÿ¢ñ	@
+ÀÕÂ–‹Œòêåüö†ºÂ†	@
+ ¨ÓÚ’Œò×ƒİ÷q§‚‘	@
+ÀÄÆŸšŒòŒ·÷ú¶-×M—	@
+ ¡ã¡Œò·Û«úÎœéï”	@
+àÅ³§©ŒòŒ£‘ûæDg–	@
+àêëë°Œòõîïüş#6<¢	@
+€¤ï¯¸Œòä†¦ı–µea§	@
+à½µô¿ŒòÖş°ÿ®‡<¨	@
+ÀÙÏ¸ÇŒòÉÜ¯€ÇÁÔ…	@
+€ÎùüÎŒòÁ¼àßñõ—	@
+€Ë§ÁÖŒòÄ–ƒ÷.Ûì‰	@
+€úÙ…ŞŒò»íé„Û“ÿv	@
+€šÉÉåŒòÔÓß„§È¿â“	@
+À§…íŒò·Ê†¿q¼“¹	@
+€„íÒôŒòŠ£À‰×ÕÉõ	@
+àø˜—üŒòÒÃ÷ŠïBÛû 	@
+àÓ¸ÜƒŒòšğŸ‡‘kje= 	@
+ º§£‹Œò¢Ü˜Ÿ‘üH` 	@
+ è…ë’Œò§šü¤·‘Ob 	@
+À¥°šŒòÿÙ£©Ï‘¿iƒ 	@
+ ° ô¡Œò¬Ï¿©ç‘:&IŒ 	@
+ ’º©Œòß‘í¯ÿ‘öÉ“ 	@
+ ˜Åÿ°Œò´ĞÓ´—’hÍ€¢ 	@
+ ¤¸Ä¸ŒòÊïí·¯’tş$£ 	@
+À¤ÙˆÀŒò½‚¹Ç’š€ 	@
+À«éÌÇŒòèˆá¹ß’y¢9› 	@
+ÀİŒ‘ÏŒò¤ıº÷’ÚÅ— 	@
+ íµÕÖŒò«á«¼“Äõ©’ 	@
+ à™ŞŒòúŞ½§““´Z˜ 	@
+Àã»‰ãŒò‚ƒÈ·“FÙh’ 	@" ĞÉÅôŒòßá™æ¾
+S
+gĞŸğ»oA½}
+œd* lƒ”tsFy¢‹Çj
+Šé´·“ˆ¥…êo¿ŞyÔ?"Á¯˜æ¾¼Š¶¾ûœ
+C
+:q)ŞE’Œ:‰ÄŞÕc]ƒ”tsFy¢‹Çj
+ÈÊ²’ÏòĞ©¯¾ûœ      ğ?
+9
+ÌÉ] vÃAÎ¯Lo É¹ıKP"<w¿ÅOŠ€@D¨1c
+ä†»¿ûœ      ğ?
+@
+Øñ{e¶=E&†Ô¥˜J!ÁÛƒ”tsFy¢‹Çj
+†óÏàìØğµ¾ûœ      Y@$cf2f7ddb-2fa2-4336-ba5c-e0edebf0cd83"2026-11-02T20:30:39*DESKTOP-I9EQQLG22026.3.1.157-263138048394v0:2026.3.1.157-263138048394v0¢263138048394v0ª2026.3.1.157-263138048394v0²2026-Nov-02 20:31:44ºZC:\Users\SMART\work\pone\cuda-matrix-engine\results\profiles\nsys_end_to_end_2048.nsys-repÂDESKTOP-I9EQQLGÊ±C:\Program Files\NVIDIA Corporation\Nsight Systems 2026.3.1\target-windows-x64\nsys.exe profile -o C:\Users\SMART\work\pone\cuda-matrix-engine\results\profiles\nsys_end_to_end_2048 --force-overwrite true C:\Users\SMART\work\pone\cuda-matrix-engine\build\windows-release\benchmarks\benchmark_main.exe --size 2048 --warmup 1 --iterations 3 --end-to-end --output C:\Users\SMART\work\pone\cuda-matrix-engine\results\profiles\temp_e2e.csvÂDESKTOP-I9EQQLG’
+
+Analysis Options Data9 f
+
+Raw Sampling DataÙf—Ù
+
+Sampling Data Offsetsğ¿	
+
+Agent activity listù¿úœ
+
+Time Conversion DataóÜŒ
+
+UI Dataÿé‡x     U3w[END]

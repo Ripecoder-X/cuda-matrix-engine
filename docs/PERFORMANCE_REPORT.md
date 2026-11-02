@@ -2,6 +2,19 @@
 
 TBD by Batch 7.3 (final benchmark tables, profiler summary, cuBLAS comparison only if measured).
 
+## Benchmark Evidence (Phase 6)
+
+Recorded by Batch 6.4 on 2026-11-02 from a real benchmark run on the NVIDIA GeForce RTX 4070 Ti SUPER.
+
+- **Primary benchmark dataset:** `results/gemm_20261102_141125.csv`
+- **Environment metadata:** `results/gemm_20261102_141125.csv.env.txt`
+- **Driver / CUDA runtime:** 610.88 / 13.3
+- **Peak Measured Throughput (Kernel-Only):**
+  - Matrix 1024x1024: `CUDA_OPTIMIZED(32)` = **6,727.71 GFLOP/s** (0.3192 ms)
+  - Matrix 2048x2048: `CUDA_OPTIMIZED(32)` = **7,408.79 GFLOP/s** (2.3188 ms)
+  - Matrix 4096x4096: `CUDA_OPTIMIZED(32)` = **7,266.06 GFLOP/s** (18.9152 ms)
+- **Measurement coverage:** All 4 types recorded (`kernel_only`, `end_to_end`, `h2d_transfer`, `d2h_transfer`) across sizes 256, 512, 1024, 2048, and 4096.
+
 ## Correctness evidence
 
 Recorded by Batch 5.3 on 2026-11-02. This section is correctness evidence, not performance.
