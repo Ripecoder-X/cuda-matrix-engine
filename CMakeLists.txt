@@ -32,11 +32,15 @@ set(CME_SOURCES
     src/api/gemm.cpp
 )
 
+foreach(_cme_source IN LISTS CME_SOURCES)
+    if(NOT EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/${_cme_source}")
+        message(FATAL_ERROR "Required source file missing: ${_cme_source}")
+    endif()
+endforeach()
+
 set(CME_EXISTING_SOURCES)
 foreach(_cme_source IN LISTS CME_SOURCES)
-    if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/${_cme_source}")
-        list(APPEND CME_EXISTING_SOURCES "${_cme_source}")
-    endif()
+    list(APPEND CME_EXISTING_SOURCES "${_cme_source}")
 endforeach()
 
 if(NOT CME_EXISTING_SOURCES)

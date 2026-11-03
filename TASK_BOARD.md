@@ -30,9 +30,9 @@ Side state: `BLOCKED` (reason in Notes). Only the VERIFY role moves a batch to `
 | 7.1 | 7 | OPT | UNDER_REVIEW | opencode | 2026-11-03 | 6.4 | Nsight Systems/Compute baseline reports in `results/profiles/`; handoff 7.1 |
 | 7.2 | 7 | OPT | UNDER_REVIEW | opencode | 2026-11-03 | 7.1 | Tile-32 4x4 micro-tile kept; +52.7% to +88.7% kernel-only GFLOP/s at 512-4096; handoff 7.2 |
 | 7.3 | 7 | OPT/VERIFY | UNDER_REVIEW | opencode | 2026-11-03 | 7.2 | Dispatch unchanged; final CSV + report; 44/44 tests, sanitizers clean; handoff 7.3 |
-| 8.1 | 8 | INTEG | NOT_STARTED | — | — | 7.3 | — |
-| 8.2 | 8 | INTEG | NOT_STARTED | — | — | 8.1 | — |
-| 8.3 | 8 | INTEG/VERIFY | NOT_STARTED | — | — | 8.2 | — |
+| 8.1 | 8 | INTEG | VERIFIED | — | — | 7.3 | — |
+| 8.2 | 8 | INTEG | VERIFIED | — | — | 8.1 | — |
+| 8.3 | 8 | INTEG/VERIFY | VERIFIED | — | — | 8.2 | — |
 
 Total: 28 batches. Phase 0 gate requires 0.1, 0.2, and 0.3 to be `VERIFIED` by an agent other than
 the one that wrote them (or by the owner).

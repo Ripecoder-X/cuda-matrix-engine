@@ -41,48 +41,91 @@ CPU 0 0
 Optimized 0 0
 Matrix 0 0
 Status::ok 0 0
-benchmark_csv_writer 2 0.000811472
-CPU reference returns beta times C when alpha is zero 1 0.00252785
-Tiled GEMM racecheck case 1 0.300609
-Matrix::view has stride equal to cols and shares storage 1 0.00273854
-GEMM rejects invalid and empty views 1 0.00243679
-GEMM rejects overlapping matrices 1 0.00191827
-GEMM correctness matrix matches CPU reference 1 1.94974
-Public gemm CPU reference smoke test 1 0.00248279
-Public gemm CUDA smoke test 1 0.22165
-CPU reference computes a hand-checked 2x2 product 1 0.00204962
-Status::ok is ok with an empty message 1 0.00203625
-CPU reference computes a hand-checked 3x2 by 2x4 product 1 0.00177196
-Matrix indexing is row-major 1 0.00192381
-GEMM rejects incompatible dimensions 1 0.00171038
-GEMM supports strided sub-views 1 0.24849
-DeviceBuffer rejects copy count larger than size 1 0.232175
-to_status maps success and CUDA errors 1 0.100803
-Matrix converts to a const view 1 0.00535232
-Tiled GEMM matches CPU reference 1 0.333829
-GEMM alpha zero returns beta times C 1 0.224827
-Optimized GEMM honors alpha and beta 1 0.219319
-GEMM large K remains within tolerance 1 0.231711
-DeviceBuffer 2D copy honors a strided host layout 1 0.22785
-Matrix rejects non-positive dimensions 1 0.00290211
-Tiled GEMM rejects unsupported tile size 1 0.110672
-check_last_launch reports a clean error state 1 0.0889544
-Optimized GEMM matches CPU reference 1 0.326642
-DeviceBuffer move semantics 1 0.246224
-DeviceBuffer create rejects zero count 1 0.104793
-Status::error retains code and message 1 0.00639959
-CPU reference does not read C when beta is zero 1 0.00540813
-Naive GEMM honors alpha and beta 1 0.249474
-Device dispatch runs every CUDA algorithm 1 0.248681
-Tiled GEMM honors alpha and beta 1 0.264096
-MatrixView validity rules 1 0.00288349
-Matrix reports dimensions and zero-initializes 1 0.00234368
-DeviceBuffer round-trip copy 1 0.230033
-Optimized GEMM rejects unsupported tile size 1 0.11933
-Device dispatch rejects CPU reference and unknown algorithms 1 0.00431548
-GEMM validates tile size and algorithm values 1 0.00403407
-GEMM beta zero ignores NaN contents of C 1 0.231532
-Optimized GEMM memcheck non-multiple case 1 0.248336
-Naive GEMM matches CPU reference 1 0.224125
-Status::error rejects StatusCode::Ok 1 0.00304401
+benchmark_csv_writer 3 0.000545578
+CPU 0 0
+Tiled 0 0
+Matrix::view 0 0
+GEMM 0 0
+GEMM 0 0
+GEMM 0 0
+Public 0 0
+Public 0 0
+CPU 0 0
+Status::ok 0 0
+CPU 0 0
+Matrix 0 0
+GEMM 0 0
+GEMM 0 0
+DeviceBuffer 0 0
+to_status 0 0
+Matrix 0 0
+Tiled 0 0
+GEMM 0 0
+Optimized 0 0
+GEMM 0 0
+DeviceBuffer 2 0
+Matrix 0 0
+Tiled 0 0
+check_last_launch 0 0
+Optimized 0 0
+DeviceBuffer 0 0
+DeviceBuffer 0 0
+Status::error 0 0
+CPU 0 0
+Naive 0 0
+Device 0 0
+Tiled 0 0
+MatrixView 0 0
+Matrix 0 0
+DeviceBuffer 0 0
+Optimized 0 0
+Device 0 0
+GEMM 0 0
+GEMM 0 0
+Optimized 0 0
+Naive 0 0
+Status::error 0 0
+CPU reference returns beta times C when alpha is zero 1 0.00204317
+Tiled GEMM racecheck case 1 0.313487
+Matrix::view has stride equal to cols and shares storage 1 0.00278699
+GEMM rejects invalid and empty views 1 0.00209983
+GEMM rejects overlapping matrices 1 0.00204527
+GEMM correctness matrix matches CPU reference 1 1.93381
+Public gemm CPU reference smoke test 1 0.00275629
+Public gemm CUDA smoke test 1 0.233773
+CPU reference computes a hand-checked 2x2 product 1 0.0025894
+Status::ok is ok with an empty message 1 0.00184388
+CPU reference computes a hand-checked 3x2 by 2x4 product 1 0.00187957
+Matrix indexing is row-major 1 0.00196207
+GEMM rejects incompatible dimensions 1 0.00184107
+GEMM supports strided sub-views 1 0.240957
+DeviceBuffer rejects copy count larger than size 1 0.239921
+to_status maps success and CUDA errors 1 0.103964
+Matrix converts to a const view 1 0.00380046
+Tiled GEMM matches CPU reference 1 0.347546
+GEMM alpha zero returns beta times C 1 0.241173
+Optimized GEMM honors alpha and beta 1 0.226224
+GEMM large K remains within tolerance 1 0.242935
+DeviceBuffer 2D copy honors a strided host layout 1 0.236961
+Matrix rejects non-positive dimensions 1 0.00277067
+Tiled GEMM rejects unsupported tile size 1 0.107049
+check_last_launch reports a clean error state 1 0.117618
+Optimized GEMM matches CPU reference 1 0.323281
+DeviceBuffer move semantics 1 0.236591
+DeviceBuffer create rejects zero count 1 0.107721
+Status::error retains code and message 1 0.00515469
+CPU reference does not read C when beta is zero 1 0.00598873
+Naive GEMM honors alpha and beta 1 0.263325
+Device dispatch runs every CUDA algorithm 1 0.25419
+Tiled GEMM honors alpha and beta 1 0.226101
+MatrixView validity rules 1 0.00273703
+Matrix reports dimensions and zero-initializes 1 0.00210009
+DeviceBuffer round-trip copy 1 0.224129
+Optimized GEMM rejects unsupported tile size 1 0.094515
+Device dispatch rejects CPU reference and unknown algorithms 1 0.0026625
+GEMM validates tile size and algorithm values 1 0.00240314
+GEMM beta zero ignores NaN contents of C 1 0.252173
+Optimized GEMM memcheck non-multiple case 1 0.245788
+Naive GEMM matches CPU reference 1 0.239507
+Status::error rejects StatusCode::Ok 1 0.00231681
 ---

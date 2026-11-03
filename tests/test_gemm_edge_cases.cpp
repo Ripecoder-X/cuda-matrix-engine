@@ -188,6 +188,101 @@ TEST_CASE("GEMM alpha zero returns beta times C", "[gemm][edge][cuda]") {
     }
 }
 
+TEST_CASE("GEMM alpha zero with NaN inputs returns beta times C", "[gemm][edge][cuda]") {
+    cme::test::require_cuda_device();
+
+    constexpr int size = 5;
+    cme::Matrix A(size, size);
+    cme::Matrix B(size, size);
+    cme::Matrix initial_c(size, size);
+    std::fill(A.data(), A.data() + size * size, std::numeric_limits<float>::quiet_NaN());
+    std::fill(B.data(), B.data() + size * size, std::numeric_limits<float>::quiet_NaN());
+    std::fill(initial_c.data(), initial_c.data() + size * size, 1.0f);
+
+    cme::Matrix expected(size, size);
+    cme::GemmConfig reference_config;
+    reference_config.algorithm = cme::GemmAlgorithm::CPU_REFERENCE;
+    REQUIRE(cme::gemm(A.view(), B.view(), expected.view(), 0.0f, -0.75f, reference_config).is_ok());
+
+    cme::Matrix result = initial_c;
+    cme::GemmConfig config;
+    config.algorithm = cme::GemmAlgorithm::CUDA_OPTIMIZED;
+    config.tile_size = 16;
+    REQUIRE(cme::gemm(A.view(), B.view(), result.view(), 0.0f, -0.75f, config).is_ok());
+
+    for (int r = 0; r < result.rows(); ++r) {
+        for (int c = 0; c < result.cols(); ++c) {
+            REQUIRE(std::isfinite(result(r, c))) << "NaN propagated into result at (" << r << "," << c << ")";
+            CHECK(cme::test::close_enough(result(r, c), expected(r, c), size));
+        }
+    }
+}
+
+TEST_CASE("GEMM disjoint strided sub-views are accepted", "[gemm][edge][cuda]") {
+    cme::test::require_cuda_device();
+
+    cme::Matrix a_storage(7, 8);
+    cme::Matrix b_storage(5, 9);
+    cme::Matrix c_storage(6, 10);
+    cme::test::fill_random(a_storage, 720);
+    cme::test::fill_random(b_storage, 721);
+    cme::test::fill_random(c_storage, 722);
+
+    // Two disjoint sub-views from the same parent allocation: A occupies first half of a_storage,
+    // C occupies second half. They share the parent but use non-overlapping regions.
+    cme::MatrixView<const float> A{a_storage.data() + 2 * a_storage.stride(), 3, 4, a_storage.stride()};
+    cme::MatrixView<const float> B{b_storage.data(), 3, 5, b_storage.stride()};
+    cme::MatrixView<float> C{c_storage.data() + 1 * c_storage.stride() + 2, 3, 4,
+                             c_storage.stride()};
+
+    cme::GemmConfig config;
+    config.algorithm = cme::GemmAlgorithm::CUDA_TILED;
+    config.tile_size = 16;
+    REQUIRE(cme::gemm(A, B, C, 1.0f, 0.0f, config).is_ok());
+}
+
+TEST_CASE("GEMM actually overlapping views are rejected", "[gemm][edge][cuda]") {
+    cme::test::require_cuda_device();
+
+    cme::Matrix A(4, 4);
+    cme::Matrix B(4, 4);
+    cme::Matrix C(4, 4);
+    cme::test::fill_random(A, 730);
+    cme::test::fill_random(B, 731);
+    std::fill(C.data(), C.data() + 4 * 4, 0.0f);
+
+    cme::MatrixView<float> c_over_a{C.data(), 4, 4, 16};  // Same data as A, if A.data == C.data
+    // Overlap C and A: make C share start with A's first element
+    cme::MatrixView<const float> A_view{A.data(), 4, 4, 16};
+
+    cme::GemmConfig config;
+    config.algorithm = cme::GemmAlgorithm::CUDA_NAIVE;
+    config.tile_size = 16;
+    const cme::Status status =
+        cme::gemm(A_view, B.view(), C.view(), 1.0f, 0.0f, config);
+    REQUIRE(status.code() == cme::StatusCode::UnsupportedConfiguration);
+}
+
+TEST_CASE("GEMM validates no-overlap with different strides", "[gemm][edge][cuda]") {
+    cme::test::require_cuda_device();
+
+    cme::Matrix a_storage(7, 8);
+    cme::Matrix b_storage(5, 9);
+    cme::Matrix c_storage(6, 10);
+    cme::test::fill_random(a_storage, 740);
+    cme::test::fill_random(b_storage, 741);
+    cme::test::fill_random(c_storage, 742);
+
+    // A has large stride (8), C has small stride (5) - non-overlapping should still pass
+    cme::MatrixView<const float> A{a_storage.data(), 3, 4, 8};
+    cme::MatrixView<float> C{c_storage.data() + 1 * c_storage.stride() + 2, 3, 4, 5};
+
+    cme::GemmConfig config;
+    config.algorithm = cme::GemmAlgorithm::CUDA_TILED;
+    config.tile_size = 16;
+    REQUIRE(cme::gemm(A, cme::MatrixView<const float>{b_storage.data(), 3, 5, 7}, C, 1.0f, 0.0f, config).is_ok());
+}
+
 TEST_CASE("GEMM supports strided sub-views", "[gemm][edge][cuda]") {
     cme::test::require_cuda_device();
 

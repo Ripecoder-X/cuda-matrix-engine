@@ -11,21 +11,31 @@
 namespace cme {
 namespace {
 
-struct HostRange {
-    std::uintptr_t begin;
-    std::uintptr_t end;
-};
-
-HostRange host_range(const float* data, int rows, int cols, int stride) {
-    const std::uintptr_t begin = reinterpret_cast<std::uintptr_t>(data);
-    const std::uintptr_t elements =
-        (static_cast<std::uintptr_t>(rows) - 1U) * static_cast<std::uintptr_t>(stride) +
-        static_cast<std::uintptr_t>(cols);
-    return {begin, begin + elements * sizeof(float)};
-}
-
-bool ranges_overlap(const HostRange& lhs, const HostRange& rhs) {
-    return lhs.begin < rhs.end && rhs.begin < lhs.end;
+// Returns true if two row-major strided views share any element address.
+// Each row is a contiguous block of cols * sizeof(float) bytes at
+// data + row * stride.  Rows within a view never overlap because
+// is_valid() requires stride >= cols.
+bool views_overlap(const float* data_a, int rows_a, int cols_a, int stride_a,
+                   const float* data_b, int rows_b, int cols_b, int stride_b) {
+    const std::size_t elem_bytes = sizeof(float);
+    for (int r = 0; r < rows_a; ++r) {
+        const std::uintptr_t a_start =
+            reinterpret_cast<std::uintptr_t>(data_a) +
+            static_cast<std::uintptr_t>(r) * static_cast<std::uintptr_t>(stride_a) * elem_bytes;
+        const std::uintptr_t a_end =
+            a_start + static_cast<std::uintptr_t>(cols_a) * elem_bytes;
+        for (int s = 0; s < rows_b; ++s) {
+            const std::uintptr_t b_start =
+                reinterpret_cast<std::uintptr_t>(data_b) +
+                static_cast<std::uintptr_t>(s) * static_cast<std::uintptr_t>(stride_b) * elem_bytes;
+            const std::uintptr_t b_end =
+                b_start + static_cast<std::uintptr_t>(cols_b) * elem_bytes;
+            if (a_start < b_end && b_start < a_end) {
+                return true;
+            }
+        }
+    }
+    return false;
 }
 
 }  // namespace
@@ -73,17 +83,29 @@ Status gemm(MatrixView<const float> A,
         return config_status;
     }
 
-    const HostRange range_a = host_range(A.data, A.rows, A.cols, A.stride);
-    const HostRange range_b = host_range(B.data, B.rows, B.cols, B.stride);
-    const HostRange range_c = host_range(C.data, C.rows, C.cols, C.stride);
-    if (ranges_overlap(range_a, range_b) || ranges_overlap(range_a, range_c) ||
-        ranges_overlap(range_b, range_c)) {
+    if (views_overlap(A.data, A.rows, A.cols, A.stride,
+                      B.data, B.rows, B.cols, B.stride) ||
+        views_overlap(A.data, A.rows, A.cols, A.stride,
+                      C.data, C.rows, C.cols, C.stride) ||
+        views_overlap(B.data, B.rows, B.cols, B.stride,
+                      C.data, C.rows, C.cols, C.stride)) {
         return Status::error(StatusCode::UnsupportedConfiguration,
                              "A, B, and C must not overlap in memory");
     }
 
     if (config.algorithm == GemmAlgorithm::CPU_REFERENCE) {
         detail::gemm_cpu_reference(A, B, C, alpha, beta);
+        return Status::ok();
+    }
+
+    // When alpha == 0, A and B are validated but not read, matching the CPU reference.
+    // Compute C = beta * C directly without launching a GEMM kernel.
+    if (alpha == 0.0f) {
+        for (int i = 0; i < C.rows; ++i) {
+            for (int j = 0; j < C.cols; ++j) {
+                C(i, j) = (beta == 0.0f) ? 0.0f : beta * C(i, j);
+            }
+        }
         return Status::ok();
     }
 

@@ -1,0 +1,37 @@
+name: Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up CUDA
+      uses: nvidia/github-actions/cuda@v1
+      with:
+        cuda: '12.0'
+        driver: 'latest'
+
+    - name: Set up environment
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y gcc-13 g++-13 make cmake
+
+    - name: Configure
+      run: |
+        cmake --preset linux-debug
+
+    - name: Build
+      run: |
+        cmake --build --preset linux-debug
+
+    - name: Run tests
+      run: |
+        ctest --preset linux-debug --output-on-failure

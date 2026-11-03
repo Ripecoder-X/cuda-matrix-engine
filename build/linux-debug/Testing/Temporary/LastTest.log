@@ -1,14 +1,14 @@
-Start testing: Nov 03 11:55 IST
+Start testing: Nov 03 12:26 IST
 ----------------------------------------------------------
 1/44 Testing: CPU reference returns beta times C when alpha is zero
 1/44 Test: CPU reference returns beta times C when alpha is zero
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "CPU reference returns beta times C when alpha is zero"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"CPU reference returns beta times C when alpha is zero" start time: Nov 03 11:55 IST
+"CPU reference returns beta times C when alpha is zero" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "CPU reference returns beta times C when alpha is zero"
-Randomness seeded to: 1213070866
+Randomness seeded to: 2050765294
 ===============================================================================
 All tests passed (8 assertions in 1 test case)
 
@@ -16,7 +16,7 @@ All tests passed (8 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"CPU reference returns beta times C when alpha is zero" end time: Nov 03 11:55 IST
+"CPU reference returns beta times C when alpha is zero" end time: Nov 03 12:26 IST
 "CPU reference returns beta times C when alpha is zero" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -24,19 +24,19 @@ Test Passed.
 2/44 Test: Tiled GEMM racecheck case
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "Tiled GEMM racecheck case"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"Tiled GEMM racecheck case" start time: Nov 03 11:55 IST
+"Tiled GEMM racecheck case" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "Tiled GEMM racecheck case"
-Randomness seeded to: 3334728263
+Randomness seeded to: 802886443
 ===============================================================================
 All tests passed (10 assertions in 1 test case)
 
 <end of output>
-Test time =   0.30 sec
+Test time =   0.31 sec
 ----------------------------------------------------------
 Test Passed.
-"Tiled GEMM racecheck case" end time: Nov 03 11:55 IST
+"Tiled GEMM racecheck case" end time: Nov 03 12:26 IST
 "Tiled GEMM racecheck case" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -44,11 +44,11 @@ Test Passed.
 3/44 Test: Matrix::view has stride equal to cols and shares storage
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "Matrix::view has stride equal to cols and shares storage"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"Matrix::view has stride equal to cols and shares storage" start time: Nov 03 11:55 IST
+"Matrix::view has stride equal to cols and shares storage" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "Matrix::view has stride equal to cols and shares storage"
-Randomness seeded to: 3467650808
+Randomness seeded to: 1555877180
 ===============================================================================
 All tests passed (7 assertions in 1 test case)
 
@@ -56,7 +56,7 @@ All tests passed (7 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"Matrix::view has stride equal to cols and shares storage" end time: Nov 03 11:55 IST
+"Matrix::view has stride equal to cols and shares storage" end time: Nov 03 12:26 IST
 "Matrix::view has stride equal to cols and shares storage" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -64,11 +64,11 @@ Test Passed.
 4/44 Test: GEMM rejects invalid and empty views
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "GEMM rejects invalid and empty views"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"GEMM rejects invalid and empty views" start time: Nov 03 11:55 IST
+"GEMM rejects invalid and empty views" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "GEMM rejects invalid and empty views"
-Randomness seeded to: 927886384
+Randomness seeded to: 2577304337
 ===============================================================================
 All tests passed (2 assertions in 1 test case)
 
@@ -76,7 +76,7 @@ All tests passed (2 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"GEMM rejects invalid and empty views" end time: Nov 03 11:55 IST
+"GEMM rejects invalid and empty views" end time: Nov 03 12:26 IST
 "GEMM rejects invalid and empty views" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -84,11 +84,11 @@ Test Passed.
 5/44 Test: GEMM rejects overlapping matrices
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "GEMM rejects overlapping matrices"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"GEMM rejects overlapping matrices" start time: Nov 03 11:55 IST
+"GEMM rejects overlapping matrices" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "GEMM rejects overlapping matrices"
-Randomness seeded to: 960168264
+Randomness seeded to: 378265451
 ===============================================================================
 All tests passed (1 assertion in 1 test case)
 
@@ -96,7 +96,7 @@ All tests passed (1 assertion in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"GEMM rejects overlapping matrices" end time: Nov 03 11:55 IST
+"GEMM rejects overlapping matrices" end time: Nov 03 12:26 IST
 "GEMM rejects overlapping matrices" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -104,11 +104,11 @@ Test Passed.
 6/44 Test: GEMM correctness matrix matches CPU reference
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "GEMM correctness matrix matches CPU reference"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"GEMM correctness matrix matches CPU reference" start time: Nov 03 11:55 IST
+"GEMM correctness matrix matches CPU reference" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "GEMM correctness matrix matches CPU reference"
-Randomness seeded to: 2418449892
+Randomness seeded to: 1957317574
 GEMM correctness matrix: 600 algorithm runs, 16305450 element comparisons
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -128,10 +128,10 @@ GEMM correctness matrix matches CPU reference
 All tests passed (1320 assertions in 1 test case)
 
 <end of output>
-Test time =   1.95 sec
+Test time =   1.93 sec
 ----------------------------------------------------------
 Test Passed.
-"GEMM correctness matrix matches CPU reference" end time: Nov 03 11:56 IST
+"GEMM correctness matrix matches CPU reference" end time: Nov 03 12:26 IST
 "GEMM correctness matrix matches CPU reference" time elapsed: 00:00:01
 ----------------------------------------------------------
 
@@ -139,11 +139,11 @@ Test Passed.
 7/44 Test: Public gemm CPU reference smoke test
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "Public gemm CPU reference smoke test"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"Public gemm CPU reference smoke test" start time: Nov 03 11:56 IST
+"Public gemm CPU reference smoke test" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "Public gemm CPU reference smoke test"
-Randomness seeded to: 44668810
+Randomness seeded to: 3832287432
 ===============================================================================
 All tests passed (5 assertions in 1 test case)
 
@@ -151,7 +151,7 @@ All tests passed (5 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"Public gemm CPU reference smoke test" end time: Nov 03 11:56 IST
+"Public gemm CPU reference smoke test" end time: Nov 03 12:26 IST
 "Public gemm CPU reference smoke test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -159,19 +159,19 @@ Test Passed.
 8/44 Test: Public gemm CUDA smoke test
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "Public gemm CUDA smoke test"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"Public gemm CUDA smoke test" start time: Nov 03 11:56 IST
+"Public gemm CUDA smoke test" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "Public gemm CUDA smoke test"
-Randomness seeded to: 1736498726
+Randomness seeded to: 437317379
 ===============================================================================
 All tests passed (25 assertions in 1 test case)
 
 <end of output>
-Test time =   0.22 sec
+Test time =   0.23 sec
 ----------------------------------------------------------
 Test Passed.
-"Public gemm CUDA smoke test" end time: Nov 03 11:56 IST
+"Public gemm CUDA smoke test" end time: Nov 03 12:26 IST
 "Public gemm CUDA smoke test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -179,11 +179,11 @@ Test Passed.
 9/44 Test: CPU reference computes a hand-checked 2x2 product
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "CPU reference computes a hand-checked 2x2 product"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"CPU reference computes a hand-checked 2x2 product" start time: Nov 03 11:56 IST
+"CPU reference computes a hand-checked 2x2 product" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "CPU reference computes a hand-checked 2x2 product"
-Randomness seeded to: 2909290055
+Randomness seeded to: 536863692
 ===============================================================================
 All tests passed (7 assertions in 1 test case)
 
@@ -191,7 +191,7 @@ All tests passed (7 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"CPU reference computes a hand-checked 2x2 product" end time: Nov 03 11:56 IST
+"CPU reference computes a hand-checked 2x2 product" end time: Nov 03 12:26 IST
 "CPU reference computes a hand-checked 2x2 product" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -199,11 +199,11 @@ Test Passed.
 10/44 Test: Status::ok is ok with an empty message
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "Status::ok is ok with an empty message"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"Status::ok is ok with an empty message" start time: Nov 03 11:56 IST
+"Status::ok is ok with an empty message" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "Status::ok is ok with an empty message"
-Randomness seeded to: 2561457561
+Randomness seeded to: 2022070573
 ===============================================================================
 All tests passed (3 assertions in 1 test case)
 
@@ -211,7 +211,7 @@ All tests passed (3 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"Status::ok is ok with an empty message" end time: Nov 03 11:56 IST
+"Status::ok is ok with an empty message" end time: Nov 03 12:26 IST
 "Status::ok is ok with an empty message" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -219,11 +219,11 @@ Test Passed.
 11/44 Test: CPU reference computes a hand-checked 3x2 by 2x4 product
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "CPU reference computes a hand-checked 3x2 by 2x4 product"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"CPU reference computes a hand-checked 3x2 by 2x4 product" start time: Nov 03 11:56 IST
+"CPU reference computes a hand-checked 3x2 by 2x4 product" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "CPU reference computes a hand-checked 3x2 by 2x4 product"
-Randomness seeded to: 4183496
+Randomness seeded to: 1161861692
 ===============================================================================
 All tests passed (15 assertions in 1 test case)
 
@@ -231,7 +231,7 @@ All tests passed (15 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"CPU reference computes a hand-checked 3x2 by 2x4 product" end time: Nov 03 11:56 IST
+"CPU reference computes a hand-checked 3x2 by 2x4 product" end time: Nov 03 12:26 IST
 "CPU reference computes a hand-checked 3x2 by 2x4 product" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -239,11 +239,11 @@ Test Passed.
 12/44 Test: Matrix indexing is row-major
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "Matrix indexing is row-major"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"Matrix indexing is row-major" start time: Nov 03 11:56 IST
+"Matrix indexing is row-major" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "Matrix indexing is row-major"
-Randomness seeded to: 2486321532
+Randomness seeded to: 3043043548
 ===============================================================================
 All tests passed (5 assertions in 1 test case)
 
@@ -251,7 +251,7 @@ All tests passed (5 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"Matrix indexing is row-major" end time: Nov 03 11:56 IST
+"Matrix indexing is row-major" end time: Nov 03 12:26 IST
 "Matrix indexing is row-major" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -259,11 +259,11 @@ Test Passed.
 13/44 Test: GEMM rejects incompatible dimensions
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "GEMM rejects incompatible dimensions"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"GEMM rejects incompatible dimensions" start time: Nov 03 11:56 IST
+"GEMM rejects incompatible dimensions" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "GEMM rejects incompatible dimensions"
-Randomness seeded to: 1264387153
+Randomness seeded to: 1519268002
 ===============================================================================
 All tests passed (2 assertions in 1 test case)
 
@@ -271,7 +271,7 @@ All tests passed (2 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"GEMM rejects incompatible dimensions" end time: Nov 03 11:56 IST
+"GEMM rejects incompatible dimensions" end time: Nov 03 12:26 IST
 "GEMM rejects incompatible dimensions" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -279,19 +279,19 @@ Test Passed.
 14/44 Test: GEMM supports strided sub-views
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "GEMM supports strided sub-views"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"GEMM supports strided sub-views" start time: Nov 03 11:56 IST
+"GEMM supports strided sub-views" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "GEMM supports strided sub-views"
-Randomness seeded to: 904336635
+Randomness seeded to: 1082335154
 ===============================================================================
 All tests passed (22 assertions in 1 test case)
 
 <end of output>
-Test time =   0.25 sec
+Test time =   0.24 sec
 ----------------------------------------------------------
 Test Passed.
-"GEMM supports strided sub-views" end time: Nov 03 11:56 IST
+"GEMM supports strided sub-views" end time: Nov 03 12:26 IST
 "GEMM supports strided sub-views" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -299,19 +299,19 @@ Test Passed.
 15/44 Test: DeviceBuffer rejects copy count larger than size
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "DeviceBuffer rejects copy count larger than size"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"DeviceBuffer rejects copy count larger than size" start time: Nov 03 11:56 IST
+"DeviceBuffer rejects copy count larger than size" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "DeviceBuffer rejects copy count larger than size"
-Randomness seeded to: 334663598
+Randomness seeded to: 3236791484
 ===============================================================================
 All tests passed (5 assertions in 1 test case)
 
 <end of output>
-Test time =   0.23 sec
+Test time =   0.24 sec
 ----------------------------------------------------------
 Test Passed.
-"DeviceBuffer rejects copy count larger than size" end time: Nov 03 11:56 IST
+"DeviceBuffer rejects copy count larger than size" end time: Nov 03 12:26 IST
 "DeviceBuffer rejects copy count larger than size" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -319,11 +319,11 @@ Test Passed.
 16/44 Test: to_status maps success and CUDA errors
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "to_status maps success and CUDA errors"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"to_status maps success and CUDA errors" start time: Nov 03 11:56 IST
+"to_status maps success and CUDA errors" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "to_status maps success and CUDA errors"
-Randomness seeded to: 1435369576
+Randomness seeded to: 2218573124
 ===============================================================================
 All tests passed (6 assertions in 1 test case)
 
@@ -331,7 +331,7 @@ All tests passed (6 assertions in 1 test case)
 Test time =   0.10 sec
 ----------------------------------------------------------
 Test Passed.
-"to_status maps success and CUDA errors" end time: Nov 03 11:56 IST
+"to_status maps success and CUDA errors" end time: Nov 03 12:26 IST
 "to_status maps success and CUDA errors" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -339,19 +339,19 @@ Test Passed.
 17/44 Test: Matrix converts to a const view
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "Matrix converts to a const view"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"Matrix converts to a const view" start time: Nov 03 11:56 IST
+"Matrix converts to a const view" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "Matrix converts to a const view"
-Randomness seeded to: 4008125424
+Randomness seeded to: 1368716856
 ===============================================================================
 All tests passed (2 assertions in 1 test case)
 
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"Matrix converts to a const view" end time: Nov 03 11:56 IST
+"Matrix converts to a const view" end time: Nov 03 12:26 IST
 "Matrix converts to a const view" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -359,19 +359,19 @@ Test Passed.
 18/44 Test: Tiled GEMM matches CPU reference
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "Tiled GEMM matches CPU reference"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"Tiled GEMM matches CPU reference" start time: Nov 03 11:56 IST
+"Tiled GEMM matches CPU reference" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "Tiled GEMM matches CPU reference"
-Randomness seeded to: 2509916617
+Randomness seeded to: 551591842
 ===============================================================================
 All tests passed (100 assertions in 1 test case)
 
 <end of output>
-Test time =   0.33 sec
+Test time =   0.35 sec
 ----------------------------------------------------------
 Test Passed.
-"Tiled GEMM matches CPU reference" end time: Nov 03 11:56 IST
+"Tiled GEMM matches CPU reference" end time: Nov 03 12:26 IST
 "Tiled GEMM matches CPU reference" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -379,19 +379,19 @@ Test Passed.
 19/44 Test: GEMM alpha zero returns beta times C
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "GEMM alpha zero returns beta times C"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"GEMM alpha zero returns beta times C" start time: Nov 03 11:56 IST
+"GEMM alpha zero returns beta times C" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "GEMM alpha zero returns beta times C"
-Randomness seeded to: 1595188429
+Randomness seeded to: 3633781367
 ===============================================================================
 All tests passed (101 assertions in 1 test case)
 
 <end of output>
-Test time =   0.22 sec
+Test time =   0.24 sec
 ----------------------------------------------------------
 Test Passed.
-"GEMM alpha zero returns beta times C" end time: Nov 03 11:56 IST
+"GEMM alpha zero returns beta times C" end time: Nov 03 12:26 IST
 "GEMM alpha zero returns beta times C" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -399,19 +399,19 @@ Test Passed.
 20/44 Test: Optimized GEMM honors alpha and beta
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "Optimized GEMM honors alpha and beta"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"Optimized GEMM honors alpha and beta" start time: Nov 03 11:56 IST
+"Optimized GEMM honors alpha and beta" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "Optimized GEMM honors alpha and beta"
-Randomness seeded to: 4267472461
+Randomness seeded to: 1604917432
 ===============================================================================
 All tests passed (20 assertions in 1 test case)
 
 <end of output>
-Test time =   0.22 sec
+Test time =   0.23 sec
 ----------------------------------------------------------
 Test Passed.
-"Optimized GEMM honors alpha and beta" end time: Nov 03 11:56 IST
+"Optimized GEMM honors alpha and beta" end time: Nov 03 12:26 IST
 "Optimized GEMM honors alpha and beta" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -419,19 +419,19 @@ Test Passed.
 21/44 Test: GEMM large K remains within tolerance
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "GEMM large K remains within tolerance"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"GEMM large K remains within tolerance" start time: Nov 03 11:56 IST
+"GEMM large K remains within tolerance" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "GEMM large K remains within tolerance"
-Randomness seeded to: 2034722845
+Randomness seeded to: 1517184433
 ===============================================================================
 All tests passed (4 assertions in 1 test case)
 
 <end of output>
-Test time =   0.23 sec
+Test time =   0.24 sec
 ----------------------------------------------------------
 Test Passed.
-"GEMM large K remains within tolerance" end time: Nov 03 11:56 IST
+"GEMM large K remains within tolerance" end time: Nov 03 12:26 IST
 "GEMM large K remains within tolerance" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -439,19 +439,19 @@ Test Passed.
 22/44 Test: DeviceBuffer 2D copy honors a strided host layout
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "DeviceBuffer 2D copy honors a strided host layout"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"DeviceBuffer 2D copy honors a strided host layout" start time: Nov 03 11:56 IST
+"DeviceBuffer 2D copy honors a strided host layout" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "DeviceBuffer 2D copy honors a strided host layout"
-Randomness seeded to: 1634770576
+Randomness seeded to: 466712030
 ===============================================================================
 All tests passed (22 assertions in 1 test case)
 
 <end of output>
-Test time =   0.23 sec
+Test time =   0.24 sec
 ----------------------------------------------------------
 Test Passed.
-"DeviceBuffer 2D copy honors a strided host layout" end time: Nov 03 11:56 IST
+"DeviceBuffer 2D copy honors a strided host layout" end time: Nov 03 12:26 IST
 "DeviceBuffer 2D copy honors a strided host layout" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -459,11 +459,11 @@ Test Passed.
 23/44 Test: Matrix rejects non-positive dimensions
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "Matrix rejects non-positive dimensions"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"Matrix rejects non-positive dimensions" start time: Nov 03 11:56 IST
+"Matrix rejects non-positive dimensions" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "Matrix rejects non-positive dimensions"
-Randomness seeded to: 3439086873
+Randomness seeded to: 784870110
 ===============================================================================
 All tests passed (6 assertions in 1 test case)
 
@@ -471,7 +471,7 @@ All tests passed (6 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"Matrix rejects non-positive dimensions" end time: Nov 03 11:56 IST
+"Matrix rejects non-positive dimensions" end time: Nov 03 12:26 IST
 "Matrix rejects non-positive dimensions" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -479,11 +479,11 @@ Test Passed.
 24/44 Test: Tiled GEMM rejects unsupported tile size
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "Tiled GEMM rejects unsupported tile size"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"Tiled GEMM rejects unsupported tile size" start time: Nov 03 11:56 IST
+"Tiled GEMM rejects unsupported tile size" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "Tiled GEMM rejects unsupported tile size"
-Randomness seeded to: 4253291054
+Randomness seeded to: 3917421869
 ===============================================================================
 All tests passed (1 assertion in 1 test case)
 
@@ -491,7 +491,7 @@ All tests passed (1 assertion in 1 test case)
 Test time =   0.11 sec
 ----------------------------------------------------------
 Test Passed.
-"Tiled GEMM rejects unsupported tile size" end time: Nov 03 11:56 IST
+"Tiled GEMM rejects unsupported tile size" end time: Nov 03 12:26 IST
 "Tiled GEMM rejects unsupported tile size" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -499,251 +499,11 @@ Test Passed.
 25/44 Test: check_last_launch reports a clean error state
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "check_last_launch reports a clean error state"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"check_last_launch reports a clean error state" start time: Nov 03 11:56 IST
+"check_last_launch reports a clean error state" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "check_last_launch reports a clean error state"
-Randomness seeded to: 958590341
-===============================================================================
-All tests passed (1 assertion in 1 test case)
-
-<end of output>
-Test time =   0.09 sec
-----------------------------------------------------------
-Test Passed.
-"check_last_launch reports a clean error state" end time: Nov 03 11:56 IST
-"check_last_launch reports a clean error state" time elapsed: 00:00:00
-----------------------------------------------------------
-
-26/44 Testing: Optimized GEMM matches CPU reference
-26/44 Test: Optimized GEMM matches CPU reference
-Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "Optimized GEMM matches CPU reference"
-Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"Optimized GEMM matches CPU reference" start time: Nov 03 11:56 IST
-Output:
-----------------------------------------------------------
-Filters: "Optimized GEMM matches CPU reference"
-Randomness seeded to: 677142216
-===============================================================================
-All tests passed (100 assertions in 1 test case)
-
-<end of output>
-Test time =   0.33 sec
-----------------------------------------------------------
-Test Passed.
-"Optimized GEMM matches CPU reference" end time: Nov 03 11:56 IST
-"Optimized GEMM matches CPU reference" time elapsed: 00:00:00
-----------------------------------------------------------
-
-27/44 Testing: DeviceBuffer move semantics
-27/44 Test: DeviceBuffer move semantics
-Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "DeviceBuffer move semantics"
-Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"DeviceBuffer move semantics" start time: Nov 03 11:56 IST
-Output:
-----------------------------------------------------------
-Filters: "DeviceBuffer move semantics"
-Randomness seeded to: 1661416647
-===============================================================================
-All tests passed (9 assertions in 1 test case)
-
-<end of output>
-Test time =   0.25 sec
-----------------------------------------------------------
-Test Passed.
-"DeviceBuffer move semantics" end time: Nov 03 11:56 IST
-"DeviceBuffer move semantics" time elapsed: 00:00:00
-----------------------------------------------------------
-
-28/44 Testing: DeviceBuffer create rejects zero count
-28/44 Test: DeviceBuffer create rejects zero count
-Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "DeviceBuffer create rejects zero count"
-Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"DeviceBuffer create rejects zero count" start time: Nov 03 11:56 IST
-Output:
-----------------------------------------------------------
-Filters: "DeviceBuffer create rejects zero count"
-Randomness seeded to: 4056255332
-===============================================================================
-All tests passed (4 assertions in 1 test case)
-
-<end of output>
-Test time =   0.10 sec
-----------------------------------------------------------
-Test Passed.
-"DeviceBuffer create rejects zero count" end time: Nov 03 11:56 IST
-"DeviceBuffer create rejects zero count" time elapsed: 00:00:00
-----------------------------------------------------------
-
-29/44 Testing: Status::error retains code and message
-29/44 Test: Status::error retains code and message
-Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "Status::error retains code and message"
-Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"Status::error retains code and message" start time: Nov 03 11:56 IST
-Output:
-----------------------------------------------------------
-Filters: "Status::error retains code and message"
-Randomness seeded to: 1570911827
-===============================================================================
-All tests passed (3 assertions in 1 test case)
-
-<end of output>
-Test time =   0.01 sec
-----------------------------------------------------------
-Test Passed.
-"Status::error retains code and message" end time: Nov 03 11:56 IST
-"Status::error retains code and message" time elapsed: 00:00:00
-----------------------------------------------------------
-
-30/44 Testing: CPU reference does not read C when beta is zero
-30/44 Test: CPU reference does not read C when beta is zero
-Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "CPU reference does not read C when beta is zero"
-Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"CPU reference does not read C when beta is zero" start time: Nov 03 11:56 IST
-Output:
-----------------------------------------------------------
-Filters: "CPU reference does not read C when beta is zero"
-Randomness seeded to: 4075150752
-===============================================================================
-All tests passed (4 assertions in 1 test case)
-
-<end of output>
-Test time =   0.01 sec
-----------------------------------------------------------
-Test Passed.
-"CPU reference does not read C when beta is zero" end time: Nov 03 11:56 IST
-"CPU reference does not read C when beta is zero" time elapsed: 00:00:00
-----------------------------------------------------------
-
-31/44 Testing: Naive GEMM honors alpha and beta
-31/44 Test: Naive GEMM honors alpha and beta
-Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "Naive GEMM honors alpha and beta"
-Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"Naive GEMM honors alpha and beta" start time: Nov 03 11:56 IST
-Output:
-----------------------------------------------------------
-Filters: "Naive GEMM honors alpha and beta"
-Randomness seeded to: 1108284885
-===============================================================================
-All tests passed (20 assertions in 1 test case)
-
-<end of output>
-Test time =   0.25 sec
-----------------------------------------------------------
-Test Passed.
-"Naive GEMM honors alpha and beta" end time: Nov 03 11:56 IST
-"Naive GEMM honors alpha and beta" time elapsed: 00:00:00
-----------------------------------------------------------
-
-32/44 Testing: Device dispatch runs every CUDA algorithm
-32/44 Test: Device dispatch runs every CUDA algorithm
-Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "Device dispatch runs every CUDA algorithm"
-Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"Device dispatch runs every CUDA algorithm" start time: Nov 03 11:56 IST
-Output:
-----------------------------------------------------------
-Filters: "Device dispatch runs every CUDA algorithm"
-Randomness seeded to: 2010442989
-===============================================================================
-All tests passed (2850 assertions in 1 test case)
-
-<end of output>
-Test time =   0.25 sec
-----------------------------------------------------------
-Test Passed.
-"Device dispatch runs every CUDA algorithm" end time: Nov 03 11:56 IST
-"Device dispatch runs every CUDA algorithm" time elapsed: 00:00:00
-----------------------------------------------------------
-
-33/44 Testing: Tiled GEMM honors alpha and beta
-33/44 Test: Tiled GEMM honors alpha and beta
-Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "Tiled GEMM honors alpha and beta"
-Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"Tiled GEMM honors alpha and beta" start time: Nov 03 11:56 IST
-Output:
-----------------------------------------------------------
-Filters: "Tiled GEMM honors alpha and beta"
-Randomness seeded to: 3667560892
-===============================================================================
-All tests passed (20 assertions in 1 test case)
-
-<end of output>
-Test time =   0.26 sec
-----------------------------------------------------------
-Test Passed.
-"Tiled GEMM honors alpha and beta" end time: Nov 03 11:56 IST
-"Tiled GEMM honors alpha and beta" time elapsed: 00:00:00
-----------------------------------------------------------
-
-34/44 Testing: MatrixView validity rules
-34/44 Test: MatrixView validity rules
-Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "MatrixView validity rules"
-Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"MatrixView validity rules" start time: Nov 03 11:56 IST
-Output:
-----------------------------------------------------------
-Filters: "MatrixView validity rules"
-Randomness seeded to: 1877882748
-===============================================================================
-All tests passed (4 assertions in 1 test case)
-
-<end of output>
-Test time =   0.00 sec
-----------------------------------------------------------
-Test Passed.
-"MatrixView validity rules" end time: Nov 03 11:56 IST
-"MatrixView validity rules" time elapsed: 00:00:00
-----------------------------------------------------------
-
-35/44 Testing: Matrix reports dimensions and zero-initializes
-35/44 Test: Matrix reports dimensions and zero-initializes
-Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "Matrix reports dimensions and zero-initializes"
-Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"Matrix reports dimensions and zero-initializes" start time: Nov 03 11:56 IST
-Output:
-----------------------------------------------------------
-Filters: "Matrix reports dimensions and zero-initializes"
-Randomness seeded to: 1414749812
-===============================================================================
-All tests passed (9 assertions in 1 test case)
-
-<end of output>
-Test time =   0.00 sec
-----------------------------------------------------------
-Test Passed.
-"Matrix reports dimensions and zero-initializes" end time: Nov 03 11:56 IST
-"Matrix reports dimensions and zero-initializes" time elapsed: 00:00:00
-----------------------------------------------------------
-
-36/44 Testing: DeviceBuffer round-trip copy
-36/44 Test: DeviceBuffer round-trip copy
-Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "DeviceBuffer round-trip copy"
-Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"DeviceBuffer round-trip copy" start time: Nov 03 11:56 IST
-Output:
-----------------------------------------------------------
-Filters: "DeviceBuffer round-trip copy"
-Randomness seeded to: 4034722996
-===============================================================================
-All tests passed (6 assertions in 1 test case)
-
-<end of output>
-Test time =   0.23 sec
-----------------------------------------------------------
-Test Passed.
-"DeviceBuffer round-trip copy" end time: Nov 03 11:56 IST
-"DeviceBuffer round-trip copy" time elapsed: 00:00:00
-----------------------------------------------------------
-
-37/44 Testing: Optimized GEMM rejects unsupported tile size
-37/44 Test: Optimized GEMM rejects unsupported tile size
-Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "Optimized GEMM rejects unsupported tile size"
-Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"Optimized GEMM rejects unsupported tile size" start time: Nov 03 11:56 IST
-Output:
-----------------------------------------------------------
-Filters: "Optimized GEMM rejects unsupported tile size"
-Randomness seeded to: 1753797432
+Randomness seeded to: 2227168662
 ===============================================================================
 All tests passed (1 assertion in 1 test case)
 
@@ -751,7 +511,247 @@ All tests passed (1 assertion in 1 test case)
 Test time =   0.12 sec
 ----------------------------------------------------------
 Test Passed.
-"Optimized GEMM rejects unsupported tile size" end time: Nov 03 11:56 IST
+"check_last_launch reports a clean error state" end time: Nov 03 12:26 IST
+"check_last_launch reports a clean error state" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/44 Testing: Optimized GEMM matches CPU reference
+26/44 Test: Optimized GEMM matches CPU reference
+Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "Optimized GEMM matches CPU reference"
+Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
+"Optimized GEMM matches CPU reference" start time: Nov 03 12:26 IST
+Output:
+----------------------------------------------------------
+Filters: "Optimized GEMM matches CPU reference"
+Randomness seeded to: 2961653382
+===============================================================================
+All tests passed (100 assertions in 1 test case)
+
+<end of output>
+Test time =   0.32 sec
+----------------------------------------------------------
+Test Passed.
+"Optimized GEMM matches CPU reference" end time: Nov 03 12:26 IST
+"Optimized GEMM matches CPU reference" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/44 Testing: DeviceBuffer move semantics
+27/44 Test: DeviceBuffer move semantics
+Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "DeviceBuffer move semantics"
+Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
+"DeviceBuffer move semantics" start time: Nov 03 12:26 IST
+Output:
+----------------------------------------------------------
+Filters: "DeviceBuffer move semantics"
+Randomness seeded to: 3801163839
+===============================================================================
+All tests passed (9 assertions in 1 test case)
+
+<end of output>
+Test time =   0.24 sec
+----------------------------------------------------------
+Test Passed.
+"DeviceBuffer move semantics" end time: Nov 03 12:26 IST
+"DeviceBuffer move semantics" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/44 Testing: DeviceBuffer create rejects zero count
+28/44 Test: DeviceBuffer create rejects zero count
+Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "DeviceBuffer create rejects zero count"
+Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
+"DeviceBuffer create rejects zero count" start time: Nov 03 12:26 IST
+Output:
+----------------------------------------------------------
+Filters: "DeviceBuffer create rejects zero count"
+Randomness seeded to: 2004583297
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"DeviceBuffer create rejects zero count" end time: Nov 03 12:26 IST
+"DeviceBuffer create rejects zero count" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/44 Testing: Status::error retains code and message
+29/44 Test: Status::error retains code and message
+Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "Status::error retains code and message"
+Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
+"Status::error retains code and message" start time: Nov 03 12:26 IST
+Output:
+----------------------------------------------------------
+Filters: "Status::error retains code and message"
+Randomness seeded to: 2283672579
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Status::error retains code and message" end time: Nov 03 12:26 IST
+"Status::error retains code and message" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/44 Testing: CPU reference does not read C when beta is zero
+30/44 Test: CPU reference does not read C when beta is zero
+Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "CPU reference does not read C when beta is zero"
+Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
+"CPU reference does not read C when beta is zero" start time: Nov 03 12:26 IST
+Output:
+----------------------------------------------------------
+Filters: "CPU reference does not read C when beta is zero"
+Randomness seeded to: 956435110
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"CPU reference does not read C when beta is zero" end time: Nov 03 12:26 IST
+"CPU reference does not read C when beta is zero" time elapsed: 00:00:00
+----------------------------------------------------------
+
+31/44 Testing: Naive GEMM honors alpha and beta
+31/44 Test: Naive GEMM honors alpha and beta
+Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "Naive GEMM honors alpha and beta"
+Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
+"Naive GEMM honors alpha and beta" start time: Nov 03 12:26 IST
+Output:
+----------------------------------------------------------
+Filters: "Naive GEMM honors alpha and beta"
+Randomness seeded to: 3835447134
+===============================================================================
+All tests passed (20 assertions in 1 test case)
+
+<end of output>
+Test time =   0.26 sec
+----------------------------------------------------------
+Test Passed.
+"Naive GEMM honors alpha and beta" end time: Nov 03 12:26 IST
+"Naive GEMM honors alpha and beta" time elapsed: 00:00:00
+----------------------------------------------------------
+
+32/44 Testing: Device dispatch runs every CUDA algorithm
+32/44 Test: Device dispatch runs every CUDA algorithm
+Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "Device dispatch runs every CUDA algorithm"
+Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
+"Device dispatch runs every CUDA algorithm" start time: Nov 03 12:26 IST
+Output:
+----------------------------------------------------------
+Filters: "Device dispatch runs every CUDA algorithm"
+Randomness seeded to: 2123528083
+===============================================================================
+All tests passed (2850 assertions in 1 test case)
+
+<end of output>
+Test time =   0.25 sec
+----------------------------------------------------------
+Test Passed.
+"Device dispatch runs every CUDA algorithm" end time: Nov 03 12:26 IST
+"Device dispatch runs every CUDA algorithm" time elapsed: 00:00:00
+----------------------------------------------------------
+
+33/44 Testing: Tiled GEMM honors alpha and beta
+33/44 Test: Tiled GEMM honors alpha and beta
+Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "Tiled GEMM honors alpha and beta"
+Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
+"Tiled GEMM honors alpha and beta" start time: Nov 03 12:26 IST
+Output:
+----------------------------------------------------------
+Filters: "Tiled GEMM honors alpha and beta"
+Randomness seeded to: 2075880601
+===============================================================================
+All tests passed (20 assertions in 1 test case)
+
+<end of output>
+Test time =   0.23 sec
+----------------------------------------------------------
+Test Passed.
+"Tiled GEMM honors alpha and beta" end time: Nov 03 12:26 IST
+"Tiled GEMM honors alpha and beta" time elapsed: 00:00:00
+----------------------------------------------------------
+
+34/44 Testing: MatrixView validity rules
+34/44 Test: MatrixView validity rules
+Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "MatrixView validity rules"
+Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
+"MatrixView validity rules" start time: Nov 03 12:26 IST
+Output:
+----------------------------------------------------------
+Filters: "MatrixView validity rules"
+Randomness seeded to: 3775244580
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MatrixView validity rules" end time: Nov 03 12:26 IST
+"MatrixView validity rules" time elapsed: 00:00:00
+----------------------------------------------------------
+
+35/44 Testing: Matrix reports dimensions and zero-initializes
+35/44 Test: Matrix reports dimensions and zero-initializes
+Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "Matrix reports dimensions and zero-initializes"
+Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
+"Matrix reports dimensions and zero-initializes" start time: Nov 03 12:26 IST
+Output:
+----------------------------------------------------------
+Filters: "Matrix reports dimensions and zero-initializes"
+Randomness seeded to: 898580200
+===============================================================================
+All tests passed (9 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Matrix reports dimensions and zero-initializes" end time: Nov 03 12:26 IST
+"Matrix reports dimensions and zero-initializes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+36/44 Testing: DeviceBuffer round-trip copy
+36/44 Test: DeviceBuffer round-trip copy
+Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "DeviceBuffer round-trip copy"
+Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
+"DeviceBuffer round-trip copy" start time: Nov 03 12:26 IST
+Output:
+----------------------------------------------------------
+Filters: "DeviceBuffer round-trip copy"
+Randomness seeded to: 980707304
+===============================================================================
+All tests passed (6 assertions in 1 test case)
+
+<end of output>
+Test time =   0.22 sec
+----------------------------------------------------------
+Test Passed.
+"DeviceBuffer round-trip copy" end time: Nov 03 12:26 IST
+"DeviceBuffer round-trip copy" time elapsed: 00:00:00
+----------------------------------------------------------
+
+37/44 Testing: Optimized GEMM rejects unsupported tile size
+37/44 Test: Optimized GEMM rejects unsupported tile size
+Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "Optimized GEMM rejects unsupported tile size"
+Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
+"Optimized GEMM rejects unsupported tile size" start time: Nov 03 12:26 IST
+Output:
+----------------------------------------------------------
+Filters: "Optimized GEMM rejects unsupported tile size"
+Randomness seeded to: 695756263
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"Optimized GEMM rejects unsupported tile size" end time: Nov 03 12:26 IST
 "Optimized GEMM rejects unsupported tile size" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -759,11 +759,11 @@ Test Passed.
 38/44 Test: Device dispatch rejects CPU reference and unknown algorithms
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "Device dispatch rejects CPU reference and unknown algorithms"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"Device dispatch rejects CPU reference and unknown algorithms" start time: Nov 03 11:56 IST
+"Device dispatch rejects CPU reference and unknown algorithms" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "Device dispatch rejects CPU reference and unknown algorithms"
-Randomness seeded to: 625033526
+Randomness seeded to: 918888628
 ===============================================================================
 All tests passed (2 assertions in 1 test case)
 
@@ -771,7 +771,7 @@ All tests passed (2 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"Device dispatch rejects CPU reference and unknown algorithms" end time: Nov 03 11:56 IST
+"Device dispatch rejects CPU reference and unknown algorithms" end time: Nov 03 12:26 IST
 "Device dispatch rejects CPU reference and unknown algorithms" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -779,11 +779,11 @@ Test Passed.
 39/44 Test: GEMM validates tile size and algorithm values
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "GEMM validates tile size and algorithm values"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"GEMM validates tile size and algorithm values" start time: Nov 03 11:56 IST
+"GEMM validates tile size and algorithm values" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "GEMM validates tile size and algorithm values"
-Randomness seeded to: 2054162865
+Randomness seeded to: 708901574
 ===============================================================================
 All tests passed (3 assertions in 1 test case)
 
@@ -791,7 +791,7 @@ All tests passed (3 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"GEMM validates tile size and algorithm values" end time: Nov 03 11:56 IST
+"GEMM validates tile size and algorithm values" end time: Nov 03 12:26 IST
 "GEMM validates tile size and algorithm values" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -799,19 +799,19 @@ Test Passed.
 40/44 Test: GEMM beta zero ignores NaN contents of C
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "GEMM beta zero ignores NaN contents of C"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"GEMM beta zero ignores NaN contents of C" start time: Nov 03 11:56 IST
+"GEMM beta zero ignores NaN contents of C" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "GEMM beta zero ignores NaN contents of C"
-Randomness seeded to: 1728174395
+Randomness seeded to: 1079282367
 ===============================================================================
 All tests passed (580 assertions in 1 test case)
 
 <end of output>
-Test time =   0.23 sec
+Test time =   0.25 sec
 ----------------------------------------------------------
 Test Passed.
-"GEMM beta zero ignores NaN contents of C" end time: Nov 03 11:56 IST
+"GEMM beta zero ignores NaN contents of C" end time: Nov 03 12:26 IST
 "GEMM beta zero ignores NaN contents of C" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -819,11 +819,11 @@ Test Passed.
 41/44 Test: Optimized GEMM memcheck non-multiple case
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "Optimized GEMM memcheck non-multiple case"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"Optimized GEMM memcheck non-multiple case" start time: Nov 03 11:56 IST
+"Optimized GEMM memcheck non-multiple case" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "Optimized GEMM memcheck non-multiple case"
-Randomness seeded to: 3183701328
+Randomness seeded to: 2510678277
 ===============================================================================
 All tests passed (10 assertions in 1 test case)
 
@@ -831,7 +831,7 @@ All tests passed (10 assertions in 1 test case)
 Test time =   0.25 sec
 ----------------------------------------------------------
 Test Passed.
-"Optimized GEMM memcheck non-multiple case" end time: Nov 03 11:56 IST
+"Optimized GEMM memcheck non-multiple case" end time: Nov 03 12:26 IST
 "Optimized GEMM memcheck non-multiple case" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -839,19 +839,19 @@ Test Passed.
 42/44 Test: Naive GEMM matches CPU reference
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "Naive GEMM matches CPU reference"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"Naive GEMM matches CPU reference" start time: Nov 03 11:56 IST
+"Naive GEMM matches CPU reference" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "Naive GEMM matches CPU reference"
-Randomness seeded to: 1592195150
+Randomness seeded to: 4104212046
 ===============================================================================
 All tests passed (40 assertions in 1 test case)
 
 <end of output>
-Test time =   0.22 sec
+Test time =   0.24 sec
 ----------------------------------------------------------
 Test Passed.
-"Naive GEMM matches CPU reference" end time: Nov 03 11:56 IST
+"Naive GEMM matches CPU reference" end time: Nov 03 12:26 IST
 "Naive GEMM matches CPU reference" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -859,11 +859,11 @@ Test Passed.
 43/44 Test: Status::error rejects StatusCode::Ok
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests/cme_tests" "Status::error rejects StatusCode::Ok"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/tests
-"Status::error rejects StatusCode::Ok" start time: Nov 03 11:56 IST
+"Status::error rejects StatusCode::Ok" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 Filters: "Status::error rejects StatusCode::Ok"
-Randomness seeded to: 2368278072
+Randomness seeded to: 2285515921
 ===============================================================================
 All tests passed (3 assertions in 1 test case)
 
@@ -871,7 +871,7 @@ All tests passed (3 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"Status::error rejects StatusCode::Ok" end time: Nov 03 11:56 IST
+"Status::error rejects StatusCode::Ok" end time: Nov 03 12:26 IST
 "Status::error rejects StatusCode::Ok" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -879,7 +879,7 @@ Test Passed.
 44/44 Test: benchmark_csv_writer
 Command: "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/benchmarks/cme_csv_writer_test" "/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/benchmarks/csv_writer_test.csv"
 Directory: /home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/benchmarks
-"benchmark_csv_writer" start time: Nov 03 11:56 IST
+"benchmark_csv_writer" start time: Nov 03 12:26 IST
 Output:
 ----------------------------------------------------------
 CSV header and escaping verified
@@ -887,8 +887,8 @@ CSV header and escaping verified
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"benchmark_csv_writer" end time: Nov 03 11:56 IST
+"benchmark_csv_writer" end time: Nov 03 12:26 IST
 "benchmark_csv_writer" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Nov 03 11:56 IST
+End testing: Nov 03 12:26 IST
