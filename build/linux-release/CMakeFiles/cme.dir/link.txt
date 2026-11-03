@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcme.a CMakeFiles/cme.dir/src/core/matrix.cpp.o CMakeFiles/cme.dir/src/core/status.cpp.o CMakeFiles/cme.dir/src/core/gemm_reference.cpp.o CMakeFiles/cme.dir/src/cuda/cuda_utils.cu.o CMakeFiles/cme.dir/src/cuda/device_buffer.cu.o CMakeFiles/cme.dir/src/cuda/gemm_dispatch.cu.o CMakeFiles/cme.dir/src/cuda/kernels/gemm_naive.cu.o CMakeFiles/cme.dir/src/cuda/kernels/gemm_tiled.cu.o CMakeFiles/cme.dir/src/cuda/kernels/gemm_optimized.cu.o CMakeFiles/cme.dir/src/api/gemm.cpp.o
+/usr/bin/ranlib libcme.a

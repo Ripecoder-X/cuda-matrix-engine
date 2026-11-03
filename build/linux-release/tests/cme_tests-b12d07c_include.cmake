@@ -1,0 +1,5 @@
+if(EXISTS "/home/Ripecoder/work/cuda-matrix-engine/build/linux-release/tests/cme_tests-b12d07c_tests.cmake")
+  include("/home/Ripecoder/work/cuda-matrix-engine/build/linux-release/tests/cme_tests-b12d07c_tests.cmake")
+else()
+  add_test(cme_tests_NOT_BUILT-b12d07c cme_tests_NOT_BUILT-b12d07c)
+endif()

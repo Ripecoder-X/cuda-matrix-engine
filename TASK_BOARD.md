@@ -23,13 +23,13 @@ Side state: `BLOCKED` (reason in Notes). Only the VERIFY role moves a batch to `
 | 5.1 | 5 | TEST | UNDER_REVIEW | opencode | 2026-11-02 | 4.2 | Correctness matrix: 600 runs, 16,305,450 comparisons |
 | 5.2 | 5 | TEST | UNDER_REVIEW | opencode | 2026-11-02 | 5.1 | 8 edge cases, 715 assertions; CUDA error mapping |
 | 5.3 | 5 | TEST | UNDER_REVIEW | opencode | 2026-11-02 | 5.2 | Scripts pass: 43/43 ctest; memcheck/racecheck 0 errors |
-| 6.1 | 6 | BENCH | IN_PROGRESS | opencode | 2026-11-02 | 4.2 | Creating benchmark utilities |
-| 6.2 | 6 | BENCH | NOT_STARTED | — | — | 6.1, 4.1 | — |
-| 6.3 | 6 | BENCH | NOT_STARTED | — | — | 6.2 | — |
-| 6.4 | 6 | BENCH | NOT_STARTED | — | — | 6.3 | — |
-| 7.1 | 7 | OPT | NOT_STARTED | — | — | 6.4 | — |
-| 7.2 | 7 | OPT | NOT_STARTED | — | — | 7.1 | — |
-| 7.3 | 7 | OPT/VERIFY | NOT_STARTED | — | — | 7.2 | — |
+| 6.1 | 6 | BENCH | UNDER_REVIEW | opencode | 2026-11-03 | 4.2 | Benchmark config/CSV/common rows; `benchmark_csv_writer` passes; handoff 6.1 |
+| 6.2 | 6 | BENCH | UNDER_REVIEW | opencode | 2026-11-03 | 6.1, 4.1 | Kernel-only events benchmark; 25 rows; handoff 6.2 |
+| 6.3 | 6 | BENCH | UNDER_REVIEW | opencode | 2026-11-03 | 6.2 | End-to-end + H2D/D2H; all four measurement types; handoff 6.3 |
+| 6.4 | 6 | BENCH | UNDER_REVIEW | opencode | 2026-11-03 | 6.3 | Driver/script/docs; full CSV `results/gemm_20261103T062611Z.csv` (62 rows); handoff 6.4 |
+| 7.1 | 7 | OPT | UNDER_REVIEW | opencode | 2026-11-03 | 6.4 | Nsight Systems/Compute baseline reports in `results/profiles/`; handoff 7.1 |
+| 7.2 | 7 | OPT | UNDER_REVIEW | opencode | 2026-11-03 | 7.1 | Tile-32 4x4 micro-tile kept; +52.7% to +88.7% kernel-only GFLOP/s at 512-4096; handoff 7.2 |
+| 7.3 | 7 | OPT/VERIFY | UNDER_REVIEW | opencode | 2026-11-03 | 7.2 | Dispatch unchanged; final CSV + report; 44/44 tests, sanitizers clean; handoff 7.3 |
 | 8.1 | 8 | INTEG | NOT_STARTED | — | — | 7.3 | — |
 | 8.2 | 8 | INTEG | NOT_STARTED | — | — | 8.1 | — |
 | 8.3 | 8 | INTEG/VERIFY | NOT_STARTED | — | — | 8.2 | — |

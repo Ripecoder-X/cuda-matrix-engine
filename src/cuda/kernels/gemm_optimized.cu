@@ -5,26 +5,27 @@
 namespace cme::detail {
 namespace {
 
-// One thread computes a 2x2 register micro-tile. The shared-memory tiles are padded by
-// one column to break the stride that otherwise maps consecutive rows to the same bank.
+// Each thread computes a kMicro x kMicro register micro-tile. TILE=32 uses a
+// 4x4 micro-tile to reduce shared-memory load pressure per multiply-add. The
+// shared-memory tiles are padded by one column to break the stride that
+// otherwise maps consecutive rows to the same bank.
 template <int TILE>
 __global__ void gemm_optimized_kernel(DeviceGemmArgs args) {
+    constexpr int kMicro = (TILE == 32) ? 4 : 2;
+    constexpr int kThreadsPerDim = TILE / kMicro;
+    constexpr int kThreadCount = kThreadsPerDim * kThreadsPerDim;
+
     __shared__ float a_tile[TILE][TILE + 1];
     __shared__ float b_tile[TILE][TILE + 1];
 
-    constexpr int kThreadsPerDim = TILE / 2;
     const int tx = threadIdx.x;
     const int ty = threadIdx.y;
     const int tid = ty * kThreadsPerDim + tx;
-    constexpr int kThreadCount = kThreadsPerDim * kThreadsPerDim;
 
-    const int row0 = blockIdx.y * TILE + ty * 2;
-    const int col0 = blockIdx.x * TILE + tx * 2;
+    const int row0 = blockIdx.y * TILE + ty * kMicro;
+    const int col0 = blockIdx.x * TILE + tx * kMicro;
 
-    float acc00 = 0.0f;
-    float acc01 = 0.0f;
-    float acc10 = 0.0f;
-    float acc11 = 0.0f;
+    float acc[kMicro][kMicro] = {};
 
     for (int k0 = 0; k0 < args.K; k0 += TILE) {
         for (int index = tid; index < TILE * TILE; index += kThreadCount) {
@@ -43,55 +44,50 @@ __global__ void gemm_optimized_kernel(DeviceGemmArgs args) {
         }
         __syncthreads();
 
-        const int local_row = ty * 2;
-        const int local_col = tx * 2;
+        const int local_row = ty * kMicro;
+        const int local_col = tx * kMicro;
 #pragma unroll
         for (int p = 0; p < TILE; ++p) {
-            const float a0 = a_tile[local_row][p];
-            const float a1 = a_tile[local_row + 1][p];
-            const float b0 = b_tile[p][local_col];
-            const float b1 = b_tile[p][local_col + 1];
-            acc00 += a0 * b0;
-            acc01 += a0 * b1;
-            acc10 += a1 * b0;
-            acc11 += a1 * b1;
+            float a[kMicro];
+            float b[kMicro];
+#pragma unroll
+            for (int i = 0; i < kMicro; ++i) {
+                a[i] = a_tile[local_row + i][p];
+            }
+#pragma unroll
+            for (int j = 0; j < kMicro; ++j) {
+                b[j] = b_tile[p][local_col + j];
+            }
+#pragma unroll
+            for (int i = 0; i < kMicro; ++i) {
+#pragma unroll
+                for (int j = 0; j < kMicro; ++j) {
+                    acc[i][j] += a[i] * b[j];
+                }
+            }
         }
         __syncthreads();
     }
 
-    if (row0 < args.M && col0 < args.N) {
-        float value = args.alpha * acc00;
-        if (args.beta != 0.0f) {
-            value += args.beta * args.C[row0 * args.ldc + col0];
+#pragma unroll
+    for (int i = 0; i < kMicro; ++i) {
+#pragma unroll
+        for (int j = 0; j < kMicro; ++j) {
+            if (row0 + i < args.M && col0 + j < args.N) {
+                float value = args.alpha * acc[i][j];
+                if (args.beta != 0.0f) {
+                    value += args.beta * args.C[(row0 + i) * args.ldc + col0 + j];
+                }
+                args.C[(row0 + i) * args.ldc + col0 + j] = value;
+            }
         }
-        args.C[row0 * args.ldc + col0] = value;
-    }
-    if (row0 < args.M && col0 + 1 < args.N) {
-        float value = args.alpha * acc01;
-        if (args.beta != 0.0f) {
-            value += args.beta * args.C[row0 * args.ldc + col0 + 1];
-        }
-        args.C[row0 * args.ldc + col0 + 1] = value;
-    }
-    if (row0 + 1 < args.M && col0 < args.N) {
-        float value = args.alpha * acc10;
-        if (args.beta != 0.0f) {
-            value += args.beta * args.C[(row0 + 1) * args.ldc + col0];
-        }
-        args.C[(row0 + 1) * args.ldc + col0] = value;
-    }
-    if (row0 + 1 < args.M && col0 + 1 < args.N) {
-        float value = args.alpha * acc11;
-        if (args.beta != 0.0f) {
-            value += args.beta * args.C[(row0 + 1) * args.ldc + col0 + 1];
-        }
-        args.C[(row0 + 1) * args.ldc + col0 + 1] = value;
     }
 }
 
 template <int TILE>
 cudaError_t launch_optimized(const DeviceGemmArgs& args, cudaStream_t stream) {
-    constexpr int kThreadsPerDim = TILE / 2;
+    constexpr int kMicro = (TILE == 32) ? 4 : 2;
+    constexpr int kThreadsPerDim = TILE / kMicro;
     const dim3 block(kThreadsPerDim, kThreadsPerDim);
     const dim3 grid((args.N + TILE - 1) / TILE, (args.M + TILE - 1) / TILE);
     gemm_optimized_kernel<TILE><<<grid, block, 0, stream>>>(args);

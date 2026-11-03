@@ -1,0 +1,6 @@
+Time (%),Total Time (ns),Instances,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),GridXYZ,BlockXYZ,Name
+28.6,12444370,2,6222185.0,6222185.0,6221785,6222585,565.7, 128  128    1,  16   16    1,cme::detail::<unnamed>::gemm_naive_kernel(cme::detail::DeviceGemmArgs)
+23.8,10372864,2,5186432.0,5186432.0,5026748,5346116,225827.3,  64   64    1,  32   32    1,void cme::detail::<unnamed>::gemm_tiled_kernel<(int)32>(cme::detail::DeviceGemmArgs)
+23.3,10121816,2,5060908.0,5060908.0,4803542,5318274,363970.5, 128  128    1,  16   16    1,void cme::detail::<unnamed>::gemm_tiled_kernel<(int)16>(cme::detail::DeviceGemmArgs)
+13.2,5740717,2,2870358.5,2870358.5,2870215,2870502,202.9, 128  128    1,   8    8    1,void cme::detail::<unnamed>::gemm_optimized_kernel<(int)16>(cme::detail::DeviceGemmArgs)
+11.1,4844120,2,2422060.0,2422060.0,2422044,2422076,22.6,  64   64    1,  16   16    1,void cme::detail::<unnamed>::gemm_optimized_kernel<(int)32>(cme::detail::DeviceGemmArgs)

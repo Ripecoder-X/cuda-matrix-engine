@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcme_benchmark_common.a CMakeFiles/cme_benchmark_common.dir/csv_writer.cpp.o CMakeFiles/cme_benchmark_common.dir/benchmark_common.cpp.o
+/usr/bin/ranlib libcme_benchmark_common.a

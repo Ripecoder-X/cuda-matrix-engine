@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/cme_example_basic.dir/basic_gemm.cpp.o -o cme_example_basic   -L/usr/lib/x86_64-linux-gnu/stubs  -L/usr/lib/gcc/x86_64-linux-gnu/12  ../libcme.a /usr/lib/x86_64-linux-gnu/libcudart.so -lcudadevrt -lcudart_static -lrt -lpthread -ldl 

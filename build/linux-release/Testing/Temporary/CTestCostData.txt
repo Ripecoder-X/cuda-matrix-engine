@@ -1,0 +1,45 @@
+GEMM large K remains within tolerance 1 0.296858
+Status::error retains code and message 1 0.00253326
+DeviceBuffer move semantics 1 0.216013
+GEMM alpha zero returns beta times C 1 0.231001
+Matrix reports dimensions and zero-initializes 1 0.00291132
+check_last_launch reports a clean error state 1 0.0902334
+GEMM rejects incompatible dimensions 1 0.00362692
+Status::error rejects StatusCode::Ok 1 0.00448293
+Optimized GEMM rejects unsupported tile size 1 0.0942617
+GEMM rejects invalid and empty views 1 0.00508859
+Matrix rejects non-positive dimensions 1 0.00414432
+Tiled GEMM rejects unsupported tile size 1 0.117668
+CPU reference returns beta times C when alpha is zero 1 0.00575144
+Tiled GEMM honors alpha and beta 1 0.242071
+CPU reference computes a hand-checked 3x2 by 2x4 product 1 0.00255962
+DeviceBuffer create rejects zero count 1 0.0885611
+GEMM rejects overlapping matrices 1 0.00211113
+Public gemm CPU reference smoke test 1 0.00177978
+GEMM beta zero ignores NaN contents of C 1 0.230421
+Tiled GEMM matches CPU reference 1 0.236563
+Device dispatch runs every CUDA algorithm 1 0.218719
+DeviceBuffer 2D copy honors a strided host layout 1 0.228102
+GEMM correctness matrix matches CPU reference 1 0.701587
+Status::ok is ok with an empty message 1 0.00242168
+CPU reference computes a hand-checked 2x2 product 1 0.0017216
+CPU reference does not read C when beta is zero 1 0.00154686
+GEMM supports strided sub-views 1 0.237397
+Matrix converts to a const view 1 0.00241624
+MatrixView validity rules 1 0.0020925
+to_status maps success and CUDA errors 1 0.098736
+Matrix::view has stride equal to cols and shares storage 1 0.00322386
+Optimized GEMM memcheck non-multiple case 1 0.254036
+Optimized GEMM honors alpha and beta 1 0.233964
+Tiled GEMM racecheck case 1 0.259031
+DeviceBuffer round-trip copy 1 0.241467
+Public gemm CUDA smoke test 1 0.239261
+DeviceBuffer rejects copy count larger than size 1 0.231002
+Device dispatch rejects CPU reference and unknown algorithms 1 0.0024758
+Optimized GEMM matches CPU reference 1 0.266676
+GEMM validates tile size and algorithm values 1 0.00265688
+Naive GEMM matches CPU reference 1 0.219195
+Matrix indexing is row-major 1 0.00245972
+Naive GEMM honors alpha and beta 1 0.21718
+benchmark_csv_writer 1 0.00210477
+---

@@ -173,3 +173,80 @@ and non-NVIDIA backends.
   for race detection and substantially slower; the dedicated case is a 64x64x64 tiled kernel run.
 - **environment.sh policy:** every tool is probed with `command -v`; a missing tool prints
   `NOT FOUND` and the script continues with exit status 0.
+
+## Batch 7.1
+
+- **Profiler access:** direct `ncu` is blocked by `RmProfilingAdminOnly: 1`, and `sudo -n` is not
+  available. `scripts/profile.sh` runs Nsight Compute in a privileged `ubuntu:24.04` container with
+  `chroot /host` when that condition is detected, so the report still comes from the host binary and
+  host GPU. If the user can enable profiling permissions, the same commands run directly.
+- **Nsight Systems export:** this host's `nsys` writes a `.qdstrm` but cannot find its bundled
+  importer. The script converts it with `QdstrmImporter` from
+  `/usr/lib/nsight-systems/host-linux-x64/`. Both the `.nsys-rep` and the GPU kernel summary are
+  saved under `results/profiles/`.
+- **Profiler clocks:** Nsight Compute reports `2.34 cycle/nsecond` for every captured kernel. The
+  baseline values are recorded from the reports and are not compared as wall-clock benchmark values.
+
+## Batch 7.2
+
+- **TILE=32 micro-tile:** changed from 2x2 to 4x4 after the profile showed `mio_throttle` at 13.84
+  cycles per issued instruction. The measured kernel-only improvement was 52.7% at 512, 87.8% at
+  1024, 88.7% at 2048, and 78.2% at 4096 in GFLOP/s, with the 4x4 result outside the baseline IQR.
+  TILE=16 remains at 2x2 because a 4x4 micro-tile would reduce that block to 4x4 threads.
+- **Size claim:** the 4x4 variant is claimed for sizes 512 and larger. At 256 it measured 21.4%
+  slower in GFLOP/s, so it is not claimed for that size.
+- **Default dispatch:** `CUDA_OPTIMIZED` stays selectable for clients that choose it. The public
+  default remains `CUDA_TILED` with `tile_size = 16`, because section 4.4 freezes that default and
+  Batch 7.3 may change only the dispatch file, not the public configuration header.
+
+## Batch 6.1
+
+- **Utilities layout:** `benchmark_config.hpp`, `csv_writer.hpp`, and `csv_writer.cpp` were kept as
+  the frozen Batch 6.1 interface. Shared statistics, timestamp, and GPU sampling helpers live in
+  `benchmark_common.hpp/.cpp`; CSV row construction lives in `benchmark_rows.hpp/.cpp`.
+- **CSV test:** `benchmarks/csv_writer_test.cpp` writes one row containing a comma in a field, reads
+  the file back, and fails unless the 19-field header matches byte-for-byte and the comma is quoted
+  per RFC 4180. It runs as CTest test `benchmark_csv_writer`.
+- **Transfer GFLOP/s:** `h2d_transfer` and `d2h_transfer` rows store `0.000000` GFLOP/s because they
+  perform no arithmetic.
+
+## Batch 6.2
+
+- **Five kernel specifications:** the benchmark covers CUDA_NAIVE, CUDA_TILED at 16 and 32, and
+  CUDA_OPTIMIZED at 16 and 32. Allocating device buffers per size outside the timed region and
+  timing only the launch with CUDA events follows the batch requirement.
+- **Private-header exception:** `benchmarks/benchmark_gemm.cu` includes
+  `src/cuda/gemm_dispatch.hpp` and `src/cuda/device_buffer.hpp`, the HANDOFF §5.2 exception. The
+  exception is recorded in `docs/BENCHMARKING.md`.
+
+## Batch 6.3
+
+- **End-to-end scope:** each device algorithm and the CPU reference run through the public
+  `cme::gemm()` with `std::chrono::steady_clock`. The CPU reference is limited to sizes 256 and 512
+  to keep the full run practical; no device size was dropped.
+- **Transfer timing:** H2D aggregates the A and B copies in one timed region; D2H times the C copy.
+  Both use CUDA events around the copy only. The transfer harness uses raw `cudaMalloc` buffers and
+  does not depend on the public `gemm()` path.
+
+## Batch 6.4
+
+- **Quick mode:** `--quick` uses sizes 256 and 512, 2 warm-up iterations, and 5 measured iterations
+  unless the caller overrides them. The full mode uses the frozen 5/30 and 256..4096 defaults.
+- **Output naming:** `scripts/benchmark.sh` writes `results/gemm_<UTC>[_quick].csv` and a matching
+  `.env.txt` from `scripts/environment.sh`. The benchmark binary itself accepts `--output` and
+  `--sizes`/`--measurements`/`--warmup`/`--iterations`.
+- **cuBLAS:** `CME_WITH_CUBLAS=OFF` by owner default D3; the report says cuBLAS not measured rather
+  than citing a row that does not exist.
+- **Benchmark documentation:** `docs/BENCHMARKING.md` stores the binding methodology and the
+  kernel-only private-header exception. `results/README.md` explains file naming and CSV reading.
+
+## Batch 7.3
+
+- **Dispatch unchanged:** the final decision is to keep `src/cuda/gemm_dispatch.cu` as-is. The public
+  default remains `CUDA_TILED`/16 because it is frozen; callers must select `CUDA_OPTIMIZED`/32 to
+  get the fastest measured configuration.
+- **Final evidence:** the final full run is `results/gemm_20261103T062611Z.csv`. The full test script
+  passed 44/44 CTest tests, memcheck reported 0 errors, and racecheck reported 0 hazards.
+- **Report mapping:** `docs/PERFORMANCE_REPORT.md` numbers are copied from that CSV. cuBLAS is
+  reported as not measured. The 256-size regression of the 4x4 optimized tile is listed as a known
+  limitation.
