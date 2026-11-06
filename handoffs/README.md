@@ -33,3 +33,8 @@ code into a note; reference file paths and line counts.
 ## Next step (exact command or action for the next agent)
 - <one concrete action>
 ```
+
+## Batch index
+
+Notes exist for batches 0.1 through 7.3. Batches 8.1 through 8.3 have no note. Their status on
+`TASK_BOARD.md` was set by owner instruction, not by a recorded verification run.
