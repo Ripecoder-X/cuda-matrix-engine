@@ -338,7 +338,7 @@ namespace cme::test {
 // Fills with uniform values in [-1, 1] from a deterministic seed.
 void fill_random(Matrix& m, std::uint32_t seed);
 
-// Tolerance rule used by ALL correctness tests (see QUALITY_STANDARDS.md):
+// Tolerance rule used by ALL correctness tests (see docs/development/QUALITY_STANDARDS.md):
 //   |got - ref| <= atol_for(K) + rtol * |ref|
 //   rtol = 1e-4,  atol_for(K) = 1e-5 * K
 bool close_enough(float got, float ref, int K);

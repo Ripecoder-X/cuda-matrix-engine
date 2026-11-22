@@ -36,7 +36,7 @@ Decisions are appended here as batches make them. Each entry names the batch.
 ## Batch 1.4
 
 - **Catch2 version:** pinned to tag `v3.9.1` (latest v3 tag visible from the upstream repository when
-  the batch ran). Also recorded in `QUALITY_STANDARDS.md`.
+  the batch ran). Also recorded in `docs/development/QUALITY_STANDARDS.md`.
 - **Test target layout:** one executable `cme_tests` contains all test sources, with
   `catch_discover_tests` registering each test case with CTest.
 - **New test files:** `tests/test_status.cpp` and `tests/test_gemm_reference.cpp` were added beyond
@@ -256,9 +256,9 @@ and non-NVIDIA backends.
 - **Authorization:** the owner explicitly authorized one agent to complete all remaining work and
   to exercise the owner/VERIFY authority for final approvals. This is the Phase 0 gate waiver and
   the Phase 8 verifier record required by HANDOFF §5 and §6.
-- **Phase 8 correction:** `TASK_BOARD.md` had 8.1–8.3 already marked `VERIFIED` with no agent, date,
+- **Phase 8 correction:** `docs/development/TASK_BOARD.md` had 8.1–8.3 already marked `VERIFIED` with no agent, date,
   notes, or handoff files. Those rows were reset to the verified state only after this closeout
-  produced `handoffs/8.1.md`, `handoffs/8.2.md`, `handoffs/8.3.md`, and `handoffs/VERIFY-closeout.md`.
+  produced `docs/development/handoffs/8.1.md`, `docs/development/handoffs/8.2.md`, `docs/development/handoffs/8.3.md`, and `docs/development/handoffs/VERIFY-closeout.md`.
 - **Phase 8 test fixes:** four tests added with the Phase 8 commit were malformed. A Catch2 v3
   message stream was replaced with `INFO`; the alpha-zero reference C was initialized from the same
   `initial_c` value as the CUDA result; two strided-view cases used incompatible GEMM dimensions;

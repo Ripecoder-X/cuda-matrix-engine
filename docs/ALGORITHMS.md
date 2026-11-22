@@ -2,7 +2,7 @@
 
 All kernels compute `C = alpha * A * B + beta * C` for row-major FP32 matrices with leading
 dimensions `lda`, `ldb`, and `ldc`. Each kernel accumulates in `float`; the CPU reference accumulates
-each dot product in `double`. The tolerance rule in `QUALITY_STANDARDS.md` accounts for this
+each dot product in `double`. The tolerance rule in `docs/development/QUALITY_STANDARDS.md` accounts for this
 difference. No kernel reads `C` when `beta == 0`.
 
 ## Naive kernel

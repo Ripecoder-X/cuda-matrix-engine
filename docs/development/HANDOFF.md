@@ -3,7 +3,7 @@
 **Project:** `cuda-matrix-engine` (Project 01 of the CUDA Portfolio)
 **Owner:** Nirmal
 **Status of this document:** Architecture and implementation complete; all 28 batches VERIFIED.
-**Copy location:** Repository root as `HANDOFF.md`; original at `/home/Ripecoder/CUDA_MATRIX_ENGINE_HANDOFF.md`.
+**Copy location:** Repository path as `docs/development/HANDOFF.md`; original at `/home/Ripecoder/CUDA_MATRIX_ENGINE_HANDOFF.md`.
 
 ---
 
@@ -14,13 +14,13 @@ You are one agent in a chain. Agents may run out of context, time, or quota at a
 Follow this loop every session:
 
 1. **Read this file** sections 0, 1, 2, 3 and 4 in full. Do not skip the interface contracts in section 4. They are binding.
-2. **Read `TASK_BOARD.md`** (created in Batch 0.3). Find the first batch whose status is not `VERIFIED`.
+2. **Read `docs/development/TASK_BOARD.md`** (created in Batch 0.3). Find the first batch whose status is not `VERIFIED`.
 3. **Read the batch** in section 6 that matches that ID. Check its dependencies are `VERIFIED`. If a dependency is not verified, stop and mark your batch `BLOCKED` with the reason.
-4. **Mark the batch `IN_PROGRESS`** on `TASK_BOARD.md` before writing any code. Record your agent name and the date.
+4. **Mark the batch `IN_PROGRESS`** on `docs/development/TASK_BOARD.md` before writing any code. Record your agent name and the date.
 5. **Do only the files listed for that batch.** If you need a change in a file owned by another batch, do not make it. Write the request in the batch's handoff note and mark yourself `BLOCKED`.
 6. **Run the batch's verification command.** Paste the actual output summary into the handoff note.
-7. **Write a handoff note** to `handoffs/<BATCH_ID>.md` using the template in section 8.
-8. **Update `TASK_BOARD.md`** to `UNDER_REVIEW` (you finished it) or `BLOCKED`. Only the verifier role moves a batch to `VERIFIED`.
+7. **Write a handoff note** to `docs/development/handoffs/<BATCH_ID>.md` using the template in section 8.
+8. **Update `docs/development/TASK_BOARD.md`** to `UNDER_REVIEW` (you finished it) or `BLOCKED`. Only the verifier role moves a batch to `VERIFIED`.
 9. **Stop.** Do not start the next batch in the same session unless your context clearly has room and the next batch is small. Finishing one batch cleanly is worth more than starting two and leaving a mess.
 
 ### Non-negotiable rules
@@ -37,8 +37,8 @@ Follow this loop every session:
 
 Write a checkpoint immediately, before you run out:
 
-- Update `TASK_BOARD.md` to `IN_PROGRESS` with a one-line "next step" for the batch.
-- Write `handoffs/<BATCH_ID>.md` with what is done, what is not, and the exact next command to run.
+- Update `docs/development/TASK_BOARD.md` to `IN_PROGRESS` with a one-line "next step" for the batch.
+- Write `docs/development/handoffs/<BATCH_ID>.md` with what is done, what is not, and the exact next command to run.
 - Leave the repository in a building state if at all possible. If it cannot build, say so in the handoff note at the top.
 
 ---
@@ -100,20 +100,22 @@ cuda-matrix-engine/
 ├── LICENSE                       (Batch 0.2, owner decision — see section 9)
 ├── .gitignore
 ├── .clang-format
-├── HANDOFF.md                    (copy of this file)
-├── MASTER_PLAN.md                (Batch 0.3)
-├── AGENTS.md                     (Batch 0.3)
-├── ARCHITECTURE.md               (Batch 0.3)
-├── INTERFACES.md                 (Batch 0.3, mirrors section 4 of this file)
-├── QUALITY_STANDARDS.md          (Batch 0.3)
-├── TASK_BOARD.md                 (Batch 0.3)
 ├── docs/
 │   ├── ENVIRONMENT.md            (Batch 0.1)
 │   ├── ALGORITHMS.md
 │   ├── BENCHMARKING.md
 │   ├── PROFILING.md
 │   ├── PERFORMANCE_REPORT.md
-│   └── DESIGN_DECISIONS.md
+│   ├── DESIGN_DECISIONS.md
+│   └── development/
+│       ├── HANDOFF.md            (copy of this file)
+│       ├── MASTER_PLAN.md        (Batch 0.3)
+│       ├── AGENTS.md             (Batch 0.3)
+│       ├── ARCHITECTURE.md       (Batch 0.3)
+│       ├── INTERFACES.md         (Batch 0.3, mirrors section 4 of this file)
+│       ├── QUALITY_STANDARDS.md  (Batch 0.3)
+│       ├── TASK_BOARD.md         (Batch 0.3)
+│       └── handoffs/             (one note per batch, created as work happens)
 ├── include/cme/                  (PUBLIC — no CUDA headers allowed)
 │   ├── matrix.hpp
 │   ├── matrix_view.hpp
@@ -171,8 +173,7 @@ cuda-matrix-engine/
 ├── results/
 │   ├── .gitkeep
 │   └── README.md
-├── .github/workflows/build.yml
-└── handoffs/                     (one note per batch, created as work happens)
+└── .github/workflows/build.yml
 ```
 
 ### 3.2 Frozen-tree amendments (binding)
@@ -530,7 +531,7 @@ namespace cme::test {
 // Fills with uniform values in [-1, 1] from a deterministic seed.
 void fill_random(Matrix& m, std::uint32_t seed);
 
-// Tolerance rule used by ALL correctness tests (see QUALITY_STANDARDS.md):
+// Tolerance rule used by ALL correctness tests (see docs/development/QUALITY_STANDARDS.md):
 //   |got - ref| <= atol_for(K) + rtol * |ref|
 //   rtol = 1e-4,  atol_for(K) = 1e-5 * K
 bool close_enough(float got, float ref, int K);
@@ -680,7 +681,7 @@ A batch is `VERIFIED` only when a **different agent** (VERIFY role) has run the 
 - `.clang-format`
 - `README.md` (placeholder: title, one-paragraph description, "under construction")
 - `LICENSE` — **do not create until the owner chooses a license (see section 9, open decision D1).** Mark the batch with this item open if not decided.
-- All empty directories with `.gitkeep` where needed: `include/cme/`, `src/core/`, `src/cuda/kernels/`, `src/api/`, `tests/`, `benchmarks/`, `examples/`, `scripts/`, `results/`, `docs/`, `handoffs/`, `.github/workflows/`
+- All empty directories with `.gitkeep` where needed: `include/cme/`, `src/core/`, `src/cuda/kernels/`, `src/api/`, `tests/`, `benchmarks/`, `examples/`, `scripts/`, `results/`, `docs/`, `docs/development/handoffs/`, `.github/workflows/`
 
 **Requirements for `CMakeLists.txt`:**
 - `cmake_minimum_required(VERSION 3.24)` (CUDA language support and `CMAKE_CUDA_ARCHITECTURES` handling)
@@ -729,14 +730,14 @@ cmake --build --preset linux-debug
 **Depends on:** 0.2.
 
 **Files to create:**
-- `MASTER_PLAN.md` — copy the phase list from section 6 of this file, with batch IDs.
-- `AGENTS.md` — the rules from section 0 of this file, verbatim, plus: "If you are a free-tier or limited-context agent, do one batch per session."
-- `ARCHITECTURE.md` — section 5 of this file, verbatim.
-- `INTERFACES.md` — section 4 of this file, verbatim.
-- `QUALITY_STANDARDS.md` — section 11 (Definition of Done) and the tolerance rule from section 4.12, plus the benchmark rules from section 7.
-- `TASK_BOARD.md` — table of every batch ID in section 6, with columns: `ID | Phase | Role | Status | Agent | Date | Depends on | Notes`. All statuses start as `NOT_STARTED` except 0.1, which is `NOT_STARTED` too.
+- `docs/development/MASTER_PLAN.md` — copy the phase list from section 6 of this file, with batch IDs.
+- `docs/development/AGENTS.md` — the rules from section 0 of this file, verbatim, plus: "If you are a free-tier or limited-context agent, do one batch per session."
+- `docs/development/ARCHITECTURE.md` — section 5 of this file, verbatim.
+- `docs/development/INTERFACES.md` — section 4 of this file, verbatim.
+- `docs/development/QUALITY_STANDARDS.md` — section 11 (Definition of Done) and the tolerance rule from section 4.12, plus the benchmark rules from section 7.
+- `docs/development/TASK_BOARD.md` — table of every batch ID in section 6, with columns: `ID | Phase | Role | Status | Agent | Date | Depends on | Notes`. All statuses start as `NOT_STARTED` except 0.1, which is `NOT_STARTED` too.
 - `docs/ALGORITHMS.md`, `docs/BENCHMARKING.md`, `docs/PROFILING.md`, `docs/PERFORMANCE_REPORT.md`, `docs/DESIGN_DECISIONS.md` — stubs with a title and "TBD by batch X.Y".
-- `handoffs/README.md` — explains the handoff note template in section 8.
+- `docs/development/handoffs/README.md` — explains the handoff note template in section 8.
 
 **Status values for TASK_BOARD (use exactly these):**
 `NOT_STARTED` → `IN_PROGRESS` → `UNDER_REVIEW` → `VERIFIED`
@@ -744,10 +745,10 @@ Side states: `BLOCKED` (with reason in Notes).
 
 **Acceptance criteria:**
 - All seven control files exist.
-- `TASK_BOARD.md` lists every batch from section 6, in order.
-- `INTERFACES.md` matches section 4 exactly. Diff the two to confirm.
+- `docs/development/TASK_BOARD.md` lists every batch from section 6, in order.
+- `docs/development/INTERFACES.md` matches section 4 exactly. Diff the two to confirm.
 
-**Verification:** `grep -c "^Batch\|^| [0-9]" TASK_BOARD.md` equals the number of batches in section 6 (see section 6 summary table).
+**Verification:** `grep -c "^Batch\|^| [0-9]" docs/development/TASK_BOARD.md` equals the number of batches in section 6 (see section 6 summary table).
 
 **Done when:** the verification passes and the files are committed.
 
@@ -830,7 +831,7 @@ Side states: `BLOCKED` (with reason in Notes).
 - Triple loop is fine. Do not optimize.
 
 **Requirements for `tests/CMakeLists.txt`:**
-- Add Catch2 v3 via `FetchContent`, pinned to a **specific tag**. Record the tag in `docs/DESIGN_DECISIONS.md` and `QUALITY_STANDARDS.md`. Pick the most recent v3 release available at the time of the batch; do not use a branch name.
+- Add Catch2 v3 via `FetchContent`, pinned to a **specific tag**. Record the tag in `docs/DESIGN_DECISIONS.md` and `docs/development/QUALITY_STANDARDS.md`. Pick the most recent v3 release available at the time of the batch; do not use a branch name.
 - Use `catch_discover_tests` with CTest.
 - Each test source is a separate executable or one executable per file — choose one and document it. Recommended: one executable `cme_tests` with all test files.
 
@@ -900,7 +901,7 @@ ctest --preset linux-debug --output-on-failure
 - Move semantics: moved-from buffer has size 0 and null data.
 - `copy_from_host` with count > size returns InvalidArgument.
 
-These tests need a GPU. If no CUDA device is present, the test must **skip** with a clear message rather than fail. Use Catch2 `SKIP`. Record this policy in QUALITY_STANDARDS.md.
+These tests need a GPU. If no CUDA device is present, the test must **skip** with a clear message rather than fail. Use Catch2 `SKIP`. Record this policy in docs/development/QUALITY_STANDARDS.md.
 
 **Verification:**
 ```
@@ -1283,7 +1284,7 @@ Compare with `close_enough(got, ref, K)`.
 
 **Depends on:** 7.3.
 
-**Files:** `README.md`, `docs/ARCHITECTURE.md` (if separate from root `ARCHITECTURE.md` — keep one copy only, at the root), `docs/ALGORITHMS.md`, `docs/DESIGN_DECISIONS.md`, `docs/PERFORMANCE_REPORT.md` (final pass).
+**Files:** `README.md`, `docs/development/ARCHITECTURE.md`, `docs/ALGORITHMS.md`, `docs/DESIGN_DECISIONS.md`, `docs/PERFORMANCE_REPORT.md` (final pass).
 
 **Requirements for `README.md`:**
 - One-paragraph description.
@@ -1319,11 +1320,11 @@ Compare with `close_enough(got, ref, K)`.
 **Depends on:** 8.2.
 
 **Steps:**
-1. Walk through the Definition of Done table in `QUALITY_STANDARDS.md` (section 11 of this file). Mark each row with evidence (file path or command output).
-2. Confirm every batch in `TASK_BOARD.md` is `VERIFIED`.
+1. Walk through the Definition of Done table in `docs/development/QUALITY_STANDARDS.md` (section 11 of this file). Mark each row with evidence (file path or command output).
+2. Confirm every batch in `docs/development/TASK_BOARD.md` is `VERIFIED`.
 3. Confirm the frozen-tree amendments in section 3.2 are all either applied or recorded in `DESIGN_DECISIONS.md`.
 4. Confirm no CUDA header is in `include/cme/`.
-5. Confirm `INTERFACES.md` still matches section 4 of this file.
+5. Confirm `docs/development/INTERFACES.md` still matches section 4 of this file.
 6. Confirm no performance claim in any document lacks a CSV or profile reference.
 
 **Done when:** the checklist is complete with evidence. The owner reviews the summary.
@@ -1367,7 +1368,7 @@ Compare with `close_enough(got, ref, K)`.
 
 Total: 28 batches across 9 phases (0–8).
 
-Parallelism note: 1.3 and 1.2 can run in parallel. 2.x can start as soon as 1.1 is verified, in parallel with 1.2–1.4. 6.1 can start once 4.2 is verified, in parallel with 5.x. Use `TASK_BOARD.md` to avoid two agents editing the same file.
+Parallelism note: 1.3 and 1.2 can run in parallel. 2.x can start as soon as 1.1 is verified, in parallel with 1.2–1.4. 6.1 can start once 4.2 is verified, in parallel with 5.x. Use `docs/development/TASK_BOARD.md` to avoid two agents editing the same file.
 
 ---
 
@@ -1389,7 +1390,7 @@ Parallelism note: 1.3 and 1.2 can run in parallel. 2.x can start as soon as 1.1 
 
 ## 8. Handoff note template
 
-Every batch ends with a file `handoffs/<BATCH_ID>.md` (for example `handoffs/3.2.md`). Use this exact template:
+Every batch ends with a file `docs/development/handoffs/<BATCH_ID>.md` (for example `docs/development/handoffs/3.2.md`). Use this exact template:
 
 ```markdown
 # Handoff — Batch <ID>: <title>
@@ -1445,8 +1446,8 @@ Agents encountering an open decision must not guess silently. Record it in the h
 
 | Risk | Early sign | Response |
 |---|---|---|
-| Free-tier agent runs out mid-batch | Handoff note missing or partial | Next agent reads `TASK_BOARD.md` and the last `handoffs/` file. If the batch's files are partially written, the next agent completes or reverts them, then verifies from scratch. Never trust a partial batch without running its verification. |
-| Two agents edit the same file | Merge conflicts, build breaks in unrelated code | Check `TASK_BOARD.md` before touching a file. Owners are listed per batch. Do not edit files owned by another batch. |
+| Free-tier agent runs out mid-batch | Handoff note missing or partial | Next agent reads `docs/development/TASK_BOARD.md` and the last `docs/development/handoffs/` file. If the batch's files are partially written, the next agent completes or reverts them, then verifies from scratch. Never trust a partial batch without running its verification. |
+| Two agents edit the same file | Merge conflicts, build breaks in unrelated code | Check `docs/development/TASK_BOARD.md` before touching a file. Owners are listed per batch. Do not edit files owned by another batch. |
 | Interface drift | Compile errors between modules | Diff against section 4. Fix the implementation, not the interface. If the interface is wrong, `BLOCKED`. |
 | CUDA version mismatch | Build fails on `cuda_runtime.h` or architecture flags | Check `docs/ENVIRONMENT.md`. Confirm `CME_CUDA_ARCHITECTURES` matches the GPU (89 for RTX 4070 Ti SUPER). Do not change the architecture value to silence an error without recording why. |
 | Kernel hangs or wrong results | Test timeouts, mismatched output | Run `compute-sanitizer` first. Check `__syncthreads()` placement and bounds checks. Do not increase tolerance to hide a bug. |
@@ -1459,7 +1460,7 @@ Agents encountering an open decision must not guess silently. Record it in the h
 
 ## 11. Definition of done (project level)
 
-Copy into `QUALITY_STANDARDS.md`. The project is complete only when every row has evidence.
+Copy into `docs/development/QUALITY_STANDARDS.md`. The project is complete only when every row has evidence.
 
 | Area | Acceptance criteria | Evidence required |
 |---|---|---|
@@ -1468,7 +1469,7 @@ Copy into `QUALITY_STANDARDS.md`. The project is complete only when every row ha
 | Memory | No CUDA memory errors | `compute-sanitizer --tool memcheck` clean (in `scripts/test.sh` output) |
 | Races | No shared-memory races in kernels | `compute-sanitizer --tool racecheck` clean on kernel tests |
 | Edge cases | Odd dimensions, non-square, K=1, M=1, strided views, beta=0 with NaN, alpha=0 tested | `test_gemm_edge_cases` passes |
-| API | Stable documented public headers with no CUDA includes | grep result; `INTERFACES.md` matches section 4 |
+| API | Stable documented public headers with no CUDA includes | grep result; `docs/development/INTERFACES.md` matches section 4 |
 | Performance | Reproducible benchmark CSV from a full run | File in `results/` and name in `PERFORMANCE_REPORT.md` |
 | Profiling | Nsight evidence for every optimization claim | Profile files in `results/profiles/`; `PROFILING.md` entries |
 | Documentation | Build, usage, algorithms, benchmarking, and performance documented | Files exist and contain no `TBD` placeholders |
@@ -1494,7 +1495,7 @@ If you are the first agent reading this and the repository does not exist yet:
 3. Execute Batch 0.2 and 0.3.
 4. Stop. Write your handoff. The next agent continues from Phase 1.
 
-If you are the first agent and the repository **already exists**: skip to `TASK_BOARD.md`, find the first batch not `VERIFIED`, and follow section 0.
+If you are the first agent and the repository **already exists**: skip to `docs/development/TASK_BOARD.md`, find the first batch not `VERIFIED`, and follow section 0.
 
 ---
 

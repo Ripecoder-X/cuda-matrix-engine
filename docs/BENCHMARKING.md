@@ -34,7 +34,7 @@ arithmetic.
 
 ## Kernel-only benchmark exception
 
-HANDOFF.md section 5.2 normally limits benchmarks to `include/cme/*` headers. The kernel-only
+docs/development/HANDOFF.md section 5.2 normally limits benchmarks to `include/cme/*` headers. The kernel-only
 benchmark is the one permitted exception: `benchmarks/benchmark_gemm.cu` includes
 `src/cuda/gemm_dispatch.hpp` and `src/cuda/device_buffer.hpp` so it can call `gemm_device` and
 allocate device buffers directly. This isolates kernel launch time from host allocation, host copies,

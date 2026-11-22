@@ -5,13 +5,13 @@ You are one agent in a chain. Agents may run out of context, time, or quota at a
 Follow this loop every session:
 
 1. **Read this file** sections 0, 1, 2, 3 and 4 in full. Do not skip the interface contracts in section 4. They are binding.
-2. **Read `TASK_BOARD.md`** (created in Batch 0.3). Find the first batch whose status is not `VERIFIED`.
+2. **Read `docs/development/TASK_BOARD.md`** (created in Batch 0.3). Find the first batch whose status is not `VERIFIED`.
 3. **Read the batch** in section 6 that matches that ID. Check its dependencies are `VERIFIED`. If a dependency is not verified, stop and mark your batch `BLOCKED` with the reason.
-4. **Mark the batch `IN_PROGRESS`** on `TASK_BOARD.md` before writing any code. Record your agent name and the date.
+4. **Mark the batch `IN_PROGRESS`** on `docs/development/TASK_BOARD.md` before writing any code. Record your agent name and the date.
 5. **Do only the files listed for that batch.** If you need a change in a file owned by another batch, do not make it. Write the request in the batch's handoff note and mark yourself `BLOCKED`.
 6. **Run the batch's verification command.** Paste the actual output summary into the handoff note.
-7. **Write a handoff note** to `handoffs/<BATCH_ID>.md` using the template in section 8.
-8. **Update `TASK_BOARD.md`** to `UNDER_REVIEW` (you finished it) or `BLOCKED`. Only the verifier role moves a batch to `VERIFIED`.
+7. **Write a handoff note** to `docs/development/handoffs/<BATCH_ID>.md` using the template in section 8.
+8. **Update `docs/development/TASK_BOARD.md`** to `UNDER_REVIEW` (you finished it) or `BLOCKED`. Only the verifier role moves a batch to `VERIFIED`.
 9. **Stop.** Do not start the next batch in the same session unless your context clearly has room and the next batch is small. Finishing one batch cleanly is worth more than starting two and leaving a mess.
 
 ### Non-negotiable rules
@@ -28,8 +28,8 @@ Follow this loop every session:
 
 Write a checkpoint immediately, before you run out:
 
-- Update `TASK_BOARD.md` to `IN_PROGRESS` with a one-line "next step" for the batch.
-- Write `handoffs/<BATCH_ID>.md` with what is done, what is not, and the exact next command to run.
+- Update `docs/development/TASK_BOARD.md` to `IN_PROGRESS` with a one-line "next step" for the batch.
+- Write `docs/development/handoffs/<BATCH_ID>.md` with what is done, what is not, and the exact next command to run.
 - Leave the repository in a building state if at all possible. If it cannot build, say so in the handoff note at the top.
 
 ---

@@ -1,7 +1,8 @@
 # Handoff Notes
 
-One file per batch: `handoffs/<BATCH_ID>.md`. Use the template below exactly. Do not paste source
-code into a note; reference file paths and line counts.
+One file per batch: `docs/development/handoffs/<BATCH_ID>.md`. Use the template below exactly. Do
+not paste source code into a note; reference file paths and line counts. Historical notes retain the
+path names recorded at the time they were written.
 
 ```markdown
 # Handoff — Batch <ID>: <title>

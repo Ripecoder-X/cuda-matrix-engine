@@ -25,7 +25,7 @@ For a fast smoke test:
 
 ## Reading the CSV
 
-The column order is frozen in `HANDOFF.md` section 4.13. One row is one algorithm, size, and
+The column order is frozen in `docs/development/HANDOFF.md` section 4.13. One row is one algorithm, size, and
 measurement type. `measurement` is one of `kernel_only`, `end_to_end`, `h2d_transfer`, or
 `d2h_transfer`. Times are milliseconds. `gflops_median` is zero for transfer rows because a transfer
 does not perform GEMM arithmetic.

@@ -1,7 +1,7 @@
 # Master Plan
 
 Execution plan for `cuda-matrix-engine`. A batch is the unit of work for one agent session.
-Batch IDs are permanent. Dependency and acceptance details live in `HANDOFF.md` section 6.
+Batch IDs are permanent. Dependency and acceptance details live in `docs/development/HANDOFF.md` section 6.
 
 ## Phase 0 — Environment and control plane
 

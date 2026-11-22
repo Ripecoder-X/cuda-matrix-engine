@@ -44,7 +44,7 @@ The project is complete only when every row has evidence.
 | Memory | No CUDA memory errors | `compute-sanitizer --tool memcheck` clean (in `scripts/test.sh` output) |
 | Races | No shared-memory races in kernels | `compute-sanitizer --tool racecheck` clean on kernel tests |
 | Edge cases | Odd dimensions, non-square, K=1, M=1, strided views, beta=0 with NaN, alpha=0 tested | `test_gemm_edge_cases` passes |
-| API | Stable documented public headers with no CUDA includes | grep result; `INTERFACES.md` matches section 4 |
+| API | Stable documented public headers with no CUDA includes | grep result; `docs/development/INTERFACES.md` matches section 4 |
 | Performance | Reproducible benchmark CSV from a full run | File in `results/` and name in `PERFORMANCE_REPORT.md` |
 | Profiling | Nsight evidence for every optimization claim | Profile files in `results/profiles/`; `PROFILING.md` entries |
 | Documentation | Build, usage, algorithms, benchmarking, and performance documented | Files exist and contain no `TBD` placeholders |
