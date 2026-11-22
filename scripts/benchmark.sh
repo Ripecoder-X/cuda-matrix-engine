@@ -4,6 +4,8 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "${ROOT}"
 
+PRESET="${CME_BENCHMARK_PRESET:-linux-release}"
+
 QUICK=0
 for arg in "$@"; do
     if [[ "${arg}" == "--quick" ]]; then
@@ -11,18 +13,22 @@ for arg in "$@"; do
     fi
 done
 
-cmake --preset linux-release
-cmake --build --preset linux-release -j "$(nproc)"
+cmake --preset "${PRESET}"
+cmake --build --preset "${PRESET}" -j "$(nproc)"
 
 mkdir -p results
 STAMP="$(date -u '+%Y%m%dT%H%M%SZ')"
+SUFFIX=""
+if [[ "${PRESET}" != "linux-release" ]]; then
+    SUFFIX="_${PRESET}"
+fi
 if [[ "${QUICK}" -eq 1 ]]; then
-    OUTPUT="results/gemm_${STAMP}_quick.csv"
+    OUTPUT="results/gemm_${STAMP}${SUFFIX}_quick.csv"
 else
-    OUTPUT="results/gemm_${STAMP}.csv"
+    OUTPUT="results/gemm_${STAMP}${SUFFIX}.csv"
 fi
 
-./build/linux-release/benchmarks/cme_benchmark --output "${OUTPUT}" "$@"
+"./build/${PRESET}/benchmarks/cme_benchmark" --output "${OUTPUT}" "$@"
 ./scripts/environment.sh > "${OUTPUT%.csv}.env.txt"
 
 printf 'benchmark CSV: %s\n' "${OUTPUT}"

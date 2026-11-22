@@ -1,8 +1,10 @@
 # Performance Report
 
-Final report verified during closeout on 2026-11-22. All numbers below are copied from the final
-benchmark CSV `results/gemm_20261122T073654Z.csv` (63 lines: one frozen header plus 62 data rows).
-Profiler evidence is in `results/profiles/` and summarized in `docs/PROFILING.md`.
+Final report verified during closeout on 2026-11-22. Main tables are copied from the final benchmark
+CSV `results/gemm_20261122T073654Z.csv` (63 lines: one frozen header plus 62 data rows). The optional
+cuBLAS baseline was measured later in `results/gemm_20261122T102414Z_linux-release-cublas.csv`
+(68 lines: one header plus 67 data rows). Profiler evidence is in `results/profiles/` and summarized
+in `docs/PROFILING.md`.
 
 ## Hardware and software
 
@@ -15,8 +17,9 @@ Source: `docs/ENVIRONMENT.md`.
   reported by `cudaRuntimeGetVersion()`: 12.0.
 - OS: Pop!_OS 24.04 LTS, kernel 7.0.11-76070011-generic.
 - Build: CMake 3.28.3, g++ 13.3.0, Release build (`linux-release`), `CME_CUDA_ARCHITECTURES=89`.
-- cuBLAS: `CME_WITH_CUBLAS=OFF` (owner default D3). No cuBLAS row exists in the CSV, so cuBLAS is
-  **not measured**.
+- cuBLAS: main CSV used `CME_WITH_CUBLAS=OFF` (owner default D3). The optional baseline CSV used the
+  `linux-release-cublas` preset (`CME_WITH_CUBLAS=ON`) and direct `cublasSgemm` from the CUDA 12.0
+  toolkit. No Tensor Core result is claimed.
 
 Each CSV row records the GPU name, driver version, and CUDA runtime version. The measured GPU state
 (median of samples taken before and after each configuration) is also in every row.
@@ -54,12 +57,31 @@ dispatcher exposes. Values are `gflops_median` from the final CSV.
 | CUDA_OPTIMIZED | 16 | 2034.095068 | 4766.254508 | 5656.035843 | 6116.374924 | 5593.337515 |
 | CUDA_OPTIMIZED | 32 | 2164.243581 | 7906.321992 | 12633.445936 | 14122.236099 | 12210.370568 |
 
-Highest measured kernel-only result: **14122.236099 GFLOP/s** for CUDA_OPTIMIZED tile 32 at
-2048x2048x2048. At 4096 the same configuration measured 12210.370568 GFLOP/s with an IQR of
-0.555928 ms.
+Highest measured project-kernel kernel-only result in the main CSV: **14122.236099 GFLOP/s** for
+CUDA_OPTIMIZED tile 32 at 2048x2048x2048. At 4096 the same configuration measured 12210.370568
+GFLOP/s with an IQR of 0.555928 ms.
 
 Kernel-only medians are not directly comparable to end-to-end numbers: the kernel-only harness
 keeps device buffers allocated and copied once, outside the timed region.
+
+## Optional cuBLAS baseline
+
+Source: `results/gemm_20261122T102414Z_linux-release-cublas.csv`. This optional run used the same
+5 warm-up / 30 measured iteration methodology and CUDA-event kernel-only timing. `CUBLAS_REFERENCE`
+calls `cublasSgemm` directly on the same preallocated device buffers. Row-major inputs are passed by
+swapping operands; no public interface changed. No end-to-end cuBLAS row is produced.
+
+| Size | CUBLAS median ms | CUBLAS IQR ms | CUBLAS GFLOP/s | CUDA_OPTIMIZED tile 32 GFLOP/s | CUBLAS / optimized |
+|---:|---:|---:|---:|---:|---:|
+| 256 | 0.009808 | 0.001024 | 3421.128813 | 2184.533389 | 1.57x |
+| 512 | 0.018608 | 0.000800 | 14425.809014 | 8456.258179 | 1.71x |
+| 1024 | 0.100656 | 0.001728 | 21334.879874 | 12633.445936 | 1.69x |
+| 2048 | 0.523264 | 0.002048 | 32832.125817 | 14069.865882 | 2.33x |
+| 4096 | 4.490208 | 0.035432 | 30608.594571 | 12241.675154 | 2.50x |
+
+The optimized-row values above are from the same optional CSV, not the earlier main CSV. In this run
+`CUBLAS_REFERENCE` was faster than every project kernel at all five sizes. The baselines compare
+rows produced by one command on the same GPU; min, max, and full GPU state are in the CSV.
 
 ## End-to-end median milliseconds
 
@@ -140,8 +162,11 @@ The frozen default is a known limitation, not an unnoticed result.
   lower than the 2745.0 MHz to 2760.0 MHz seen for other kernel-only 4096 rows) and an IQR of
   0.555928 ms. No rows were removed.
 - The scalar CPU reference is reported only for 256 and 512 and is not a device measurement.
-- cuBLAS was not measured (`CME_WITH_CUBLAS=OFF`).
-- Tensor Cores, transposes, and batched GEMM are out of scope for this project.
+- The main benchmark CSV has no cuBLAS row (`CME_WITH_CUBLAS=OFF`). The optional
+  `CUBLAS_REFERENCE` baseline is in a separate CSV and is faster than the project kernels at every
+  measured size.
+- Tensor Core behavior is not claimed or characterized. Transposes and batched GEMM remain out of
+  scope for this project.
 - Nsight Compute required a privileged Docker wrapper because
   `/proc/driver/nvidia/params` has `RmProfilingAdminOnly: 1`. Nsight Systems required the manual
   `QdstrmImporter` step. Both are documented in `docs/PROFILING.md`.
@@ -160,7 +185,15 @@ This builds `linux-release`, runs the full benchmark, and writes
 ./scripts/benchmark.sh --quick
 ```
 
-The final CSV used for this report is `results/gemm_20261122T073654Z.csv`.
+The optional cuBLAS baseline is reproduced with:
+
+```bash
+CME_BENCHMARK_PRESET=linux-release-cublas ./scripts/benchmark.sh
+```
+
+It builds `linux-release-cublas` and writes `results/gemm_<UTC>_linux-release-cublas.csv`.
+The main CSV used for this report is `results/gemm_20261122T073654Z.csv`; the cuBLAS CSV is
+`results/gemm_20261122T102414Z_linux-release-cublas.csv`.
 
 ## Correctness evidence
 

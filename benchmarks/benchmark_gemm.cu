@@ -2,6 +2,10 @@
 
 #include <cuda_runtime.h>
 
+#if defined(CME_WITH_CUBLAS)
+#include <cublas_v2.h>
+#endif
+
 #include <chrono>
 #include <cstdint>
 #include <cstdio>
@@ -44,6 +48,80 @@ void require_status(const cme::Status& status, const char* what) {
         throw std::runtime_error(std::string(what) + ": " + status.message());
     }
 }
+
+#if defined(CME_WITH_CUBLAS)
+
+void require_cublas(cublasStatus_t status, const char* what) {
+    if (status != CUBLAS_STATUS_SUCCESS) {
+        throw std::runtime_error(std::string(what) + ": " + cublasGetStatusString(status));
+    }
+}
+
+class CublasHandle {
+public:
+    CublasHandle() {
+        require_cublas(cublasCreate(&handle_), "cublasCreate");
+    }
+
+    ~CublasHandle() {
+        if (handle_ != nullptr) {
+            cublasDestroy(handle_);
+        }
+    }
+
+    CublasHandle(const CublasHandle&) = delete;
+    CublasHandle& operator=(const CublasHandle&) = delete;
+
+    cublasHandle_t get() const { return handle_; }
+
+private:
+    cublasHandle_t handle_ = nullptr;
+};
+
+std::vector<double> measure_cublas_launches(cublasHandle_t handle,
+                                            int m,
+                                            int n,
+                                            int k,
+                                            const float* a,
+                                            const float* b,
+                                            float* c,
+                                            int warmup_iterations,
+                                            int measured_iterations) {
+    const float alpha = 1.0f;
+    const float beta = 0.0f;
+
+    for (int i = 0; i < warmup_iterations; ++i) {
+        require_cublas(cublasSgemm(handle, CUBLAS_OP_N, CUBLAS_OP_N, n, m, k, &alpha, b, n, a, k,
+                                   &beta, c, n),
+                       "cuBLAS warm-up launch");
+    }
+    require_cuda(cudaDeviceSynchronize(), "cuBLAS warm-up synchronize");
+
+    cudaEvent_t start = nullptr;
+    cudaEvent_t stop = nullptr;
+    require_cuda(cudaEventCreate(&start), "cuBLAS cudaEventCreate start");
+    require_cuda(cudaEventCreate(&stop), "cuBLAS cudaEventCreate stop");
+
+    std::vector<double> samples;
+    samples.reserve(static_cast<std::size_t>(measured_iterations));
+    for (int i = 0; i < measured_iterations; ++i) {
+        require_cuda(cudaEventRecord(start, nullptr), "cuBLAS cudaEventRecord start");
+        require_cublas(cublasSgemm(handle, CUBLAS_OP_N, CUBLAS_OP_N, n, m, k, &alpha, b, n, a, k,
+                                   &beta, c, n),
+                       "cuBLAS measured launch");
+        require_cuda(cudaEventRecord(stop, nullptr), "cuBLAS cudaEventRecord stop");
+        require_cuda(cudaEventSynchronize(stop), "cuBLAS cudaEventSynchronize");
+        float elapsed_ms = 0.0f;
+        require_cuda(cudaEventElapsedTime(&elapsed_ms, start, stop), "cuBLAS cudaEventElapsedTime");
+        samples.push_back(static_cast<double>(elapsed_ms));
+    }
+
+    require_cuda(cudaEventDestroy(start), "cuBLAS cudaEventDestroy start");
+    require_cuda(cudaEventDestroy(stop), "cuBLAS cudaEventDestroy stop");
+    return samples;
+}
+
+#endif
 
 std::vector<double> measure_kernel_launches(const cme::detail::DeviceGemmArgs& args,
                                             cme::GemmAlgorithm algorithm,
@@ -91,6 +169,11 @@ std::string cuda_runtime_version_string() {
 void run_kernel_only_benchmarks(const BenchmarkConfig& config,
                                 CsvWriter& writer,
                                 const RowContext& context) {
+#if defined(CME_WITH_CUBLAS)
+    CublasHandle cublas_handle;
+    require_cublas(cublasSetStream(cublas_handle.get(), nullptr), "cublasSetStream");
+#endif
+
     for (int size : config.sizes) {
         const int M = size;
         const int N = size;
@@ -149,6 +232,22 @@ void run_kernel_only_benchmarks(const BenchmarkConfig& config,
             std::fprintf(stderr, "kernel_only %s tile=%d %dx%dx%d median=%.3f ms\n",
                          spec.name, spec.tile_size, M, N, K, stats.median);
         }
+
+#if defined(CME_WITH_CUBLAS)
+        std::vector<GpuReading> cublas_readings = start_gpu_readings();
+        const std::vector<double> cublas_samples = measure_cublas_launches(
+            cublas_handle.get(), M, N, K, device_a.data(), device_b.data(), device_c.data(),
+            config.warmup_iterations, config.measured_iterations);
+        append_gpu_reading(&cublas_readings);
+
+        const SampleStats cublas_stats = summarize_samples(cublas_samples);
+        write_measurement_row(writer, context, "CUBLAS_REFERENCE", M, N, K, 0, "kernel_only",
+                              config.measured_iterations, cublas_stats,
+                              summarize_gpu_readings(cublas_readings));
+
+        std::fprintf(stderr, "kernel_only CUBLAS_REFERENCE tile=0 %dx%dx%d median=%.3f ms\n",
+                     M, N, K, cublas_stats.median);
+#endif
     }
 }
 

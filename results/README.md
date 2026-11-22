@@ -8,6 +8,9 @@ produced by `scripts/profile.sh`.
 - `gemm_<timestamp>.csv` — full benchmark run. Timestamp format is `YYYYMMDDTHHMMSSZ` in UTC.
 - `gemm_<timestamp>_quick.csv` — smoke-test run produced by `scripts/benchmark.sh --quick`. It uses
   sizes 256 and 512 only and fewer iterations. Do not cite quick results as full-run evidence.
+- `gemm_<timestamp>_<preset>.csv` — full run with a non-default preset. Example:
+  `gemm_<timestamp>_linux-release-cublas.csv` contains `CUBLAS_REFERENCE` rows.
+- `gemm_<timestamp>_<preset>_quick.csv` — smoke run with a non-default preset.
 - `gemm_<timestamp>.env.txt` — output of `scripts/environment.sh` captured beside the CSV.
 - `profiles/` — Nsight Systems and Nsight Compute reports. File names identify the kernel and size.
 
@@ -21,6 +24,12 @@ For a fast smoke test:
 
 ```sh
 ./scripts/benchmark.sh --quick
+```
+
+For the optional cuBLAS baseline:
+
+```sh
+CME_BENCHMARK_PRESET=linux-release-cublas ./scripts/benchmark.sh
 ```
 
 ## Reading the CSV

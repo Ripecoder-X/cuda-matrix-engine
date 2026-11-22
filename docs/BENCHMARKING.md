@@ -65,15 +65,17 @@ and API validation. The end-to-end benchmark uses only the public API.
 - **Driver and toolkit.** The installed `nvcc` is CUDA 12.0. The CUDA runtime version reported in each
   row comes from `cudaRuntimeGetVersion`; the driver version comes from `nvidia-smi`. They are separate
   values.
-- **cuBLAS.** Optional `CUBLAS_REFERENCE` rows are off by default (`CME_WITH_CUBLAS=OFF`, owner
-  decision D3). No cuBLAS row is produced or claimed unless the option is enabled and a non-optimized
-  `cublasSgemm` row appears in the CSV.
+- **cuBLAS.** Optional `CUBLAS_REFERENCE` kernel-only rows are off by default
+  (`CME_WITH_CUBLAS=OFF`, owner decision D3). The `linux-release-cublas` preset enables a direct
+  `cublasSgemm` baseline using the same device buffers and CUDA-event timing as the kernel-only rows.
+  No cuBLAS result is reported unless a `CUBLAS_REFERENCE` row appears in the cited CSV.
 
 ## Running
 
 ```sh
 ./scripts/benchmark.sh          # full run, linux-release, results/gemm_<timestamp>.csv
 ./scripts/benchmark.sh --quick  # smoke run, sizes 256 and 512
+CME_BENCHMARK_PRESET=linux-release-cublas ./scripts/benchmark.sh  # adds CUBLAS_REFERENCE rows
 ```
 
 The benchmark executable also accepts `--output <path>`, `--sizes <list>`, `--measurements <list>`,

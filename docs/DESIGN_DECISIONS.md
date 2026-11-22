@@ -276,3 +276,17 @@ and non-NVIDIA backends.
   script passed 48/48 CTest tests, memcheck reported 0 errors, and racecheck reported 0 hazards.
   `docs/PERFORMANCE_REPORT.md` numbers were regenerated from that CSV. No performance claim was
   invented and no row was removed.
+
+## Portfolio upgrade 1 — cuBLAS baseline
+
+- **Decision:** keep `CME_WITH_CUBLAS=OFF` as the default (owner decision D3) and add a benchmark-only
+  `CUBLAS_REFERENCE` kernel row behind the existing option. The public `GemmAlgorithm` enum and
+  dispatch table are frozen, so cuBLAS is not exposed through `cme::gemm()`.
+- **Mapping:** row-major A(M,K), B(K,N), and C(M,N) are passed to `cublasSgemm` as column-major
+  B^T(N,K) times A^T(K,M), producing C^T(N,M). Leading dimensions stay K, N, and N.
+- **Evidence:** `results/gemm_20261122T102414Z_linux-release-cublas.csv` was produced with the full
+  5/30 methodology, `linux-release-cublas`, and CUDA 12.0 cuBLAS. `CUBLAS_REFERENCE` measured
+  32832.125817 GFLOP/s at 2048 and 30608.594571 GFLOP/s at 4096, faster than the project kernels in
+  that run. No Tensor Core result is claimed.
+- **Reproduction:** `CME_BENCHMARK_PRESET=linux-release-cublas ./scripts/benchmark.sh`. The default
+  preset and CI remain unchanged.

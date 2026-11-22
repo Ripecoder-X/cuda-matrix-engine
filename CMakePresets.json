@@ -35,6 +35,20 @@
       }
     },
     {
+      "name": "linux-release-cublas",
+      "displayName": "Linux Release with cuBLAS reference",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/build/linux-release-cublas",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CME_CUDA_ARCHITECTURES": "89",
+        "CME_BUILD_TESTS": "ON",
+        "CME_BUILD_BENCHMARKS": "ON",
+        "CME_BUILD_EXAMPLES": "ON",
+        "CME_WITH_CUBLAS": "ON"
+      }
+    },
+    {
       "name": "windows-release",
       "displayName": "Windows Release (Ninja)",
       "generator": "Ninja",
@@ -59,6 +73,10 @@
       "configurePreset": "linux-release"
     },
     {
+      "name": "linux-release-cublas",
+      "configurePreset": "linux-release-cublas"
+    },
+    {
       "name": "windows-release",
       "configurePreset": "windows-release"
     }
@@ -74,6 +92,13 @@
     {
       "name": "linux-release",
       "configurePreset": "linux-release",
+      "output": {
+        "outputOnFailure": true
+      }
+    },
+    {
+      "name": "linux-release-cublas",
+      "configurePreset": "linux-release-cublas",
       "output": {
         "outputOnFailure": true
       }

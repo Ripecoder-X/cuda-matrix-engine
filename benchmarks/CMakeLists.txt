@@ -17,6 +17,11 @@ add_executable(cme_benchmark
 target_include_directories(cme_benchmark PRIVATE "${PROJECT_SOURCE_DIR}/src")
 target_link_libraries(cme_benchmark PRIVATE cme cme_benchmark_common CUDA::cudart)
 
+if(CME_WITH_CUBLAS)
+    target_compile_definitions(cme_benchmark PRIVATE CME_WITH_CUBLAS=1)
+    target_link_libraries(cme_benchmark PRIVATE CUDA::cublas)
+endif()
+
 add_test(
     NAME benchmark_csv_writer
     COMMAND cme_csv_writer_test "${CMAKE_CURRENT_BINARY_DIR}/csv_writer_test.csv"

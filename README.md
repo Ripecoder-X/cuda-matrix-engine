@@ -141,6 +141,11 @@ The chart compares final optimized tile 32 against the frozen default tile 16 ac
 sizes. Full tables, methodology, profile reports, and limitations are in
 `docs/PERFORMANCE_REPORT.md` and `docs/PROFILING.md`.
 
+An optional benchmark-only `cublasSgemm` baseline was also measured (default build stays
+`CME_WITH_CUBLAS=OFF`). At 2048 it measured 32832.125817 GFLOP/s versus 14069.865882 GFLOP/s for
+the project's optimized tile-32 kernel in the same run. The project does not claim to beat cuBLAS;
+the baseline and reproduction command are in `docs/PERFORMANCE_REPORT.md`.
+
 ## Environment
 
 Verified on Pop!_OS 24.04 LTS, Intel Core i9-14900K, 32 logical CPUs, 62 GiB RAM, NVIDIA GeForce
