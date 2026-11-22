@@ -94,6 +94,31 @@ Run it after a release build:
 
 Other examples are `cme_example_algorithms` and `cme_example_custom`.
 
+## Performance case study
+
+**Goal:** accelerate row-major FP32 GEMM while keeping the public API CUDA-free and the frozen
+default unchanged.
+
+**Bottleneck:** Nsight Compute showed the original `CUDA_OPTIMIZED` tile 32 kernel was limited by
+shared-memory instruction throughput. `mio_throttle` was 13.84 cycles per issued instruction,
+52.8% of total stalls, with zero shared-load/store bank conflicts and 96.70% compute and memory
+throughput. Details are in `docs/PROFILING.md`.
+
+**Change:** `src/cuda/kernels/gemm_optimized.cu` now uses a 4x4 register micro-tile with an 8x8
+block for TILE=32. Shared tiles stay padded, inner loops stay compile-time unrolled, and the public
+configuration API is unchanged.
+
+**Result:** at 2048x2048x2048, kernel-only median improved from 4.598656 ms
+(`CUDA_TILED` tile 16, the frozen default) to 1.216512 ms (`CUDA_OPTIMIZED` tile 32), from
+3735.845543 GFLOP/s to 14122.236099 GFLOP/s. End-to-end median at 4096 improved from 87.956173 ms
+to 57.728051 ms. The 256 kernel-only case is 0.92x, so the faster variant is not claimed there.
+
+![Measured speedup of optimized GEMM](docs/assets/optimized_speedup.svg)
+
+The chart compares final optimized tile 32 against the frozen default tile 16 across all measured
+sizes. Full tables, methodology, profile reports, and limitations are in
+`docs/PERFORMANCE_REPORT.md` and `docs/PROFILING.md`.
+
 ## Environment
 
 Verified on Pop!_OS 24.04 LTS, Intel Core i9-14900K, 32 logical CPUs, 62 GiB RAM, NVIDIA GeForce
