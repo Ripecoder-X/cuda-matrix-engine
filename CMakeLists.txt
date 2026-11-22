@@ -52,15 +52,58 @@ endif()
 
 add_library(cme STATIC ${CME_EXISTING_SOURCES})
 add_library(cme::cme ALIAS cme)
+target_compile_features(cme PUBLIC cxx_std_17)
+
+include(GNUInstallDirs)
 
 target_include_directories(cme
     PUBLIC
-        "${CMAKE_CURRENT_SOURCE_DIR}/include"
+        "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>"
+        "$<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>"
     PRIVATE
         "${CMAKE_CURRENT_SOURCE_DIR}/src"
 )
 
 target_link_libraries(cme PRIVATE CUDA::cudart)
+
+include(CMakePackageConfigHelpers)
+
+set(CME_INSTALL_CMAKEDIR "${CMAKE_INSTALL_LIBDIR}/cmake/cme")
+
+install(TARGETS cme
+    EXPORT cmeTargets
+    ARCHIVE DESTINATION "${CMAKE_INSTALL_LIBDIR}"
+    LIBRARY DESTINATION "${CMAKE_INSTALL_LIBDIR}"
+    RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}"
+)
+
+install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/include/"
+    DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}"
+)
+
+install(EXPORT cmeTargets
+    FILE cmeTargets.cmake
+    NAMESPACE cme::
+    DESTINATION "${CME_INSTALL_CMAKEDIR}"
+)
+
+configure_package_config_file(
+    "${CMAKE_CURRENT_SOURCE_DIR}/cmake/cmeConfig.cmake.in"
+    "${CMAKE_CURRENT_BINARY_DIR}/cmeConfig.cmake"
+    INSTALL_DESTINATION "${CME_INSTALL_CMAKEDIR}"
+)
+
+write_basic_package_version_file(
+    "${CMAKE_CURRENT_BINARY_DIR}/cmeConfigVersion.cmake"
+    VERSION "${PROJECT_VERSION}"
+    COMPATIBILITY SameMajorVersion
+)
+
+install(FILES
+    "${CMAKE_CURRENT_BINARY_DIR}/cmeConfig.cmake"
+    "${CMAKE_CURRENT_BINARY_DIR}/cmeConfigVersion.cmake"
+    DESTINATION "${CME_INSTALL_CMAKEDIR}"
+)
 
 if(CME_BUILD_TESTS)
     add_subdirectory(tests)

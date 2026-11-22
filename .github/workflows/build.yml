@@ -36,3 +36,7 @@ jobs:
     - name: Run tests
       run: |
         ctest --preset linux-debug --output-on-failure
+
+    - name: Check install package
+      run: |
+        ./scripts/check_install.sh build/linux-debug build/package-prefix

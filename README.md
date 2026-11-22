@@ -19,6 +19,28 @@ cmake --build --preset linux-release --parallel
 The helper `./scripts/build.sh` runs the same configure and build steps with all library, test,
 benchmark, and example targets enabled.
 
+## Install and consume
+
+After a release build, install the headers, static library, and CMake package:
+
+```bash
+cmake --install build/linux-release --prefix /path/to/prefix
+```
+
+An external C++17 project can then use the exported target without CUDA headers in its own sources:
+
+```cmake
+find_package(cme 0.1 REQUIRED CONFIG)
+target_link_libraries(your_target PRIVATE cme::cme)
+```
+
+`tests/package_consumer/` is a complete standalone consumer. Run the full install/consumer smoke test
+with:
+
+```bash
+./scripts/check_install.sh
+```
+
 ## Test
 
 ```bash
