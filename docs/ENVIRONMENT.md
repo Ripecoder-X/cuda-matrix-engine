@@ -97,6 +97,25 @@ $ python3 --version
 Python 3.12.3
 ```
 
+## CI toolkit pin (closeout 2026-11-22)
+
+`.github/workflows/build.yml` runs on `ubuntu-24.04` and installs CUDA 12.0.0 with
+`Jimver/cuda-toolkit` pinned to commit `b8bf9c6c28f8a92fbb04dcfcaee872e60c57462d` (tag `v0.2.36`).
+The workflow uses `method: local` with `linux-local-args: '["--toolkit"]'` and the `cmake` and
+`make` packages already present on the runner. GPU-less hosted runners run CPU-side tests only;
+GPU-dependent tests skip cleanly.
+
+## Compute sanitizer used for closeout
+
+The system `/usr/bin/compute-sanitizer` is version 2022.4.1 and cannot run with driver 595.84. The
+closeout verification used CUDA 13.2 compute-sanitizer version `2026.1.1.0` (build 38000597)
+extracted from `cuda-sanitizer-13-2_13.2.87-0ubuntu1_amd64.deb`. `scripts/test.sh` accepts an
+override:
+
+```
+CME_COMPUTE_SANITIZER=/path/to/cuda-13.2/bin/compute-sanitizer ./scripts/test.sh
+```
+
 ## Nominal GPU state at recording time
 
 ```

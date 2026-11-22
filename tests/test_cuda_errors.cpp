@@ -139,6 +139,7 @@ TEST_CASE("to_status maps success and CUDA errors", "[cuda][status]") {
 }
 
 TEST_CASE("check_last_launch reports a clean error state", "[cuda][status]") {
+    require_cuda_device();
     static_cast<void>(cudaGetLastError());
     const cme::Status status = cme::detail::check_last_launch("clean launch");
     REQUIRE(status.is_ok());

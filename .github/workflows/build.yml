@@ -8,16 +8,17 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
     - uses: actions/checkout@v4
 
     - name: Set up CUDA
-      uses: nvidia/github-actions/cuda@v1
+      uses: Jimver/cuda-toolkit@b8bf9c6c28f8a92fbb04dcfcaee872e60c57462d
       with:
-        cuda: '12.0'
-        driver: 'latest'
+        cuda: '12.0.0'
+        method: 'local'
+        linux-local-args: '["--toolkit"]'
 
     - name: Set up environment
       run: |

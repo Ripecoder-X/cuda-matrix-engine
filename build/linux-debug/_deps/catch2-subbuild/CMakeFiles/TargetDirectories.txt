@@ -1,3 +1,0 @@
-/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/_deps/catch2-subbuild/CMakeFiles/catch2-populate.dir
-/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/_deps/catch2-subbuild/CMakeFiles/edit_cache.dir
-/home/Ripecoder/work/cuda-matrix-engine/build/linux-debug/_deps/catch2-subbuild/CMakeFiles/rebuild_cache.dir

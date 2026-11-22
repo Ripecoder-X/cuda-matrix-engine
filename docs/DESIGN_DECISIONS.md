@@ -250,3 +250,29 @@ and non-NVIDIA backends.
 - **Report mapping:** `docs/PERFORMANCE_REPORT.md` numbers are copied from that CSV. cuBLAS is
   reported as not measured. The 256-size regression of the 4x4 optimized tile is listed as a known
   limitation.
+
+## Owner closeout — 2026-11-22
+
+- **Authorization:** the owner explicitly authorized one agent to complete all remaining work and
+  to exercise the owner/VERIFY authority for final approvals. This is the Phase 0 gate waiver and
+  the Phase 8 verifier record required by HANDOFF §5 and §6.
+- **Phase 8 correction:** `TASK_BOARD.md` had 8.1–8.3 already marked `VERIFIED` with no agent, date,
+  notes, or handoff files. Those rows were reset to the verified state only after this closeout
+  produced `handoffs/8.1.md`, `handoffs/8.2.md`, `handoffs/8.3.md`, and `handoffs/VERIFY-closeout.md`.
+- **Phase 8 test fixes:** four tests added with the Phase 8 commit were malformed. A Catch2 v3
+  message stream was replaced with `INFO`; the alpha-zero reference C was initialized from the same
+  `initial_c` value as the CUDA result; two strided-view cases used incompatible GEMM dimensions;
+  and the overlap case used separate allocations instead of aliasing pointers. The
+  `check_last_launch` test also gained the existing local `require_cuda_device()` guard so GPU-less
+  CI skips it cleanly. No public interface or kernel changed.
+- **CI pin:** replaced the nonexistent `nvidia/github-actions/cuda@v1` with
+  `Jimver/cuda-toolkit@b8bf9c6c28f8a92fbb04dcfcaee872e60c57462d` (v0.2.36), CUDA 12.0.0. The pin,
+  runner, and GPU-less CI scope are recorded in `docs/ENVIRONMENT.md`.
+- **Repository hygiene:** `.gitignore` now uses `build/` instead of the malformed `> build/`.
+  All 1042 previously tracked build artifacts were removed from the git index with
+  `git rm -r --cached build`; files remain on disk. `scripts/build.sh` was added to satisfy the
+  frozen target layout.
+- **Final evidence:** the final full benchmark is `results/gemm_20261122T073654Z.csv`. The full test
+  script passed 48/48 CTest tests, memcheck reported 0 errors, and racecheck reported 0 hazards.
+  `docs/PERFORMANCE_REPORT.md` numbers were regenerated from that CSV. No performance claim was
+  invented and no row was removed.

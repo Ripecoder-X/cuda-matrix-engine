@@ -1,7 +1,7 @@
 # Performance Report
 
-Final report produced by Batch 7.3 on 2026-11-03. All numbers below are copied from the final
-benchmark CSV `results/gemm_20261103T062611Z.csv` (63 lines: one frozen header plus 62 data rows).
+Final report verified during closeout on 2026-11-22. All numbers below are copied from the final
+benchmark CSV `results/gemm_20261122T073654Z.csv` (63 lines: one frozen header plus 62 data rows).
 Profiler evidence is in `results/profiles/` and summarized in `docs/PROFILING.md`.
 
 ## Hardware and software
@@ -48,15 +48,15 @@ dispatcher exposes. Values are `gflops_median` from the final CSV.
 
 | Algorithm | tile | 256 | 512 | 1024 | 2048 | 4096 |
 |---|---:|---:|---:|---:|---:|---:|
-| CUDA_NAIVE | 0 | 1936.428473 | 2508.930103 | 2702.515563 | 2762.591182 | 2276.460497 |
-| CUDA_TILED | 16 | 2312.185278 | 3196.878101 | 3489.346993 | 3737.159001 | 3378.671564 |
-| CUDA_TILED | 32 | 2545.087416 | 3158.361484 | 3334.104841 | 3594.511858 | 3132.970473 |
-| CUDA_OPTIMIZED | 16 | 1882.542217 | 4599.017455 | 5602.209334 | 6126.600404 | 5533.724808 |
-| CUDA_OPTIMIZED | 32 | 2286.970562 | 8456.258179 | 12409.182971 | 14075.398984 | 12077.491619 |
+| CUDA_NAIVE | 0 | 1927.529378 | 2520.615413 | 2700.829618 | 2763.053151 | 2264.934096 |
+| CUDA_TILED | 16 | 2348.434518 | 3086.884302 | 3477.864053 | 3735.845543 | 3350.459438 |
+| CUDA_TILED | 32 | 2548.179891 | 3160.741579 | 3334.104841 | 3584.109363 | 3176.535999 |
+| CUDA_OPTIMIZED | 16 | 2034.095068 | 4766.254508 | 5656.035843 | 6116.374924 | 5593.337515 |
+| CUDA_OPTIMIZED | 32 | 2164.243581 | 7906.321992 | 12633.445936 | 14122.236099 | 12210.370568 |
 
-Highest measured kernel-only result: **14075.398984 GFLOP/s** for CUDA_OPTIMIZED tile 32 at
-2048x2048x2048. At 4096 the same configuration measured 12077.491619 GFLOP/s with an IQR of
-0.924616 ms.
+Highest measured kernel-only result: **14122.236099 GFLOP/s** for CUDA_OPTIMIZED tile 32 at
+2048x2048x2048. At 4096 the same configuration measured 12210.370568 GFLOP/s with an IQR of
+0.555928 ms.
 
 Kernel-only medians are not directly comparable to end-to-end numbers: the kernel-only harness
 keeps device buffers allocated and copied once, outside the timed region.
@@ -68,16 +68,16 @@ reference appears only for 256 and 512.
 
 | Algorithm | tile | 256 | 512 | 1024 | 2048 | 4096 |
 |---|---:|---:|---:|---:|---:|---:|
-| CPU_REFERENCE | 0 | 7.102941 | 60.035730 | not measured | not measured | not measured |
-| CUDA_NAIVE | 0 | 0.313442 | 1.166422 | 2.761772 | 12.739729 | 86.625762 |
-| CUDA_TILED | 16 | 0.301804 | 0.876799 | 2.658532 | 11.238789 | 66.882886 |
-| CUDA_TILED | 32 | 0.292778 | 0.905292 | 2.636362 | 11.537349 | 69.944105 |
-| CUDA_OPTIMIZED | 16 | 0.495186 | 0.876290 | 2.325485 | 9.389532 | 49.191942 |
-| CUDA_OPTIMIZED | 32 | 0.333952 | 0.852131 | 2.151030 | 7.952398 | 36.556368 |
+| CPU_REFERENCE | 0 | 6.607452 | 55.452782 | not measured | not measured | not measured |
+| CUDA_NAIVE | 0 | 0.832710 | 1.255162 | 4.212067 | 18.493276 | 108.183267 |
+| CUDA_TILED | 16 | 0.641063 | 1.246135 | 4.011719 | 16.839740 | 87.956173 |
+| CUDA_TILED | 32 | 0.494945 | 1.231997 | 4.060462 | 17.295091 | 90.934148 |
+| CUDA_OPTIMIZED | 16 | 0.393352 | 1.230471 | 3.791351 | 15.043261 | 70.465666 |
+| CUDA_OPTIMIZED | 32 | 0.629763 | 1.175209 | 3.560707 | 13.428698 | 57.728051 |
 
 At 2048x2048x2048 the fastest measured end-to-end configuration is CUDA_OPTIMIZED tile 32 at
-7.952398 ms, versus 11.238789 ms for the frozen public default CUDA_TILED tile 16. At 4096 the
-same comparison is 36.556368 ms versus 66.882886 ms.
+13.428698 ms, versus 16.839740 ms for the frozen public default CUDA_TILED tile 16. At 4096 the
+same comparison is 57.728051 ms versus 87.956173 ms.
 
 ## Transfer median milliseconds
 
@@ -85,11 +85,11 @@ Values are `median_ms` from the final CSV. H2D is the combined copy of A and B; 
 
 | Size | h2d_transfer | d2h_transfer |
 |---:|---:|---:|
-| 256 | 0.052432 | 0.037520 |
-| 512 | 0.240416 | 0.175936 |
-| 1024 | 0.801792 | 0.576816 |
-| 2048 | 3.294688 | 1.947344 |
-| 4096 | 15.146880 | 7.515744 |
+| 256 | 0.052240 | 0.059952 |
+| 512 | 0.202640 | 0.209152 |
+| 1024 | 0.926176 | 0.562080 |
+| 2048 | 3.194608 | 1.924288 |
+| 4096 | 14.973728 | 7.563456 |
 
 ## Profiler summary
 
@@ -98,8 +98,8 @@ Full commands, workarounds, and exact report contents are in `docs/PROFILING.md`
 
 - Nsight Systems, end-to-end size 2048 (`nsys_end_to_end_2048.nsys-rep`): baseline kernel durations
   were naive 6.222 ms, tiled 16 5.061 ms, tiled 32 5.186 ms, optimized 16 2.870 ms, and optimized
-  32 (2x2 micro-tile) 2.422 ms. After the Batch 7.2 change, the full benchmark measured optimized
-  tile 32 at 1.220560 ms kernel-only and 7.952398 ms end-to-end at 2048.
+  32 (2x2 micro-tile) 2.422 ms. After the Batch 7.2 change, the final closeout benchmark measured
+  optimized tile 32 at 1.216512 ms kernel-only and 13.428698 ms end-to-end at 2048.
 - Nsight Compute baseline at 2048: compute and L1 throughput were near the ceiling for every
   kernel (99.21% naive, 96.46% tiled 16, 84.71% tiled 32, 95.99% optimized 16, 96.70% optimized 32).
   DRAM throughput was low (1.16% to 2.98%), confirming the workload is limited by on-chip work and
@@ -130,13 +130,15 @@ The frozen default is a known limitation, not an unnoticed result.
 
 - The public default algorithm is still CUDA_TILED tile 16, so callers who do not set
   `GemmConfig::algorithm` do not get the fastest measured configuration.
-- CUDA_OPTIMIZED tile 32 is slower than CUDA_OPTIMIZED tile 16 and CUDA_TILED at 256 (0.014672 ms
-  kernel-only versus 0.017824 ms and 0.013184 ms respectively). The 4x4 micro-tile is only claimed
-  for sizes 512 and above.
+- CUDA_OPTIMIZED tile 32 is slower than CUDA_TILED at 256 (0.015504 ms kernel-only versus 0.014288
+  ms) and slightly faster than CUDA_OPTIMIZED tile 16 (0.016496 ms). The 4x4 micro-tile is only
+  claimed for sizes 512 and above.
 - End-to-end time is dominated by allocation and host/device copies at small sizes. At 256 the best
-  end-to-end result is 0.292778 ms while transfer alone is 0.052432 ms plus 0.037520 ms.
-- CUDA_OPTIMIZED tile 32 at 4096 showed clock variation (SM clock median 2482.5 MHz, lower than the
-  2760 MHz seen for several other 4096 rows) and a wider IQR of 0.924616 ms. No rows were removed.
+  end-to-end result is 0.393352 ms (CUDA_OPTIMIZED tile 16) while transfer alone is 0.052240 ms plus
+  0.059952 ms.
+- CUDA_OPTIMIZED tile 32 at 4096 showed clock variation (kernel-only SM clock median 2550.0 MHz,
+  lower than the 2745.0 MHz to 2760.0 MHz seen for other kernel-only 4096 rows) and an IQR of
+  0.555928 ms. No rows were removed.
 - The scalar CPU reference is reported only for 256 and 512 and is not a device measurement.
 - cuBLAS was not measured (`CME_WITH_CUBLAS=OFF`).
 - Tensor Cores, transposes, and batched GEMM are out of scope for this project.
@@ -158,20 +160,21 @@ This builds `linux-release`, runs the full benchmark, and writes
 ./scripts/benchmark.sh --quick
 ```
 
-The final CSV used for this report is `results/gemm_20261103T062611Z.csv`.
+The final CSV used for this report is `results/gemm_20261122T073654Z.csv`.
 
 ## Correctness evidence
 
-Recorded by Batch 5.3 on 2026-11-02 and re-run during Batch 7.3 on 2026-11-03.
+Recorded by Batch 5.3 on 2026-11-02, re-run during Batch 7.3 on 2026-11-03, and re-run during
+closeout on 2026-11-22 after four Phase 8 edge-case tests were corrected.
 
-- Command: `./scripts/test.sh`
+- Command: `CME_COMPUTE_SANITIZER=/tmp/opencode/cuda-sanitizer-13-2/usr/local/cuda-13.2/bin/compute-sanitizer ./scripts/test.sh`
 - Build: `cmake --preset linux-debug` and `cmake --build --preset linux-debug` completed.
-- CTest: `100% tests passed, 0 tests failed out of 44`; 5368 assertions.
+- CTest: `100% tests passed, 0 tests failed out of 48`; 47 Catch2 test cases and 5423 assertions.
 - Correctness matrix: 600 algorithm runs, 16,305,450 element comparisons.
-- `compute-sanitizer` version: 2026.1.1.0 (CUDA 13.2 package).
+- `compute-sanitizer` version: `2026.1.1.0` (build 38000597), CUDA 13.2 package.
 - Memcheck on the full test binary: `ERROR SUMMARY: 0 errors`.
 - Racecheck on the `[racecheck]` filter: `0 hazards displayed (0 errors, 0 warnings)`.
-- Raw run log: `/tmp/cme_test_sh.log` (session artifact; not committed).
+- Raw run log: `/tmp/cme_verify_test.log` (session artifact; not committed).
 
 Environment: `docs/ENVIRONMENT.md`. The system `compute-sanitizer` 2022.4.1 is incompatible with the
 installed 595.84 driver; `scripts/test.sh` selects the working 13.2 binary. See Batch 5.3 in
